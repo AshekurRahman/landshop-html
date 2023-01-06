@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'landshop';
+  src: url('../fonts/theme-icons/icomoon.eot?pspcam');
+  src: url('../fonts/theme-icons/icomoon.eot?pspcam#iefix') format('embedded-opentype'),
+    url('../fonts/theme-icons/icomoon.ttf?pspcam') format('truetype'),
+    url('../fonts/theme-icons/icomoon.woff?pspcam') format('woff'),
+    url('../fonts/theme-icons/icomoon.svg?pspcam#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ls-"],
+[class*=" ls-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'landshop' !important;
+}
+
+.ls-heart:before {
+  content: "\e90e";
+}
+
+.ls-eye:before {
+  content: "\e910";
+}
+
+.ls-cart:before {
+  content: "\e913";
+}
+
+.ls-angle-left:before {
+  content: "\e90a";
+}
+
+.ls-angle-right:before {
+  content: "\e90b";
+}
+
+.ls-arrow-right:before {
+  content: "\e90c";
+}
+
+.ls-backpack:before {
+  content: "\e90d";
+}
+
+.ls-drop:before {
+  content: "\e90f";
+}
+
+.ls-jaket:before {
+  content: "\e911";
+}
+
+.ls-locked:before {
+  content: "\e912";
+}
+
+.ls-needle:before {
+  content: "\e914";
+}
+
+.ls-plate:before {
+  content: "\e915";
+}
+
+.ls-play:before {
+  content: "\e916";
+}
+
+.ls-pocket:before {
+  content: "\e917";
+}
+
+.ls-quote-left:before {
+  content: "\e918";
+}
+
+.ls-quote-right:before {
+  content: "\e919";
+}
+
+.ls-sapling:before {
+  content: "\e91a";
+}
+
+.ls-search:before {
+  content: "\e91b";
+}
+
+.ls-shop:before {
+  content: "\e91c";
+}
+
+.ls-user:before {
+  content: "\e91d";
+}
+
+.ls-wool:before {
+  content: "\e91e";
+}
+
+.ls-zipper:before {
+  content: "\e91f";
+}
+
+.ls-envelope:before {
+  content: "\e909";
+}
+
+.ls-paper-plane:before {
+  content: "\e908";
+}
+
+.ls-linkedin:before {
+  content: "\e904";
+}
+
+.ls-instagram:before {
+  content: "\e905";
+}
+
+.ls-twitter:before {
+  content: "\e906";
+}
+
+.ls-facebook:before {
+  content: "\e907";
+}
+
+.ls-star:before {
+  content: "\e901";
+}
+
+.ls-qube:before {
+  content: "\e902";
+}
+
+.ls-minus:before {
+  content: "\e903";
+}
+
+.ls-plus:before {
+  content: "\e900";
+}
+
+.ls-bar:before {
+  content: "\e920";
+}
+
+.ls-close:before {
+  content: "\e921";
+}
+
+.ls-glasses:before {
+  content: "\e922";
+}
+
+.ls-motion:before {
+  content: "\e923";
+}
+
+.ls-rotation:before {
+  content: "\e924";
+}
+
+.ls-setting:before {
+  content: "\e925";
+}
+
+.ls-technology:before {
+  content: "\e926";
+}
+
+.ls-close-square:before {
+  content: "\e927";
+}
+
+.ls-toggle-bar:before {
+  content: "\e928";
+}
+
+.ls-check-circle:before {
+  content: "\e929";
+}
+
+.ls-headphone:before {
+  content: "\e92a";
+}
+
+.ls-setting-2:before {
+  content: "\e92b";
+}
+
+.ls-box:before {
+  content: "\e92c";
+}
+
+.ls-refresh-circle:before {
+  content: "\e92d";
+}
+
+.ls-home:before {
+  content: "\e92e";
+}
+
+.ls-coin:before {
+  content: "\e92f";
+}
+
+.ls-truck:before {
+  content: "\e930";
+}
+
+.ls-sun:before {
+  content: "\e931";
+}
+
+.ls-color-swatch:before {
+  content: "\e932";
+}
+
+.ls-security-safe:before {
+  content: "\e933";
+}
+
+.ls-adjust:before {
+  content: "\e934";
+}
+
+.ls-bubble:before {
+  content: "\e935";
+}
+
+.ls-volume-high:before {
+  content: "\e936";
+}
+
+.ls-love-fill:before {
+  content: "\e937";
+}
+
+.ls-circle-dots:before {
+  content: "\e938";
+}
+
+.ls-search-line:before {
+  content: "\e939";
+}
+
+.ls-close-line:before {
+  content: "\e93a";
+}
+
+.ls-bar-line:before {
+  content: "\e93b";
+}
