@@ -82,48 +82,52 @@ img {
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
-    padding: 14.5px 33px;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--heading-color);
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 700;
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .primary-button:hover {
-    background-color: #ffffff;
-    color: var(--primary-color);
-    box-shadow: 0px 10px 20px rgba(255, 112, 49, 0.3);
+    color: var(--heading-color);
 }
 
-.primary-button span {
-    font-size: 80%;
+.primary-button .part {
+    display: flex;
+    align-items: center;
+    padding: 14.5px 33px;
+    transition: 0.5s;
+    transform: translateY(0%);
+    width: 100%;
 }
 
-.primary-button.circle {
-    border-radius: 100px;
-}
-
-.primary-button.white {
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
-.primary-button.white:hover {
-    background-color: var(--primary-color);
+.primary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--heading-color);
     color: #ffffff;
 }
 
-.primary-button.black-hover {
-    color: var(--heading-color);
-    background-color: #fff3ee;
+.primary-button:hover .part {
+    transform: translateY(-100%);
 }
 
-.primary-button.black-hover:hover {
-    color: #fff3ee;
-    background-color: var(--heading-color);
+.primary-button .icon {
+    font-size: 80%;
+    margin-left: 10px;
 }
+
+.primary-button.white .front {
+    background-color: #ffffff;
+    color: var(--heading-color);
+}
+
 
 /*=== 3. Helper-Class-CSS ===*/
 .g-4 {
@@ -157,11 +161,15 @@ img {
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
+}
+
+.single-image img {
+    border-radius: 5px;
 }
 
 /*=== 4. Section-Title-CSS ===*/
 .section-title {
-    text-align: center;
     margin-bottom: 56px;
 }
 
@@ -379,8 +387,8 @@ img {
 
 .mainmenu-area .nav-row .nav-actions .nav-action .count {
     position: absolute;
-    right: 32%;
-    top: 32%;
+    right: 30%;
+    top: 30%;
     width: 20px;
     height: 20px;
     line-height: 18px;
@@ -406,7 +414,7 @@ img {
 
 .nav-products-area {
     position: fixed;
-    bottom: -90vh;
+    bottom: -100vh;
     left: 0;
     z-index: 9;
     background-color: #ffffff;
@@ -430,10 +438,6 @@ img {
     z-index: 1;
     overflow: auto;
     height: calc(100vh - var(--navbar-height));
-}
-
-.sticky-menu .page-wrapper {
-    padding-top: var(--navbar-height);
 }
 
 .nav-actions .toggle {
@@ -556,6 +560,43 @@ img {
     display: inline-block;
 }
 
+.header-area .element {
+    position: absolute;
+    z-index: -1;
+}
+
+.header-area .element.element-1 {
+    left: 8%;
+    top: 20%;
+    max-width: 10vw;
+}
+
+.header-area .element.element-2 {
+    right: 5%;
+    top: 12%;
+    max-width: 10vw;
+}
+
+.header-area .element.element-3 {
+    left: 0;
+    bottom: 15%;
+    transform: translateX(-60%);
+    max-width: 30vw;
+}
+
+.header-area .element.element-4 {
+    right: 0;
+    bottom: 15%;
+    transform: translateX(60%);
+    max-width: 30vw;
+}
+
+.header-area .element.element-5 {
+    left: 50%;
+    bottom: 33%;
+    transform: translate(-50%, -50%);
+    max-width: 70vw;
+}
 
 .header-area .header-text {
     text-align: center;
@@ -573,6 +614,256 @@ img {
     margin-top: 80px;
 }
 
+.header-slider-pagination {
+    width: 200px;
+    margin: auto;
+}
+
+.header-slider-pagination .swiper-slide {
+    text-align: center;
+}
+
+.header-slider-pagination .swiper-slide .number {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--heading-color);
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.header-slider-pagination .swiper-slide.swiper-slide-thumb-active .number {
+    color: var(--primary-color);
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+/* -- About-Area-CSS -- */
+.about-area {
+    position: relative;
+    z-index: 1;
+}
+
+.about-area .element {
+    position: absolute;
+    z-index: -1;
+}
+
+.about-area .element-2 {
+    left: 88%;
+    top: 24%;
+    max-width: 10vw;
+}
+
+.about-area .element-1 {
+    left: 45%;
+    top: 8%;
+    width: 55px;
+    max-width: 6vw;
+}
+
+.about-text .title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+/* -- Feature-Area-CSS-- */
+.feature-area {
+    background-color: #FDF7E6;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-area .element {
+    position: absolute;
+    z-index: -1;
+}
+
+.feature-area .element.element-1 {
+    left: 6%;
+}
+
+.feature-area .element.element-2 {
+    right: 4%;
+    bottom: 8%;
+}
+
+.feature-box {
+    background-color: #FEC202;
+    padding: 40px;
+    border-radius: 6px;
+    color: #131313;
+}
+
+.feature-box.purple {
+    background-color: #5438FD;
+    color: #ffffff;
+}
+
+.feature-box.orange {
+    background-color: #FF6B31;
+    color: #ffffff;
+}
+
+.feature-box .image {
+    margin: 0 0 30px 0;
+}
+
+.feature-box .title {
+    margin-bottom: 16px;
+}
+
+.feature-box.purple .title,
+.feature-box.orange .title {
+    color: #ffffff;
+}
+
+.slice-slider .swiper-slide {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+}
+
+.slice-slider .swiper-slide img {
+    width: 100%;
+}
+
+
+/* -- Intro-Area-CSS -- */
+.intro-area {
+    background-color: #FFF0EB;
+}
+
+.intro-area .intro-slide {
+    margin-bottom: 64px;
+}
+
+.check-list {
+    list-style: none;
+    margin: 0px 0;
+    padding: 0;
+}
+
+.check-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check-list li:before {
+    content: "\e929";
+    font-family: 'landshop';
+    margin-right: 12px;
+    color: var(--primary-color);
+}
+
+.intro-slide .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.intro-slide .swiper-slide:nth-child(odd) {
+    margin-top: 100px;
+}
+
+/* -- Product-Area-CSS -- */
+.product-box {
+    background-color: #F6F6F6;
+    padding: 24px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.product-box .thumb {
+    margin: 0 0 24px 0;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.product-box .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-box .price {
+    margin-bottom: 16px;
+}
+
+.product-box .color-select {
+    margin: -7px;
+    padding-bottom: 10px;
+}
+
+.product-box .color-select .color {
+    border: none;
+    background-color: #ededed;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    margin: 7px;
+    padding: 0;
+    position: relative;
+}
+
+.product-box .color-select .color::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 100%;
+    border: 1px solid var(--heading-color);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product-box .color-select .color.active::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.product-box .hover {
+    padding: 15px;
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product-box:hover .hover {
+    right: 0;
+    opacity: 1;
+}
+
+.product-box .hover .action {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    margin: 6px;
+    color: var(--heading-color);
+    font-size: 22px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+.product-box .hover .action:hover {
+    background-color: var(--heading-color);
+    color: #ffffff;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+}
 
 /*=== 17. Footer-CSS ===*/
 .footer-area {

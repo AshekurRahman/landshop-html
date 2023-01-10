@@ -393,7 +393,7 @@ img {
 }
 .nav-products-area {
     position: fixed;
-    bottom: -90vh;
+    bottom: -100vh;
     left: 0;
     z-index: 9;
     background-color: #ffffff;

@@ -79,7 +79,7 @@
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,

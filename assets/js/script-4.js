@@ -2,6 +2,21 @@
     $(document).on('ready', function(){
 
 
+        /* -- Product-Color-Select -- */
+        $('.color-select .color').each(function(){
+            var color = $(this).data('color');
+            $(this).css( "background-color", color);
+        });
+        
+        $('.color-select').each(function(){            
+            $(this).find('.color').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+
+
+
         /* Nav-Widget-Toggle */
         $('.nav-actions .widget-toggle').on('click', function(){
             $('body').toggleClass('nav-products-active');
@@ -101,58 +116,52 @@
 
 
         /*====== Header-Slider ======*/
+          var Header_Slider_Pagination = new Swiper(".header-slider-pagination", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            watchSlidesProgress: true,
+        });
+
         var Header_Slider = new Swiper(".header-slider", {
+            loop: true,
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
+            watchSlidesProgress: true,
+            thumbs: {
+              swiper: Header_Slider_Pagination,
+            },
             coverflowEffect: {
               rotate: 0,
-              stretch: 200,
+              stretch: 100,
               depth: 500,
               modifier: 2,
               slideShadows: false,
             },
           });
-          var Header_Slider_Pagination = new Swiper(".header-slider-pagination", {
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: "auto",
-              slidesPerView: 3,
-              thumbs: {
-                swiper: Header_Slider,
-              },
-            });
-
         /*====== Slice-Slider ======*/
         var Slice_Slider = new Swiper(".slice-slider", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".header-slider .arrow_next",
-                prevEl: ".header-slider .arrow_prev",
-            },
-            pagination: {
-                el: ".header-slider .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
+            loop: true,            
+            effect: "cards",
+            grabCursor: true,
+            cardsEffect: {
+                rotate: true,
+                slideShadows: false,
+                perSlideRotate: 5,
+                perSlideOffset: 8,
             },
         });
 
 
         /*====== Intro-Slider ======*/
-        var Header_Slider = new Swiper(".intro-slide", {
+        var Intro_Slider = new Swiper(".intro-slide", {
             loop: true,
-            speed: 800,
-            spaceBetween: 58,
+            speed: 1000,
+            spaceBetween: -100,
+            centeredSlides: true,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
@@ -165,41 +174,22 @@
                 clickable: true,
             },
             breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                },
                 780: {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 4,
                 },
             },
         });
 
-
-
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-photo-slide", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".testimonial-photo-slide .arrow_next",
-                prevEl: ".testimonial-photo-slide .arrow_prev",
-            },
-            pagination: {
-                el: ".testimonial-photo-slide .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-        
         /*====== Testimonial-Slider ======*/
         var Testimonial_Slider = new Swiper(".testimonial-content-slide", {
             loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 58,
             slidesPerView: 1,
             watchSlidesVisibility: true,
@@ -219,34 +209,9 @@
             },
         });
         
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-navigate-slide", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".testimonial-navigate-slide .arrow_next",
-                prevEl: ".testimonial-navigate-slide .arrow_prev",
-            },
-            pagination: {
-                el: ".testimonial-navigate-slide .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-        
-
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
-            loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 32,
             slidesPerView: 4,
             watchSlidesVisibility: true,

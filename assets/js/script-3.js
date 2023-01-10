@@ -103,7 +103,7 @@
         /*====== Testimonial-Slider ======*/
         var Testimonial_Slider = new Swiper(".testimonial-slider", {
             loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 58,
             slidesPerView: 1,
             watchSlidesVisibility: true,
@@ -127,7 +127,7 @@
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 32,
             slidesPerView: 1,
             watchSlidesVisibility: true,
