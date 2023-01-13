@@ -25,6 +25,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/lity.min.css">
@@ -35,6 +36,13 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".mainmenu-area" data-bs-offset="50">
+    <!-- preloader  -->
+    <div class="preloader">
+        <div class="load"></div>
+        <div class="count"></div>
+    </div>
+    <!-- preloader end -->
+
 
     <!-- Mainmenu-Area-Start -->
     <div class="mainmenu-area">
@@ -94,138 +102,135 @@
     <!-- Nav-Popup-Product-Start -->
     <div class="nav-products-area section-padding">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-3 g-md-4 g-xl-5">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-1.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
+                            <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                            </div>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-2.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
+                            <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                            </div>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-4.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
+                            <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                            </div>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-4.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
+                            <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                            </div>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-1.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
+                            <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                            </div>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">                    
                     <div class="product-box">
                         <figure class="thumb">
-                            <img src="assets/images/theme-3/product-2.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
+                            <div class="hover">
+                                <a href="#" class="action"><span class="ls-heart"></span></a>
+                                <a href="#" class="action"><span class="ls-cart"></span></a>
+                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-3/product-4.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
                         </figure>
                         <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-3/product-4.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-3/product-1.jpg" alt="Nike VR Box">
-                            <a href="#" class="primary-button">Buy Now <span class="ls-angle-right"></span></a>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title"><a href="#">Apple HomePod mini</a></h3>
-                            <div class="price">
-                                <span class="regular">$299.00</span>
-                                <span class="sold">$129.00</span>
+                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                            <div class="price">€27.99</div>
+                            <div class="color-select">
+                                <button type="button" class="color" data-color="#FDA800"></button>
+                                <button type="button" class="color" data-color="#3CB868"></button>
+                                <button type="button" class="color" data-color="#FF6B31"></button>
+                                <button type="button" class="color" data-color="#8B44FF"></button>
                             </div>
                         </div>
                     </div>
@@ -237,13 +242,6 @@
 
     <!-- Page-Wrapper-Start -->
     <div class="page-wrapper">
-        <!-- preloader  -->
-        <div class="preloader">
-            <div class="load"></div>
-            <div class="count"></div>
-        </div>
-        <!-- preloader end -->
-
         <!-- Header-Area-Start -->
         <header class="header-area">
             <img src="assets/images/theme-4/header-element-1.svg" alt="" class="element element-1">
@@ -331,22 +329,22 @@
             <img src="assets/images/theme-4/element-image-3.png" alt="" class="element element-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-lg-6">
+                    <div class="col-md-10 col-lg-8 col-xl-6">
                         <div class="section-title">
                             <h2 class="title">A Performance Oriented Endurance Bike</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-5">
+                <div class="row g-3 g-md-4 g-xl-5 align-items-center">
+                    <div class="col-md-6 col-xl-5 mb-4 mb-md-0">
                         <figure class="single-image">
                             <img src="assets/images/theme-4/element-image-1.jpg" alt="">
                         </figure>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="about-text">
                             <h3 class="title">Guard Every Corner of Your House</h3>
-                            <div class="desc mb-5">
+                            <div class="desc mb-4 mb-lg-5">
                                 <p>Checkpoint SLR 7 is a carbon gravel bike that's built for crushing the world's greatest gravel races. The lightweight 700 Series OCLV Carbon frame has gravel-smoothing IsoSpeed and a nimble-yet-stable progressive geometry. Plus, a Shimano GRX drivetrain that shifts smoothly even in the gnarliest gravel, and extra mounts for gear and accessories.</p>
                             </div>
                             <a href="#" class="primary-button">
@@ -355,7 +353,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-xl-3 d-none d-xl-block">
                         <figure class="single-image">
                             <img src="assets/images/theme-4/element-image-2.png" alt="">
                         </figure>
@@ -372,9 +370,9 @@
             <img src="assets/images/theme-4/feature-star-1.png" alt="star" class="element element-1">
             <img src="assets/images/theme-4/feature-star-2.png" alt="star" class="element element-2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="section-title px-lg-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-8">
+                        <div class="section-title px-lg-3 g-md-4 g-xl-5 text-center">
                             <h2 class="title">Core Features</h2>
                             <div class="desc">
                                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -385,7 +383,7 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="feature-box  mt-5">
+                        <div class="feature-box mt-md-5">
                             <figure class="image">
                                 <img src="assets/images/theme-4/feature-image-1.jpg" alt="">
                             </figure>
@@ -407,7 +405,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="feature-box orange mt-5">
+                        <div class="feature-box orange mt-md-5">
                             <figure class="image">
                                 <img src="assets/images/theme-4/feature-image-3.jpg" alt="">
                             </figure>
@@ -429,7 +427,7 @@
         <section class="performance-area section-padding overflow-hidden">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-md-6 mb-5 mb-md-0">
                         <div class="section-title mb-5">
                             <h2 class="title">Designed And Built for Performance</h2>
                             <div class="desc">
@@ -446,7 +444,7 @@
                             <span class="back part">Learn More <span class="icon ls-angle-right"></span></span>
                         </a>
                     </div>
-                    <div class="col-md-5 offset-md-2">
+                    <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2">
                         <div class="slice-slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -526,13 +524,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-sm-6 col-md-5 mb-4 mb-sm-0">
                         <h3 class="title">It's Right for You If...</h3>
                         <div class="desc">
                             <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You want our most advanced Checkpoint frame, one that's made specifically for gravel racing.</p>
                         </div>
                     </div>
-                    <div class="col-md-5 offset-md-2">
+                    <div class="col-sm-6 col-md-5 offset-md-2">
                         <h3 class="title">The Tech You Get</h3>
                         <div class="desc">
                             <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You want our most advanced Checkpoint frame, one that's made specifically for gravel racing.</p>
@@ -549,7 +547,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                        <div class="section-title text-center px-lg-5">
+                        <div class="section-title text-center px-lg-3 g-md-4 g-xl-5">
                             <h2 class="title">Similar Products</h2>
                             <div class="desc">
                                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -711,10 +709,11 @@
 
 
         <!-- Testimonial-Area-Start -->
-        <section class="testimonial-area">
+        <section class="testimonial-area section-padding">
+            <img src="assets/images/theme-4/element-image-3.png" alt="" class="element element-1">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 d-none d-lg-block">
                         <div class="testimonial-photo-slide swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -734,10 +733,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="slider-controls testimonial-navigation">
+                            <button type="button" class="control next"><span class="ls-angle-right"></span></button>
+                            <button type="button" class="control prev"><span class="ls-angle-left"></span></button>
+                        </div>
                     </div>
-                    <div class="col-md-6 offset-md-1">
-                        <div class="section-title">
-                            <h2 class="title">Reviews From Our Clients</h2>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="section-title mb-5">
+                            <h2 class="title mb-0">Reviews From Our Clients</h2>
                         </div>
                         <div class="testimonial-content-slide swiper">
                             <div class="swiper-wrapper">
@@ -753,9 +756,40 @@
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
-                                            <p>There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                            <p>1 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
                                         </div>
-
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box">
+                                        <div class="testimonial-header">
+                                            <div class="quote">
+                                                <span class="ls-quote-left"></span>
+                                            </div>                                            
+                                            <div class="rating-star">
+                                                <span class="star front"></span>
+                                                <span class="star back"></span>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <p>2 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box">
+                                        <div class="testimonial-header">
+                                            <div class="quote">
+                                                <span class="ls-quote-left"></span>
+                                            </div>                                            
+                                            <div class="rating-star">
+                                                <span class="star front"></span>
+                                                <span class="star back"></span>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <p>3 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>                            
@@ -793,9 +827,9 @@
             <div class="container">
                 <div class="row footer-top section-padding">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="footer-widget pe-lg-5">
+                        <div class="footer-widget pe-lg-3 g-md-4 g-xl-5">
                             <a href="index.html" class="footer-logo">
-                                <img src="assets/images/theme-3/logo-dark.svg" alt="Landshop">
+                                <img src="assets/images/theme-3/logo-light-2.svg" alt="Landshop">
                             </a>
                             <div class="desc">
                                 <p>Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepde
