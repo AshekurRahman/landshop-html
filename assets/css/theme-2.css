@@ -164,26 +164,6 @@ img {
     color: #ffffff;
 }
 
-/*=== 5. Icon-List-CSS ===*/
-.icon-list {
-    list-style: none;
-    margin: -8px 0;
-    padding: 0;
-}
-
-.icon-list li {
-    margin: 8px 0;
-    display: flex;
-}
-
-.icon-list li:before {
-    content: "\e902";
-    font-family: landshop;
-    margin-right: 10px;
-    color: var(--primary-color);
-}
-
-
 /*=== 6. Preloader-CSS ===*/
 .preloader {
     position: fixed;
@@ -620,7 +600,7 @@ img {
 }
 
 .settings-list li:before {
-    content: "\e925";
+    content: "\e940";
     font-family: 'landshop';
     color: #FDA800;
     margin-right: 12px;
@@ -658,7 +638,7 @@ img {
 }
 
 .rating-star .star:before {
-    content: "\e901 \e901 \e901 \e901 \e901";
+    content: "\e960 \e960 \e960 \e960 \e960";
 }
 
 .rating-star .back {

@@ -150,7 +150,7 @@ img {
 }
 
 .icon-list li:before {
-    content: "\e902";
+    content: "\e961";
     font-family: landshop;
     margin-right: 10px;
     color: var(--primary-color);
@@ -646,7 +646,7 @@ img {
 }
 
 .rating-star .star:before {
-    content: "\e901 \e901 \e901 \e901 \e901";
+    content: "\e960 \e960 \e960 \e960 \e960";
 }
 
 .rating-star .back {
@@ -1097,14 +1097,14 @@ img {
 }
 
 .accordion .item .title a:after {
-    content: "\e900";
+    content: "\e963";
     font-family: 'landshop';
     float: right;
     line-height: 1;
 }
 
 .accordion .item .title a[aria-expanded="true"]:after {
-    content: "\e903";
+    content: "\e962";
 }
 
 .accordion .item .desc p {

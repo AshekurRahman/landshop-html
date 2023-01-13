@@ -798,7 +798,7 @@ img {
 }
 
 .check-list li:before {
-    content: "\e929";
+    content: "\e92a";
     font-family: 'landshop';
     margin-right: 12px;
     color: #3CB868;
@@ -951,7 +951,7 @@ img {
 }
 
 .rating-star .star:before {
-    content: "\e901 \e901 \e901 \e901 \e901";
+    content: "\e960 \e960 \e960 \e960 \e960";
 }
 
 .rating-star .back {

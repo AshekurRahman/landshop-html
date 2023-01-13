@@ -756,7 +756,7 @@ img {
 }
 
 .check-list li:before {
-    content: "\e929";
+    content: "\e92a";
     font-family: 'landshop';
     margin-right: 12px;
     color: var(--primary-color);
@@ -956,7 +956,7 @@ img {
 }
 
 .rating-star .star:before {
-    content: "\e901 \e901 \e901 \e901 \e901";
+    content: "\e960 \e960 \e960 \e960 \e960";
 }
 
 .rating-star .back {
@@ -1010,7 +1010,7 @@ img {
 }
 
 .footer-area .social-menu li a:hover {
-    background-color: var(--primary-color);
+    background-color: #FF6B31;
 }
 
 .footer-widget .desc {
@@ -1038,7 +1038,7 @@ img {
 }
 
 .block-list li:hover a {
-    color: var(--primary-color);
+    color: #FF6B31;
 }
 
 .input-control {
