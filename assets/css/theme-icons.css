@@ -58,13 +58,13 @@
 .ls-ram:before {
   content: "\e90d";
 }
-.ls-prossesor:before {
+.ls-processor:before {
   content: "\e90e";
 }
 .ls-planet:before {
   content: "\e90f";
 }
-.ls-photopea:before {
+.ls-aperture:before {
   content: "\e910";
 }
 .ls-people:before {
@@ -73,7 +73,7 @@
 .ls-peak:before {
   content: "\e912";
 }
-.ls-mouse-1:before {
+.ls-mouse:before {
   content: "\e913";
 }
 .ls-microphone:before {
@@ -97,7 +97,7 @@
 .ls-film-reel-playing:before {
   content: "\e91a";
 }
-.ls-eye1:before {
+.ls-eye-scan:before {
   content: "\e91b";
 }
 .ls-drone:before {

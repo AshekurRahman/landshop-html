@@ -99,7 +99,7 @@ img {
 .primary-button .part {
     display: flex;
     align-items: center;
-    padding: 14.5px 33px;
+    padding: 15px 30px;
     transition: 0.5s;
     transform: translateY(0%);
     width: 100%;
