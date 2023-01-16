@@ -231,6 +231,7 @@
 }
 .ls-angle-right:before {
   content: "\e948";
+  font-size: 80%;
 }
 .ls-arrow-right:before {
   content: "\e949";
