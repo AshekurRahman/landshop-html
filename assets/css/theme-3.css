@@ -1044,6 +1044,9 @@ img {
     color: var(--primary-color);
 }
 
+.product-box .price .regular {
+    text-decoration: line-through;
+}
 
 /*=== 17. Footer-CSS ===*/
 .footer-area {

@@ -51,9 +51,6 @@
         transform: scaleY(1);
     }
 
-    .header-area .header-text .main-title {
-        font-size: 90px;
-    }
 }
 
 @media screen and (max-width: 1200px) {

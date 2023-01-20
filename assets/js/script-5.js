@@ -1,20 +1,6 @@
 ;(function($){
     $(document).on('ready', function(){
 
-
-        /* -- Product-Color-Select -- */
-        $('.color-select .color').each(function(){
-            var color = $(this).data('color');
-            $(this).css( "background-color", color);
-        });
-        
-        $('.color-select').each(function(){            
-            $(this).find('.color').on('click',function(){
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-
         /* Nav-Widget-Toggle */
         $('.nav-actions .widget-toggle').on('click', function(){
             $('body').toggleClass('nav-products-active');
@@ -38,52 +24,18 @@
             $(this).toggleClass('active');
             return false;
         });
-
-        /* Color-Switch-Background-Set */
-        $('.color-switch-options .switch').each(function(){
-            var color = $(this).data('color');
-            if(color != null){
-                $(this).css('background-color',color);
-            }
-        });
         
-        $('.color-switch-options .switch').on('click',function(){
-            var color = $(this).data('color');
-            if(color != null){
-                $('.header-text .product-image, .header-image .background').css('background-color',color);
-            }
-        });
-        
-        
-        /* Accordion-JS */
-        $('.accordion').find('.item .title.active').siblings('.desc').slideDown();
-        $('.accordion').find('.item .title').on('click', function () {
-            var siblingsItem = $(this).parent('.item').siblings('.item');
-            siblingsItem.find('.desc').slideUp();
-            siblingsItem.find('.title').removeClass('active');
-            $(this).siblings('.desc').slideToggle();
-            $(this).toggleClass('active');
-        });
-
-        /* Toggle-menu-JS */
-        
+        /* Toggle-menu-JS */        
         $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
             $(this).find('span').toggleClass('ls-toggle-bar');
             $(this).find('span').toggleClass('ls-close-square');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
         });
 
-        $('a').on('click',function(){
-            var href = $(this).attr('href');
-            if(href == '#'){
-                
-            }
-        });
-
 
         /* Sticky-Menu-JS */
-        $('.page-wrapper').scroll(function () {
-            if($('.page-wrapper').scrollTop() > 120) {
+        $('body').scroll(function () {
+            if($('body').scrollTop() > 120) {
                 $("body").addClass('sticky-menu');
             } else {
                 $("body").removeClass('sticky-menu');
@@ -153,34 +105,6 @@
             },
         });
         
-        /*====== Product-Slider ======*/
-        var Product_Slider = new Swiper(".product-slider", {
-            speed: 1000,
-            spaceBetween: 32,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,            
-            navigation: {
-                nextEl: "#product-slider-control .navigation-control .next",
-                prevEl: "#product-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#product-slider-control .pagination-control",
-                clickable: true,
-            },
-            breakpoints: {
-                576: {
-                    slidesPerView: 2,
-                },
-                900: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-
-
-
-
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
             url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
