@@ -16,6 +16,23 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
+
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            var subMenuThis = $(this);
+            $(this).siblings('a').append('<span class="plus"></span>');
+            $(this).siblings('a').find('.plus').on('click', function(){
+                $(this).parents('a').parents('li').toggleClass('clicked');
+            });
+        });
+
+
+
+
+
+
+
+
         
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
