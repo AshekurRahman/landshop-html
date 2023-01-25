@@ -407,10 +407,6 @@ img {
     align-items: flex-end;
 }
 
-.mainmenu-area .nav-row .menu-items ul li:hover>a .plus:after {
-    transform: rotate(-135deg);
-}
-
 /* -- Mega-Menu-CSS-- */
 .mainmenu-area .nav-row .menu-items li ul.mega-menu {
     width: 100%;
