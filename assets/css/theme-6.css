@@ -384,6 +384,8 @@ img {
     padding: 14px 0;
     box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.05);
     border-radius: 6px;
+    max-height: 80vh;
+    overflow: auto;
 }
 
 .mainmenu-area .nav-row .menu-items li ul a {
@@ -451,7 +453,7 @@ img {
 }
 
 .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
-    width: 20%;
+    width: 14.285%;
     padding: 15px;
 }
 
@@ -462,7 +464,7 @@ img {
 }
 
 .mainmenu-area .nav-row .menu-items li ul.mega-menu li a .mega-thumb {
-    border: 2px solid #fafafa;
+    border: 2px solid #ededed;
     margin: 0 0 12px 0;
 }
 

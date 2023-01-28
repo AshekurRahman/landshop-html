@@ -18,21 +18,16 @@
         });
 
         /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
+            $(this).parent('li').addClass('have-megamenu');
+        });
         $('.mainmenu-area .menu-items li ul').each(function(){
-            var subMenuThis = $(this);
-            $(this).siblings('a').append('<span class="plus"></span>');
-            $(this).siblings('a').find('.plus').on('click', function(){
-                $(this).parents('a').parents('li').toggleClass('clicked');
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            $(this).parent('li').find('.plus').on('click', function(){
+                $(this).parent('li').toggleClass('clicked');
             });
         });
-
-
-
-
-
-
-
-
         
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({

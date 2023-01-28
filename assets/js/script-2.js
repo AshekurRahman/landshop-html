@@ -11,21 +11,25 @@
             $(this).toggleClass('active');
         });
 
-        /* Toggle-menu-JS */
-        
+        /* Toggle-menu-JS */        
         $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
             $(this).find('span').toggleClass('ls-toggle-bar');
             $(this).find('span').toggleClass('ls-close-square');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
         });
 
-        $('a').on('click',function(){
-            var href = $(this).attr('href');
-            if(href == '#'){
-                
-            }
-        });
 
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
+            $(this).parent('li').addClass('have-megamenu');
+        });
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            $(this).parent('li').find('.plus').on('click', function(){
+                $(this).parent('li').toggleClass('clicked');
+            });
+        });
 
         /* Sticky-Menu-JS */
         $(window).scroll(function () {

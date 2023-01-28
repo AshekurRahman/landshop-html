@@ -17,6 +17,28 @@
             return false;
         });
 
+        
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
+            $(this).parent('li').addClass('have-megamenu');
+        });
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            $(this).parent('li').find('.plus').on('click', function(){
+                $(this).parent('li').toggleClass('clicked');
+            });
+        });
+        
+        /* Sticky-Menu-JS */
+        $(window).scroll(function () {
+            if($(window).scrollTop() > 300) {
+                $(".mainmenu-area").addClass('sticky');
+            } else {
+                $(".mainmenu-area").removeClass('sticky');
+            }
+        });
+
         /* Search-Toggle */
         $('.nav-actions .search-toggle').on('click', function(){
             $('.nav-actions .mobile-menu-toggle').removeClass('active');
