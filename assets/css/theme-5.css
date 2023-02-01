@@ -223,22 +223,6 @@ img {
     display: inline-block;
 }
 
-/* --- Top-Notification-CSS --- */
-.top-notification-bar {
-    background-color: var(--primary-color);
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
-    border-radius: 0;
-}
-
-.top-notification-bar .close-button {
-    border: none;
-    background: none;
-    float: right;
-    font-size: 16px;
-}
-
 /*=== 7. Mainmenu-CSS ===*/
 .mainmenu-area {
     min-height: var(--navbar-height);
@@ -250,14 +234,27 @@ img {
     align-items: center;
     width: 100%;
     z-index: 99;
+    box-shadow: 0 -1px 0 0 inset #fff3ee;
     background-color: #ffffff;
     transition: 0.3s;
-    position: relative;
-    border-bottom: 1px solid rgba(19, 19, 19, 0.1);
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
-.sticky-menu {
+.mainmenu-area.sticky {
+    position: fixed;
+    background-color: #ffffff;
     --navbar-height: 80px;
+}
+
+.page-wrapper {
+    padding-top: var(--navbar-height);
+}
+
+body.transparent-dark .page-wrapper,
+body.transparent-light .page-wrapper {
+    padding-top: 0;
 }
 
 .mainmenu-area .nav-row {
@@ -275,6 +272,11 @@ img {
 .mainmenu-area .nav-row>div {
     display: flex;
     align-items: center;
+}
+
+.mainmenu-area .nav-row .nav-middle {
+    width: 20%;
+    justify-content: center;
 }
 
 .mainmenu-area .nav-row .nav-left,
@@ -298,31 +300,34 @@ img {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
+.mainmenu-area .nav-row .menu-items > ul > li {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainmenu-area .nav-row .menu-items > ul > li > a {
+    line-height: var(--navbar-height);
+    position: relative;
+}
 
 .mainmenu-area .nav-row .menu-items ul li a {
-    color: var(--heading-color);
+    color: var(--body-color);
     display: block;
-    line-height: var(--navbar-height);
-    margin: 0 20px;
     font-weight: 600;
-    box-shadow: inset 0 0 0 0 var(--heading-color);
 }
 
-.mainmenu-area .nav-row .menu-items ul li.current-menu-item a {
-    font-weight: 700;
-}
-
-.mainmenu-area .nav-row .menu-items ul li.current-menu-item a,
+.mainmenu-area .nav-row .menu-items ul li a.active ~ span,
+.mainmenu-area .nav-row .menu-items ul li:hover>a ~ span,
 .mainmenu-area .nav-row .menu-items ul li a.active,
 .mainmenu-area .nav-row .menu-items ul li:hover>a {
-    box-shadow: inset 0 -2px 0 0 var(--heading-color);
+    color: var(--primary-color);
 }
 
 
@@ -333,8 +338,9 @@ img {
 }
 
 .mainmenu-area .nav-row .nav-logo {
-    max-width: 200px;
+    max-width: 200px;    
 }
+
 
 .mainmenu-area .nav-row .nav-logo .light-logo {
     display: none;
@@ -342,28 +348,36 @@ img {
 
 .mainmenu-area .nav-row .nav-actions {
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action {
-    width: var(--navbar-height);
-    height: var(--navbar-height);
+.mainmenu-area .nav-row .nav-right .nav-actions {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;    
+}
+
+.mainmenu-area .nav-row .nav-actions .nav-action {    
     font-size: 32px;
     text-align: center;
     position: relative;
     z-index: 1;
     background-color: transparent;
     color: var(--heading-color);
-    z-index: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1px;
+}
+
+.mainmenu-area .nav-row .nav-right .nav-actions .nav-action {
+    margin-left: 32px;
+}
+
+.mainmenu-area .nav-row .nav-left .nav-actions .nav-action {
+    margin-right: 32px;
 }
 
 .mainmenu-area .nav-row .nav-actions .nav-action:before {
@@ -385,23 +399,19 @@ img {
 
 .mainmenu-area .nav-row .nav-actions .nav-action:after {
     content: "";
-    width: 1px;
+    width: 2px;
     height: 50%;
     position: absolute;
-    left: 0px;
+    right: -1px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(19, 19, 19, 0.1);
-}
-
-.mainmenu-area .nav-row .nav-left .nav-actions .nav-action:after {
-    left: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .mainmenu-area .nav-row .nav-actions .nav-action .count {
     position: absolute;
-    right: 30%;
-    top: 30%;
+    top: 0px;
+    right: -5px;
     width: 20px;
     height: 20px;
     line-height: 18px;
@@ -427,18 +437,18 @@ img {
 
 .nav-products-area {
     position: fixed;
-    bottom: -100vh;
+    top: 100vh;
     left: 0;
     z-index: 9;
     background-color: #ffffff;
     width: 100%;
-    height: calc(100vh - var(--navbar-height));
+    height: 100vh;
     overflow: auto;
     transition: 0.3s;
 }
 
 .nav-products-active .nav-products-area {
-    bottom: 0px;
+    top: 0px;
 }
 
 .nav-products-active {
@@ -449,6 +459,9 @@ img {
 .page-wrapper {
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
 }
 
 .nav-actions .toggle {
@@ -519,19 +532,17 @@ img {
     z-index: -1;
     display: flex;
     align-items: center;
-    margin: 0px 40px;
 }
 
 .nav-search .input-field {
+    border: none;
     padding: 5px 10px 5px 24px;
     font-weight: 500;
     outline: none;
-    height: 50px;
+    height: 48px;
     background-color: #F6F6F6;
     border-radius: 100px 0 0 100px;
-    color: var(--heading-color);
-    border: none;
-    width: 122px;
+    width: 120px;
     transition: 0.5s;
 }
 
@@ -540,23 +551,187 @@ img {
 }
 
 .nav-search button {
+    border: none;
     background: none;
     padding: 0;
     margin: 0;
     width: 60px;
-    height: 50px;
-    color: var(--body-color);
+    height: 48px;
+    color: #696969;
     outline: none;
     text-align: center;
-    background-color: #F7F7F7;
-    border: none;
+    background-color: #F6F6F6;
     border-radius: 0 100px 100px 0;
 }
 
-.nav-search button:hover {
-    color: var(--heading-color);
+
+/*=== 7.1. Sub-menu-CSS ===*/
+.mainmenu-area .nav-row .menu-items li:not(.have-megamenu) {
+    position: relative;
 }
 
+.mainmenu-area .nav-row .menu-items li ul {
+    background-color: #ffffff;
+    min-width: 220px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0;
+    -webkit-box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    max-width: 1920px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px 24px;
+    border-top: 1px solid #f1f1f1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li a {
+    padding: 12px 0px;
+    color: #131313;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li:first-child {
+    border-top: none;
+}
+
+.mainmenu-area .nav-row .menu-items .mega-menu li {
+    border-top: none;
+}
+
+.mainmenu-area .nav-row .menu-items ul li .plus {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+}
+
+.mainmenu-area .nav-row .menu-items ul li .plus:after {
+    content: "\e963";
+    font-family: 'landshop';
+    display: inline-block;
+    margin-left: 3px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 90%;
+    color: inherit;
+}
+
+.mainmenu-area .nav-row .menu-items ul li a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu a:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 5px);
+    border-bottom: 5px solid var(--primary-color);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu li.have-submenu a:before {
+    border: none;
+    border-left: 5px solid var(--primary-color);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    left: 0;
+    top: 40%;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu:hover>a:before {
+    opacity: 1;
+    top: calc(100% - 5px);
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/*=== 7.2 Mega-Menu-CSS ===*/
+.mainmenu-area .nav-row .menu-items li ul.mega-menu {
+    width: 100%;
+    padding: 15px;
+    max-height: 650px;
+    overflow: auto;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li {
+    width: 14.285%;
+    padding: 15px;
+    text-align: center;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li a .mega-thumb {
+    margin: 0 0 12px 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 0 #f1f1f1;
+    box-shadow: 0px 0px 15px 0 #f1f1f1;
+    border: 10px solid #ffffff;
+}
 
 /* -- Header-Area-CSS -- */
 .header-area {

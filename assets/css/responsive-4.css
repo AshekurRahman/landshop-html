@@ -13,7 +13,7 @@
         --navbar-height: 80px;
     }
 
-    .sticky-menu {
+    .sticky.mainmenu-area {
         --navbar-height: 70px;
     }
 
@@ -106,7 +106,7 @@
         --navbar-height: 70px;
     }
 
-    .sticky-menu {
+    .sticky.mainmenu-area {
         --navbar-height: 60px;
     }
 
@@ -214,12 +214,21 @@
 }
 
 @media screen and (max-width: 1360px) {
+    body {
+        --navbar-height: 100px;
+    }
+
+    .sticky.mainmenu-area {
+        --navbar-height: 80px;
+    }
+
     .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
         width: 25%;
     }
 }
 
 @media screen and (min-width: 768px) {
+    
     .mainmenu-area .nav-row .menu-items li ul {
         transition: 0.5s ease;
         transform: scaleY(0);
@@ -248,10 +257,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    :root {
-        --navbar-height: 80px;
+    body {
+        --navbar-height: 60px;
     }
 
+    .sticky.mainmenu-area {
+        --navbar-height: 50px;
+    }
+    
     .transparent-light .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
         color: var(--heading-color);
     }

@@ -363,11 +363,6 @@ img {
     transition: 0.5s;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action:hover>.count {
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
 /* -- Sub-menu-CSS -- */
 .mainmenu-area .nav-row .menu-items li:not(.mega-menu-item) {
     position: relative;

@@ -388,11 +388,6 @@ body.transparent-light .page-wrapper {
     transition: 0.5s;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action:hover>.count {
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
 .transparent-light .mainmenu-area:not(.sticky) .nav-row .nav-actions .nav-action {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;

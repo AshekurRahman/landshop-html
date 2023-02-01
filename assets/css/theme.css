@@ -412,11 +412,6 @@ body.transparent-light .page-wrapper {
     transition: 0.5s;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action:hover>.count {
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
 /*=== 7.1. Sub-menu-CSS ===*/
 .mainmenu-area .nav-row .menu-items li:not(.have-megamenu) {
     position: relative;

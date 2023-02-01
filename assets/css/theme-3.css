@@ -409,11 +409,6 @@ body.transparent-light .page-wrapper {
     transition: 0.3s;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action:hover>.count {
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
 .mainmenu-area .nav-row .nav-actions .nav-action.search-toggle,
 .mainmenu-area .nav-row .nav-actions .nav-action.mobile-menu-toggle {
     display: none;
