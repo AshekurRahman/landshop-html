@@ -27,6 +27,19 @@
         bottom: 3%;
     }
 
+    .header-content .main-title {
+        font-size: 46px;
+        margin-bottom: 16px;
+    }
+
+    .header-content .desc {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        margin-bottom: 36px;
+    }
+
 }
 
 
@@ -38,14 +51,6 @@
 
     .header-area {
         padding-top: 60px;
-    }
-
-    .header-slider {
-        margin-top: 40px;
-    }
-
-    .header-slider-pagination .swiper-slide .number {
-        font-size: 16px;
     }
 
     .section-title .title {
@@ -124,7 +129,11 @@
 
 
 /* Responsive-Mobile-Menu-CSS-Start */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1024px) {
+    .mainmenu-area .nav-row .menu-items ul {
+        justify-content: center;
+    }
+
     .mainmenu-area .nav-row .menu-items>ul>li {
         padding: 0 15px;
     }
@@ -181,6 +190,29 @@
         width: 25%;
     }
 }
+@media screen and (max-width: 992px) {
+    .feature-blog {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-blog .image {
+        margin-bottom: 24px;
+    }
+
+    .section-padding {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 100px;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .mainmenu-area .nav-row .menu-items li ul {
@@ -216,11 +248,11 @@
     }
 
     .mainmenu-area .nav-row .nav-left .nav-actions .nav-action {
-        margin-right: 15px;
+        margin-right: 24px;
     }
-    
+
     .mainmenu-area .nav-row .nav-right .nav-actions .nav-action {
-        margin-left: 15px;
+        margin-left: 24px;
     }
 
     .transparent-light .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
@@ -314,10 +346,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-    }   
+    }
 
     .mainmenu-area .nav-row .nav-actions .nav-action {
-        font-size: 16px;
+        font-size: 26px;
     }
 
     .mainmenu-area .nav-row .nav-actions .nav-action .count {
@@ -337,7 +369,7 @@
     .mainmenu-area .nav-row .menu-items li ul.mega-menu li a .mega-thumb {
         margin-bottom: 8px;
     }
-        
+
     .mainmenu-area .nav-row .menu-items ul li a {
         line-height: 1.8em;
     }
@@ -345,7 +377,7 @@
     .mainmenu-area .nav-row .menu-items ul {
         flex-direction: column;
     }
-    
+
     .mainmenu-area .nav-row .nav-middle {
         width: 30%;
     }
