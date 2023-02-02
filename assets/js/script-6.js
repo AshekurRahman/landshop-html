@@ -54,6 +54,7 @@
         var Testimonial_Slider = new Swiper(".testimonial-slider", {
             loop: true,
             speed: 1000,
+            effect: "fade",
             spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,
@@ -75,7 +76,7 @@
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,
             speed: 1000,
-            spaceBetween: 0,
+            spaceBetween: 32,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,            
@@ -91,11 +92,8 @@
                 575: {
                     slidesPerView: 2,
                 },
-                768: {
+                992: {
                     slidesPerView: 3,
-                },
-                1250: {
-                    slidesPerView: 4,
                 },
             },
         });
