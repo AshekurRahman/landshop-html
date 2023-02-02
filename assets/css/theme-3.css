@@ -80,35 +80,67 @@ img {
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
-    padding: 15px 30px;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: #ffffff;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: 700;
-    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+            box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .primary-button:hover {
-    background-color: #ffffff;
-    color: var(--primary-color);
-    box-shadow: 0px 10px 20px rgba(255, 112, 49, 0.3);
+    color: #ffffff;
 }
 
-.primary-button span {
+.primary-button .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 32px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.primary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--heading-color);
+    color: #ffffff;
+}
+
+.primary-button:hover .part {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.primary-button .icon {
     font-size: 80%;
+    margin-left: 10px;
 }
 
-.primary-button.circle {
-    border-radius: 100px;
-}
-
-.primary-button.white {
+.primary-button.white-button .front {
     background-color: #ffffff;
     color: var(--primary-color);
 }
 
-.primary-button.white:hover {
+.primary-button.white-button .back {
     background-color: var(--primary-color);
     color: #ffffff;
 }

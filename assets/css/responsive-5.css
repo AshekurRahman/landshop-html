@@ -353,10 +353,7 @@
     }
 
     .mainmenu-area .nav-row .nav-actions .nav-action .count {
-        width: 12px;
-        height: 12px;
-        line-height: 10px;
-        font-size: 8px;
+        font-size: 12px;
     }
 
 }
