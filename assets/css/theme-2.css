@@ -592,7 +592,6 @@ body.transparent-light .page-wrapper {
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 15px 0 #f1f1f1;
     box-shadow: 0px 0px 15px 0 #f1f1f1;
-    border: 10px solid #ffffff;
 }
 
 /*=== 8. Header-CSS ===*/
@@ -616,8 +615,11 @@ body.transparent-light .page-wrapper {
 }
 
 .header-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .play-button .play-icon {
@@ -630,6 +632,8 @@ body.transparent-light .page-wrapper {
     border-radius: 100px;
     color: #ffffff;
     margin-right: 12px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     padding-left: 3px;
 }
@@ -677,7 +681,9 @@ body.transparent-light .page-wrapper {
     bottom: 80px;
     width: 100vw;
     max-width: 1920px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: -1;
 }
 
@@ -699,8 +705,12 @@ body.transparent-light .page-wrapper {
     text-align: center;
     display: inline-block;
     margin-bottom: 40px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .feature-box-1 {
@@ -708,7 +718,9 @@ body.transparent-light .page-wrapper {
 }
 
 .feature-box-1:hover .icon {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .feature-box-1.purple-box .icon {
@@ -759,14 +771,18 @@ body.transparent-light .page-wrapper {
     color: #ffffff;
     border-radius: 6px;
     margin-bottom: 24px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0.3);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0.3);
+            box-shadow: 0px 0px 0px rgba(255, 112, 49, 0.3);
 }
 
 .icon-box-1:hover .icon {
     background-color: #ffffff;
     color: var(--primary-color);
-    box-shadow: 0px 15px 35px rgba(255, 112, 49, 0.3);
+    -webkit-box-shadow: 0px 15px 35px rgba(255, 112, 49, 0.3);
+            box-shadow: 0px 15px 35px rgba(255, 112, 49, 0.3);
 }
 
 .icon-box-1 .title {
@@ -796,7 +812,9 @@ body.transparent-light .page-wrapper {
     position: absolute;
     left: 50%;
     top: 28%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 130%;
     height: 130%;
     background: url('../images/theme-2/feedback-image-bg.png') no-repeat scroll top center / contain;
@@ -833,8 +851,12 @@ body.transparent-light .page-wrapper {
 }
 
 .settings-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 16px;
 }
 
@@ -903,7 +925,8 @@ body.transparent-light .page-wrapper {
     padding: 40px;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-item:after {
@@ -1181,7 +1204,8 @@ body.transparent-light .page-wrapper {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    box-shadow: 0 0 0 rgba(255, 107, 49, 0.3);
+    -webkit-box-shadow: 0 0 0 rgba(255, 107, 49, 0.3);
+            box-shadow: 0 0 0 rgba(255, 107, 49, 0.3);
 }
 
 .subscribe-form button[type="submit"]:hover {

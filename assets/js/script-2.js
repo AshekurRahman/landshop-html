@@ -1,6 +1,5 @@
 ;(function($){
-    $(document).on('ready', function(){
-        
+    $(document).on('ready', function(){        
         /* Accordion-JS */
         $('.accordion').find('.item .title.active').siblings('.desc').slideDown();
         $('.accordion').find('.item .title').on('click', function () {
@@ -10,15 +9,12 @@
             $(this).siblings('.desc').slideToggle();
             $(this).toggleClass('active');
         });
-
         /* Toggle-menu-JS */        
         $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
             $(this).find('span').toggleClass('ls-toggle-bar');
             $(this).find('span').toggleClass('ls-close-square');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
         });
-
-
         /* -- Submenu-Plus-Icon-Add --*/
         $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
             $(this).parent('li').addClass('have-megamenu');
@@ -30,7 +26,6 @@
                 $(this).parent('li').toggleClass('clicked');
             });
         });
-
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if($(window).scrollTop() > 300) {
@@ -38,8 +33,7 @@
             } else {
                 $(".mainmenu-area").removeClass('sticky');
             }
-        });
-        
+        });        
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -61,8 +55,6 @@
             origin: 'right',
             interval: 100,
         });
-
-
         /*====== Testimonial-Slider ======*/
         var Testimonial_Slider = new Swiper(".testimonial-slider", {
             effect: 'coverflow',
@@ -77,9 +69,7 @@
               modifier: 1,
               slideShadows: false
             },
-        });
-        
-
+        });   
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,
@@ -108,8 +98,6 @@
                 },
             },
         });
-
-
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
             url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
@@ -120,7 +108,6 @@
             }
         });
     });
-
     /*------------- preloader js --------------*/
     var startTime = performance.now();
     var count=0;
@@ -134,10 +121,7 @@
         clearInterval(counter);
         }
     }, Math.floor(startTime/100));
-
     $(window).on('load', function(){
         $('.preloader').fadeOut();
     });
-
-
 })(jQuery);

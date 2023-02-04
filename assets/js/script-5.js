@@ -1,6 +1,5 @@
 ;(function($){
     $(document).on('ready', function(){
-
         /* Nav-Widget-Toggle */
         $('.nav-actions .widget-toggle').on('click', function(){
             $('body').toggleClass('nav-products-active');
@@ -15,7 +14,6 @@
             $(this).toggleClass('active');
             return false;
         });
-
         /* Search-Toggle */
         $('.nav-actions .search-toggle').on('click', function(){
             $('.nav-actions .mobile-menu-toggle').removeClass('active');
@@ -23,16 +21,13 @@
             $('body').toggleClass('nav-search-active');
             $(this).toggleClass('active');
             return false;
-        });
-        
+        });        
         /* Toggle-menu-JS */        
         $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
             $(this).find('span').toggleClass('ls-toggle-bar');
             $(this).find('span').toggleClass('ls-close-square');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
-
-        
+        });       
         /* -- Submenu-Plus-Icon-Add --*/
         $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
             $(this).parent('li').addClass('have-megamenu');
@@ -43,8 +38,7 @@
             $(this).parent('li').find('.plus').on('click', function(){
                 $(this).parent('li').toggleClass('clicked');
             });
-        });
-        
+        });        
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if($(window).scrollTop() > 300) {
@@ -53,8 +47,6 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
-        
-        
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -75,9 +67,7 @@
         sr.reveal(`.anim_right`, {
             origin: 'right',
             interval: 100,
-        });
-
-        
+        });        
         /*====== Testimonial-Slider ======*/        
         var Testimonial_Slider_Menu = [
             '<img src="assets/images/theme-5/client-1.png" alt="">',
@@ -126,8 +116,7 @@
                     $('#subscribe-form .form-group').fadeOut();
                 }
             }
-        });
-        
+        });        
         $('.carousel').each(function(){ 
             var lomba = $(this).outerWidth(),
             delay = 0,
@@ -144,7 +133,6 @@
             });
         });
     });
-
     /*------------- preloader js --------------*/
     var startTime = performance.now();
     var count=0;
@@ -158,10 +146,7 @@
         clearInterval(counter);
         }
     }, Math.floor(startTime/100));
-
     $(window).on('load', function(){
         $('.preloader').fadeOut();
     });
-
-
 })(jQuery);
