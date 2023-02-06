@@ -1,7 +1,35 @@
 ;(function($){
     $(document).on('ready', function(){
-
-
+        /* -- Product-Color-Select -- */
+        $('.color-select .color').each(function(){
+            var color = $(this).data('color');
+            $(this).css( "background-color", color);
+        });        
+        $('.color-select').each(function(){            
+            $(this).find('.color').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });        
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
+            $(this).parent('li').addClass('have-megamenu');
+        });
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            $(this).parent('li').find('.plus').on('click', function(){
+                $(this).parent('li').toggleClass('clicked');
+            });
+        });        
+        /* Sticky-Menu-JS */
+        $(window).scroll(function () {
+            if($(window).scrollTop() > 300) {
+                $(".mainmenu-area").addClass('sticky');
+            } else {
+                $(".mainmenu-area").removeClass('sticky');
+            }
+        });
         /* Nav-Widget-Toggle */
         $('.nav-actions .widget-toggle').on('click', function(){
             $('body').toggleClass('nav-products-active');
@@ -16,7 +44,6 @@
             $(this).toggleClass('active');
             return false;
         });
-
         /* Search-Toggle */
         $('.nav-actions .search-toggle').on('click', function(){
             $('.nav-actions .mobile-menu-toggle').removeClass('active');
@@ -25,23 +52,19 @@
             $(this).toggleClass('active');
             return false;
         });
-
         /* Color-Switch-Background-Set */
         $('.color-switch-options .switch').each(function(){
             var color = $(this).data('color');
             if(color != null){
                 $(this).css('background-color',color);
             }
-        });
-        
+        });        
         $('.color-switch-options .switch').on('click',function(){
             var color = $(this).data('color');
             if(color != null){
                 $('.header-text .product-image, .header-image .background').css('background-color',color);
             }
         });
-        
-        
         /* Accordion-JS */
         $('.accordion').find('.item .title.active').siblings('.desc').slideDown();
         $('.accordion').find('.item .title').on('click', function () {
@@ -51,32 +74,12 @@
             $(this).siblings('.desc').slideToggle();
             $(this).toggleClass('active');
         });
-
-        /* Toggle-menu-JS */
-        
+        /* Toggle-menu-JS */        
         $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
             $(this).find('span').toggleClass('ls-toggle-bar');
             $(this).find('span').toggleClass('ls-close-square');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
-
-        $('a').on('click',function(){
-            var href = $(this).attr('href');
-            if(href == '#'){
-                
-            }
-        });
-
-
-        /* Sticky-Menu-JS */
-        $('.page-wrapper').scroll(function () {
-            if($('.page-wrapper').scrollTop() > 120) {
-                $("body").addClass('sticky-menu');
-            } else {
-                $("body").removeClass('sticky-menu');
-            }
-        });
-        
+        });        
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -98,60 +101,50 @@
             origin: 'right',
             interval: 100,
         });
-
-
         /*====== Header-Slider ======*/
+          var Header_Slider_Pagination = new Swiper(".header-slider-pagination", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            watchSlidesProgress: true,
+        });
         var Header_Slider = new Swiper(".header-slider", {
             loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
             watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".header-slider .arrow_next",
-                prevEl: ".header-slider .arrow_prev",
+            thumbs: {
+              swiper: Header_Slider_Pagination,
             },
-            pagination: {
-                el: ".header-slider .slider-custom-pagination",
-                clickable: true,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 100,
+              depth: 500,
+              modifier: 2,
+              slideShadows: false,
             },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
-            },
-        });
-
+          });
         /*====== Slice-Slider ======*/
-        var Header_Slider = new Swiper(".slice-slider", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".header-slider .arrow_next",
-                prevEl: ".header-slider .arrow_prev",
-            },
-            pagination: {
-                el: ".header-slider .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
+        var Slice_Slider = new Swiper(".slice-slider", {
+            loop: true,            
+            effect: "cards",
+            grabCursor: true,
+            cardsEffect: {
+                rotate: true,
+                slideShadows: false,
+                perSlideRotate: 5,
+                perSlideOffset: 8,
             },
         });
-
-
         /*====== Intro-Slider ======*/
-        var Header_Slider = new Swiper(".intro-slide", {
+        var Intro_Slider = new Swiper(".intro-slide", {
             loop: true,
-            speed: 800,
-            spaceBetween: 58,
+            speed: 1000,
+            spaceBetween: -100,
+            centeredSlides: true,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
@@ -164,28 +157,55 @@
                 clickable: true,
             },
             breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
                 780: {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 4,
                 },
             },
         });
-
-
-
         /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-photo-slide", {
+        var Testimonial_Slider_1 = new Swiper(".testimonial-navigate-slide", {
             loop: true,
-            speed: 800,
-            spaceBetween: 58,
+            speed: 1000,
+            spaceBetween: 30,
+            slidesPerView: 2,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: ".testimonial-navigation .next",
+                prevEl: ".testimonial-navigation .prev",
+            },
+            pagination: {
+                el: ".testimonial-navigation .slider-custom-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
+                520: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        var Testimonial_Slider_2 = new Swiper(".testimonial-photo-slide", {
+            loop: true,
+            speed: 1000,
+            spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             navigation: {
-                nextEl: ".testimonial-photo-slide .arrow_next",
-                prevEl: ".testimonial-photo-slide .arrow_prev",
+                nextEl: ".testimonial-navigation .next",
+                prevEl: ".testimonial-navigation .prev",
             },
             pagination: {
-                el: ".testimonial-photo-slide .slider-custom-pagination",
+                el: ".testimonial-navigation .slider-custom-pagination",
                 clickable: true,
             },
             breakpoints: {
@@ -193,22 +213,23 @@
                     slidesPerView: 1,
                 },
             },
+            thumbs: {
+              swiper: Testimonial_Slider_1,
+            },
         });
-        
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-content-slide", {
+        var Testimonial_Slider_3 = new Swiper(".testimonial-content-slide", {
             loop: true,
-            speed: 800,
-            spaceBetween: 58,
+            speed: 1000,
+            spaceBetween: 30,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             navigation: {
-                nextEl: ".testimonial-content-slide .arrow_next",
-                prevEl: ".testimonial-content-slide .arrow_prev",
+                nextEl: ".testimonial-navigation .next",
+                prevEl: ".testimonial-navigation .prev",
             },
             pagination: {
-                el: ".testimonial-content-slide .slider-custom-pagination",
+                el: ".testimonial-navigation .slider-custom-pagination",
                 clickable: true,
             },
             breakpoints: {
@@ -216,38 +237,21 @@
                     slidesPerView: 1,
                 },
             },
-        });
+            thumbs: {
+              swiper: Testimonial_Slider_1,
+            },
+        });        
         
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-navigate-slide", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 58,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".testimonial-navigate-slide .arrow_next",
-                prevEl: ".testimonial-navigate-slide .arrow_prev",
-            },
-            pagination: {
-                el: ".testimonial-navigate-slide .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                780: {
-                    slidesPerView: 1,
-                },
-            },
-        });
+        Testimonial_Slider_2.controller.control = Testimonial_Slider_1;
+        Testimonial_Slider_2.controller.control = Testimonial_Slider_3;
+        Testimonial_Slider_3.controller.control = Testimonial_Slider_1;
+        Testimonial_Slider_3.controller.control = Testimonial_Slider_2;
         
-
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
-            loop: true,
-            speed: 800,
+            speed: 1000,
             spaceBetween: 32,
-            slidesPerView: 4,
+            slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,            
             navigation: {
@@ -259,21 +263,14 @@
                 clickable: true,
             },
             breakpoints: {
-                575: {
-                    slidesPerView: 1,
+                576: {
+                    slidesPerView: 2,
                 },
                 900: {
-                    slidesPerView: 1,
-                },
-                1250: {
                     slidesPerView: 3,
                 },
             },
         });
-
-
-
-
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
             url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
@@ -284,7 +281,6 @@
             }
         });
     });
-
     /*------------- preloader js --------------*/
     var startTime = performance.now();
     var count=0;
@@ -298,10 +294,7 @@
         clearInterval(counter);
         }
     }, Math.floor(startTime/100));
-
     $(window).on('load', function(){
         $('.preloader').fadeOut();
     });
-
-
 })(jQuery);
