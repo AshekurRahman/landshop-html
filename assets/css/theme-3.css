@@ -77,7 +77,6 @@ img {
 
 .container {
     max-width: 1312px;
-    width: calc(100vw - 60px);
 }
 
 /*=== 2. Button-CSS ===*/
