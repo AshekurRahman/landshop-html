@@ -78,23 +78,59 @@ img {
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
-    padding: 14px 32px;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: #ffffff;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: 700;
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+            box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .primary-button:hover {
-    background-color: #ffffff;
-    color: var(--primary-color);
-    -webkit-box-shadow: 0px 15px 35px rgba(255, 112, 49, 0.3);
-    box-shadow: 0px 15px 35px rgba(255, 112, 49, 0.3);
+    color: #ffffff;
 }
 
-.primary-button span {
+.primary-button .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 32px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.primary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--heading-color);
+    color: #ffffff;
+}
+
+.primary-button:hover .part {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.primary-button .icon {
     font-size: 80%;
+    margin-left: 10px;
 }
 
 /*=== 3. Helper-Class-CSS ===*/
@@ -146,11 +182,13 @@ img {
 
 .icon-list li {
     margin: 8px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .icon-list li:before {
-    content: "\e902";
+    content: "\e961";
     font-family: landshop;
     margin-right: 10px;
     color: var(--primary-color);
@@ -201,11 +239,24 @@ img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     z-index: 99;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.page-wrapper {
+    padding-top: var(--navbar-height);    
+}
+
+body.transparent-dark .page-wrapper,
+body.transparent-light .page-wrapper {
+    padding-top: 0;
+}
+
+.transparent-dark .mainmenu-area {
+    position: absolute;
 }
 
 .mainmenu-area.sticky {
@@ -243,12 +294,29 @@ img {
 }
 
 
-.mainmenu-area .nav-row .menu-items ul li a {
+.mainmenu-area .nav-row .menu-items > ul  li  a {
     color: var(--heading-color);
-    padding: 10px 24px;
+}
+
+.mainmenu-area .nav-row .menu-items > ul > li {
+    padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.mainmenu-area .nav-row .menu-items > ul > li > a {
+    line-height: var(--navbar-height);
     display: block;
 }
 
+.mainmenu-area .nav-row .menu-items ul li>a.active ~ span,
+.mainmenu-area .nav-row .menu-items ul li:hover>span,
 .mainmenu-area .nav-row .menu-items ul li>a.active,
 .mainmenu-area .nav-row .menu-items ul li:hover>a {
     color: var(--primary-color);
@@ -266,6 +334,19 @@ img {
     -ms-flex-positive: 2;
     flex-grow: 2;
 }
+
+.transparent-light .mainmenu-area:not(.sticky) .nav-row .nav-logo .dark-logo {
+    display: none;
+}
+
+.transparent-light .mainmenu-area.sticky .nav-row .nav-logo .light-logo {
+    display: none;
+}
+
+.transparent-dark .mainmenu-area .nav-row .nav-logo .light-logo {
+    display: none;
+}
+
 
 .mainmenu-area .nav-row .nav-actions {
     -webkit-box-flex: 2;
@@ -331,9 +412,172 @@ img {
     transition: 0.5s;
 }
 
-.mainmenu-area .nav-row .nav-actions .nav-action:hover>.count {
+/*=== 7.1. Sub-menu-CSS ===*/
+.mainmenu-area .nav-row .menu-items li:not(.have-megamenu) {
+    position: relative;
+}
+
+.mainmenu-area .nav-row .menu-items li ul {
     background-color: #ffffff;
-    color: var(--primary-color);
+    min-width: 220px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+    -webkit-box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 1920px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0px 24px;
+    border-top: 1px solid #f1f1f1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li a {
+    padding: 12px 0px;
+}
+
+.mainmenu-area .nav-row .menu-items li ul li:first-child {
+    border-top: none;
+}
+
+.mainmenu-area .nav-row .menu-items .mega-menu li {
+    border-top: none;
+}
+
+.mainmenu-area .nav-row .menu-items ul li .plus {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+}
+
+.mainmenu-area .nav-row .menu-items ul li .plus:after {
+    content: "\e963";
+    font-family: 'landshop';
+    display: inline-block;
+    margin-left: 3px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 90%;
+    color: inherit;
+}
+
+.mainmenu-area .nav-row .menu-items ul li a {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu a:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 5px);
+    border-bottom: 5px solid var(--primary-color);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+         -o-transition-duration: 0s;
+            transition-duration: 0s;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu li.have-submenu a:before {
+    border: none;
+    
+    border-left: 5px solid var(--primary-color);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    left: 0;
+    top: 40%;
+}
+
+.mainmenu-area .nav-row .menu-items ul li.have-submenu:hover>a:before {
+    opacity: 1;
+    top: calc(100% - 5px);
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-delay: 0.3s;
+         -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+}
+
+/*=== 7.2 Mega-Menu-CSS ===*/
+.mainmenu-area .nav-row .menu-items li ul.mega-menu {
+    width: 100%;
+    padding: 15px;
+    max-height: 650px;
+    overflow: auto;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li {
+    width: 14.285%;
+    padding: 15px;
+    text-align: center;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+}
+
+.mainmenu-area .nav-row .menu-items li ul.mega-menu li a .mega-thumb {
+    margin: 0 0 12px 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 0 #f1f1f1;
+            box-shadow: 0px 0px 15px 0 #f1f1f1;
 }
 
 /*=== 8. Header-CSS ===*/
@@ -449,8 +693,8 @@ img {
     background: #ffffff;
     padding: 15px;
     border-radius: 500px;
-    -webkit-box-shadow: 0px 25px 55px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 25px 55px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 25px 55px #f1f1f1;
+    box-shadow: 0px 25px 55px #f1f1f1;
     overflow: hidden;
     z-index: 2;
     display: -webkit-box;
@@ -493,8 +737,8 @@ img {
 .feature-box-1 {
     background-color: #ffffff;
     padding: 40px;
-    -webkit-box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 25px 45px #f1f1f1;
+    box-shadow: 0px 25px 45px #f1f1f1;
     border-radius: 6px;
     position: relative;
     z-index: 1;
@@ -646,7 +890,7 @@ img {
 }
 
 .rating-star .star:before {
-    content: "\e901 \e901 \e901 \e901 \e901";
+    content: "\e960 \e960 \e960 \e960 \e960";
 }
 
 .rating-star .back {
@@ -1097,14 +1341,14 @@ img {
 }
 
 .accordion .item .title a:after {
-    content: "\e900";
+    content: "\e963";
     font-family: 'landshop';
     float: right;
     line-height: 1;
 }
 
 .accordion .item .title a[aria-expanded="true"]:after {
-    content: "\e903";
+    content: "\e962";
 }
 
 .accordion .item .desc p {
