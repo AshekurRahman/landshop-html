@@ -176,6 +176,32 @@
                 },
             },
         });
+        
+        /*====== Testimonial-Slider ======*/
+        var Testimonial_Slider = new Swiper(".testimonial-slider", {
+            loop: true,
+            speed: 1000,
+            spaceBetween: 0,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                575: {
+                    slidesPerView: 2,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+                1250: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+
+
+
+        
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
             url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL

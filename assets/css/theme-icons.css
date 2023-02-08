@@ -16,12 +16,20 @@
   font-family: 'landshop' !important;
 }
 
-.ls-ultraviolet:before {
-  content: "\e900";
+.ls-bag-happy:before {
+  content: "\e965";
 }
 
-.ls-token:before {
-  content: "\e901";
+.ls-microphone-2:before {
+  content: "\e966";
+}
+
+.ls-cupon:before {
+  content: "\e967";
+}
+
+.ls-ultraviolet:before {
+  content: "\e900";
 }
 
 .ls-support:before {
@@ -164,7 +172,7 @@
   content: "\e924";
 }
 
-.ls-bag-happy-1:before {
+.ls-bag-happy:before {
   content: "\e925";
 }
 

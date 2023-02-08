@@ -167,6 +167,64 @@ img {
     color: #ffffff;
 }
 
+/*=== 2. Secondary-CSS ===*/
+.secondary-button {
+    background: var(--primary-color);
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 100px;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.secondary-button:hover {
+    color: #ffffff;
+}
+
+.secondary-button .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 32px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.secondary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--heading-color);
+    color: #ffffff;
+}
+
+.secondary-button:hover .part {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.secondary-button .icon {
+    font-size: 80%;
+    margin-left: 10px;
+}
+
+
 /*=== 3. Helper-Class-CSS ===*/
 .g-4 {
     --bs-gutter-y: 2rem;
@@ -939,9 +997,268 @@ body.transparent-light .page-wrapper {
     margin-bottom: 8px;
 }
 
+.feature-box-2.icon-bg .icon {
+    background-color: #FFE9E0;
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    transition: 0.5s;
+}
+
+.feature-box-2.icon-bg .title {
+    font-size: 20px;
+}
+
+.feature-box-2.icon-bg {
+    padding: 34px 32px;
+}
+
+.feature-box-2.icon-bg:hover .icon {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/*=== 5. Icon-List-CSS ===*/
+.icon-list {
+    list-style: none;
+    margin: -12px 0;
+    padding: 0;
+}
+
+.icon-list li {
+    margin: 12px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.icon-list li:before {
+    content: "\e940";
+    font-family: landshop;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+
 .client-logo-area {
     background-color: var(--primary-color);
     padding: 120px;
+}
+
+/* == Product-Area-CSS == */
+.product-area {
+    background-color: #FFF4F0;
+}
+
+.product-slider {
+    margin-bottom: -80px;
+}
+
+.product-box {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 500px 500px 6px 6px;
+    text-align: center;
+    margin-bottom: 80px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.product-box:hover {
+    margin-bottom: 64px;
+    box-shadow: 0px 15px 55px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-box .thumb {
+    height: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 500px 500px 0 0;
+    background-color: #ededed;
+}
+
+.product-box .thumb img {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.product-box .thumb.color-1 {
+    background-color: #FFECEC;
+}
+
+.product-box .thumb.color-2 {
+    background-color: #E5F1F7;
+}
+
+.product-box .thumb.color-3 {
+    background-color: #FAEFDC;
+}
+
+.product-box .thumb.color-4 {
+    background-color: #FCECFF;
+}
+
+.product-box .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.product-box .title a {
+    color: var(--heading-color);
+}
+
+.product-box .title:hover>a {
+    color: var(--primary-color);
+}
+
+.product-box .content {
+    padding: 24px 0;
+}
+
+.product-box .price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.product-box .hover .action {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    line-height: 48px;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0.1);
+    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0.1);
+}
+
+.product-box .hover .action:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    -webkit-box-shadow: 0px 0px 15px rgba(255, 112, 49, 0.2);
+    box-shadow: 0px 0px 15px rgba(255, 112, 49, 0.2);
+}
+
+.product-box .hover {
+    position: relative;
+    margin-bottom: -10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.product-box:hover>.hover {
+    margin-top: 16px;
+    opacity: 1;
+}
+
+/* == Testimonial-Area-CSS == */
+
+.rating-star {
+    display: inline-block;
+    position: relative;
+    color: #FDB12E;
+    letter-spacing: 5px;
+}
+
+.rating-star .star {
+    font-family: 'landshop' !important;
+}
+
+.rating-star .star:before {
+    content: "\e960 \e960 \e960 \e960 \e960";
+}
+
+.rating-star .back {
+    opacity: 0.4;
+}
+
+.rating-star .front {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
+    z-index: 2;
+}
+
+.testimonial-slider {
+    margin: -72px;
+    padding: 60px;
+}
+
+.testimonial-slider .swiper-slide {
+    opacity: 0 !important;
+    transition: 0.5s;
+}
+
+.testimonial-slider .swiper-slide.swiper-slide-visible {
+    opacity: 1 !important;
+}
+
+.testimonial-box {
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    margin: 16px;
+    position: relative;
+}
+
+.testimonial-box .quote:before,
+.testimonial-box .quote:after {
+    content: "";
+    border-right: 15px solid var(--primary-color);
+    border-top: 20px solid var(--primary-color);
+    border-bottom: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: 10px;
+}
+
+.testimonial-box .quote {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 40px;
+    top: -10px;
+}
+
+.testimonial-box .rating-star {
+    margin-bottom: 20px;
+}
+
+.testimonial-box .desc {
+    margin-bottom: 24px;
+}
+
+.testimonial-box .profile {
+    display: flex;
+}
+
+.testimonial-box .profile .title {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.testimonial-box .profile .thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    overflow: hidden;
+    line-height: 0;
+    margin-right: 16px;
 }
 
 /*=== 17. Footer-CSS ===*/
