@@ -80,13 +80,12 @@ img {
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
-    background: var(--primary-color);
-    color: #ffffff;
+    background-color: transparent;
     display: inline-block;
     border-radius: 100px;
     font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
-            box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -101,24 +100,25 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 15px 32px;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 30px;
     padding-right: 0;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
     -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
     width: 100%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .primary-button .part span {
     margin-left: 15px;
+    margin-right: 10px;
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -126,6 +126,11 @@ img {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     border-radius: 100px;
+}
+
+.primary-button .front {
+    background: var(--primary-color);
+    color: #ffffff;
 }
 
 .primary-button .back {
@@ -136,10 +141,15 @@ img {
     color: #ffffff;
 }
 
+.primary-button .back span {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
 .primary-button:hover .part {
     -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 
 .primary-button .icon {
@@ -193,7 +203,6 @@ img {
 
 /*=== 4. Section-Title-CSS ===*/
 .section-title {
-    text-align: center;
     margin-bottom: 56px;
 }
 
@@ -261,7 +270,7 @@ img {
     width: 100%;
     z-index: 99;
     -webkit-box-shadow: 0 -1px 0 0 inset #fff3ee;
-            box-shadow: 0 -1px 0 0 inset #fff3ee;
+    box-shadow: 0 -1px 0 0 inset #fff3ee;
     background-color: #ffffff;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -303,30 +312,30 @@ body.transparent-light .page-wrapper {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .mainmenu-area .nav-row .nav-middle {
     width: 20%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .mainmenu-area .nav-row .nav-left,
 .mainmenu-area .nav-row .nav-right {
     -webkit-box-flex: 5;
-        -ms-flex-positive: 5;
-            flex-grow: 5;
+    -ms-flex-positive: 5;
+    flex-grow: 5;
     width: 40%;
     z-index: 1;
 }
 
 .mainmenu-area .nav-row .nav-right {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .mainmenu-area .nav-row .menu-items ul {
@@ -347,19 +356,19 @@ body.transparent-light .page-wrapper {
     width: 100%;
 }
 
-.mainmenu-area .nav-row .menu-items > ul > li {
+.mainmenu-area .nav-row .menu-items>ul>li {
     padding: 0 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.mainmenu-area .nav-row .menu-items > ul > li > a {
+.mainmenu-area .nav-row .menu-items>ul>li>a {
     line-height: var(--navbar-height);
     position: relative;
 }
@@ -370,8 +379,8 @@ body.transparent-light .page-wrapper {
     font-weight: 600;
 }
 
-.mainmenu-area .nav-row .menu-items ul li a.active ~ span,
-.mainmenu-area .nav-row .menu-items ul li:hover>a ~ span,
+.mainmenu-area .nav-row .menu-items ul li a.active~span,
+.mainmenu-area .nav-row .menu-items ul li:hover>a~span,
 .mainmenu-area .nav-row .menu-items ul li a.active,
 .mainmenu-area .nav-row .menu-items ul li:hover>a {
     color: var(--primary-color);
@@ -384,12 +393,12 @@ body.transparent-light .page-wrapper {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .mainmenu-area .nav-row .nav-logo {
-    max-width: 200px;    
+    max-width: 200px;
 }
 
 
@@ -410,7 +419,7 @@ body.transparent-light .page-wrapper {
 .mainmenu-area .nav-row .nav-right .nav-actions {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;    
+    justify-content: flex-end;
 }
 
 .mainmenu-area .nav-row .nav-actions .nav-action {
@@ -426,11 +435,11 @@ body.transparent-light .page-wrapper {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .mainmenu-area .nav-row .nav-actions .nav-action:before {
@@ -460,8 +469,8 @@ body.transparent-light .page-wrapper {
     right: -1px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -491,6 +500,7 @@ body.transparent-light .page-wrapper {
 .mainmenu-area .nav-row .nav-actions .nav-action.mobile-menu-toggle {
     display: none;
 }
+
 .nav-products-area {
     position: fixed;
     bottom: -100vh;
@@ -544,28 +554,28 @@ body.transparent-light .page-wrapper {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
     opacity: 0;
 }
 
 .nav-actions .toggle.active span:nth-child(2) {
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
 .nav-actions .toggle.active span:nth-child(1) {
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     opacity: 0;
 }
 
@@ -606,8 +616,8 @@ body.transparent-light .page-wrapper {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0px 40px;
 }
 
@@ -805,7 +815,7 @@ body.transparent-light .page-wrapper {
 
 /* === Header-Area === */
 .header-area {
-    padding: 120px;
+    padding: 120px 0;
     background-color: #FFF4F0;
 }
 
@@ -841,31 +851,99 @@ body.transparent-light .page-wrapper {
     background-color: var(--primary-color);
 }
 
-.header-image {
+.header-slider {
     background: url('../images/theme-7/header-bg-circle.png') no-repeat scroll center center / contain;
     padding: 24px;
+}
+
+.header-slider.swiper-fade .swiper-slide {
+    opacity: 0 !important;
+}
+
+.header-slider.swiper-fade .swiper-slide.swiper-slide-active {
+    opacity: 1 !important;
+}
+
+.header-image {
     margin: 0;
 }
 
-.header-thumbs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: -16px;
+#header-slider-pagination {
+    max-height: 520px;
+    text-align: center;
 }
 
-.header-thumbs .thumb {
-    display: block;
-    margin: 16px;
-    border: 2px solid transparent;
+#header-slider-pagination .thumb {
+    margin: 0;
+    display: inline-block;
+    line-height: 0;
     border-radius: 5px;
     overflow: hidden;
+    border: 2px solid #ffffff;
 }
 
-.header-thumbs .thumb.active {
+#header-slider-pagination .swiper-slide-thumb-active .thumb {
     border-color: var(--primary-color);
 }
+
+/* Feature-Area-CSS */
+.feature-box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-box-1 .icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 107, 49, 0.1);
+    text-align: center;
+    line-height: 100px;
+    color: #FF6B31;
+    font-size: 30px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.feature-box-1 .label {
+    margin: 0;
+    width: calc(100% - 132px);
+    font-size: 24px;
+}
+
+.feature-box-1:hover .icon {
+    background-color: #FF6B31;
+    color: #ffffff;
+}
+
+.feature-box-2 {
+    padding: 40px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);
+    transition: 0.5s;
+}
+
+.feature-box-2:hover {
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.feature-box-2 .icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+.feature-box-2 .title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.client-logo-area {
+    background-color: var(--primary-color);
+    padding: 120px;
+}
+
 /*=== 17. Footer-CSS ===*/
 .footer-area {
     background-color: #FFF5F2;

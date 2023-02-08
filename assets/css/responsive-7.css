@@ -1,6 +1,10 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .header-text .main-title {
-        font-size: 78px;
+        font-size: 68px;
+    }
+    
+    #header-slider-pagination {
+        max-height: 520px;
     }
 
     body {
@@ -8,168 +12,42 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    body {
-        --navbar-height: 80px;
-    }
-
+@media screen and (max-width: 1200px) {
     .header-text .main-title {
-        font-size: 68px;
+        font-size: 50px;
     }
-
-    .video-play-box {
-        padding: 160px 0;
+    .feature-box-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
-
-    .video-play-box .overlay-text {
-        font-size: 160px;
+    
+    .feature-box-1 .label {
+        width: 100%;
+        margin-top: 30px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        --navbar-height: 60px;
+@media screen and (max-width: 768px) {    
+    #header-slider-pagination {
+        max-height: 460px;
     }
-
-    .header-area {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .header-text .main-title {
-        font-size: 58px;
-        margin-bottom: 16px;
-    }
-
-    .header-text .product-image {
-        max-width: 180px;
-    }
-
-    .header-text .header-price {
-        margin-bottom: 50px;
-        font-size: 22px;
-    }
-
-    .header-image .circle-buy-button {
-        width: 80px;
-        height: 80px;
-        line-height: 1.4em;
-        font-size: 14px;
-    }
-
-    .fifty-color-bg,
-    .header-image {
-        padding: 40px;
-    }
-
-    .color-switch-options {
-        padding-bottom: 16px;
-    }
-
-    .color-switch-options .switch {
-        width: 30px;
-        height: 30px;
-    }
-
-    .section-title .title {
-        font-size: 38px;
-        margin-bottom: 16px;
-    }
-
-    .feature-box-1 .icon {
+    .header-text .desc {
         margin-bottom: 30px;
     }
+}
 
-    .video-play-box {
-        padding: 120px 0;
-    }
-
-    .video-play-box .overlay-text {
-        font-size: 20vw;
-    }
-
-    .video-play-box .play-button {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
-        font-size: 24px;
-    }
-
-    .testimonial-box {
-        padding: 90px 30px 30px 30px;
-        margin-top: 65px;
-    }
-
-    .testimonial-box .rating-star {
-        margin-bottom: 16px;
-    }
-
-    .testimonial-box .desc {
-        font-size: 20px;
-    }
-
-    .testimonial-area .avarage-circle {
-        width: 130px;
-        height: 130px;
-        font-size: 16px;
-        top: 65px;
-    }
-
-    .testimonial-area .avarage-circle span {
-        font-size: 32px;
-        line-height: 36px;
+@media screen and (max-width: 576px) {    
+    #header-slider-pagination {
+        max-height: 400px;
     }
 }
 
-@media screen and (max-width: 576px) {
-    body {
-        --navbar-height: 50px;
-    }
-
-    .feature-box {
-        padding: 30px;
-    }
-
-    .video-play-box {
-        padding: 80px 0;
-    }
-
-    .section-title .title {
-        font-size: 32px;
-        margin-bottom: 16px;
-    }
-
-    .feature-box-2 {
-        padding-left: 0;
-    }
-
-    .feature-box-2 .icon {
-        position: static;
-        margin-bottom: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 22px;
-    }
-
-    .feature-box-2 .title {
-        font-size: 22px;
-    }
-
-    .header-text .main-title {
-        font-size: 48px;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        --navbar-height: 50px;
+@media screen and (max-width: 480px) {    
+    #header-slider-pagination {
+        max-height: 280px;
     }
 }
-
-
-
 
 /* Responsive-Mobile-Menu-CSS-Start */
 @media screen and (max-width: 1550px) {
