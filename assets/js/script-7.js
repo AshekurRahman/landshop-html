@@ -134,14 +134,21 @@
         var Client_Logo_Slider = new Swiper("#client-logo-slider", {
             loop: true,
             speed: 1000,
-            spaceBetween: 60,
-            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerView: 2,
             watchSlidesVisibility: true,
             freeMode: true,
             watchSlidesProgress: true,
             breakpoints: {
+                580: {
+                    slidesPerView: 3,
+                },
                 780: {
                     slidesPerView: 4,
+                    spaceBetween: 60,
+                },
+                992: {
+                    slidesPerView: 5,
                 },
                 1200: {
                     slidesPerView: 6,
@@ -186,11 +193,8 @@
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             breakpoints: {
-                575: {
+                992: {
                     slidesPerView: 2,
-                },
-                900: {
-                    slidesPerView: 3,
                 },
                 1250: {
                     slidesPerView: 3,
