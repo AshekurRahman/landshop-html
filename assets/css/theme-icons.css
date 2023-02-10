@@ -16,8 +16,8 @@
   font-family: 'landshop' !important;
 }
 
-.ls-bag-happy:before {
-  content: "\e965";
+.ls-right-quote-line:before {
+  content: "\e968";
 }
 
 .ls-microphone-2:before {
