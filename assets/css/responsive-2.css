@@ -93,6 +93,10 @@
         right: 0;
         margin: auto;
     }
+
+    .header-actions {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 768px) {

@@ -16,6 +16,30 @@
   font-family: 'landshop' !important;
 }
 
+.ls-call-calling:before {
+  content: "\e96e";
+}
+
+.ls-music-bold:before {
+  content: "\e969";
+}
+
+.ls-lighting:before {
+  content: "\e96a";
+}
+
+.ls-sound:before {
+  content: "\e96b";
+}
+
+.ls-music:before {
+  content: "\e96c";
+}
+
+.ls-volume-high:before {
+  content: "\e96d";
+}
+
 .ls-right-quote-line:before {
   content: "\e968";
 }

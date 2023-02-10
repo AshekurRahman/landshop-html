@@ -498,7 +498,6 @@ body.transparent-light .page-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 -0.5px;
 }
 
 .mainmenu-area .nav-row .nav-actions .nav-action:before {

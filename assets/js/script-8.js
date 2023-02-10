@@ -114,7 +114,6 @@
             },
         });
 
-
         /*====== Header-Slider ======*/
         var Header_slider = new Swiper(".header-slider", {
             effect: 'fade',
@@ -159,18 +158,10 @@
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,
             speed: 1000,
-            spaceBetween: 32,
+            spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,
-            watchSlidesProgress: true,            
-            navigation: {
-                nextEl: "#product-slider-control .navigation-control .next",
-                prevEl: "#product-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#product-slider-control .pagination-control",
-                clickable: true,
-            },
+            watchSlidesProgress: true,
             breakpoints: {
                 575: {
                     slidesPerView: 2,
@@ -192,19 +183,7 @@
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-            breakpoints: {
-                992: {
-                    slidesPerView: 2,
-                },
-                1250: {
-                    slidesPerView: 3,
-                },
-            },
         });
-
-
-
-
         
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
