@@ -1,5 +1,5 @@
 ;(function($){
-    $(document).on('ready', function(){       
+    $(document).on('ready', function(){
         
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
@@ -10,16 +10,19 @@
             }
         });
 
-
         /* Navbar-Toggle-Button */
         $('.toggle').on('click',function(){
             $(this).toggleClass('active');
             return false;
         });
-        
+        $('.product-toggle').on('click',function(){
+            $('body').toggleClass('nav-product-show');
+        });
         $('.menu-toggle').on('click',function(){
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
         });
+
+
         /* -- Submenu-Plus-Icon-Add --*/
         $('.mainmenu-area .menu-items li ul').each(function(){
             var items = $(this).children('li').length;
@@ -29,11 +32,17 @@
                 $(this).addClass('over-items');
             }
         });
-        
+        $('.footer-nav-links').each(function(){
+            var items = $(this).children('li').length;
+            if( 5 < items ){
+                $(this).addClass('over-items');
+            }
+        });        
+
         $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
             $(this).parent().toggleClass('menu-open');
         });
-             
+        
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -55,76 +64,80 @@
             origin: 'right',
             interval: 100,
         });
+
         /*====== Header-Product-Slider ======*/
-        var Product_Slider = new Swiper(".header-product-slider", {
+        var Product_Slider = new Swiper(".header-product-slide", {
             loop: true,
             speed: 1000,
             spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".header-product-slider .arrow_next",
-                prevEl: ".header-product-slider .arrow_prev",
-            },
             pagination: {
-                el: ".header-product-slider .slider-custom-pagination",
+                el: "#header-slider-pagination",
                 clickable: true,
-            },
-            breakpoints: {
-                380: {
-                    slidesPerView: 2,
-                },
-                680: {
-                    slidesPerView: 3,
+                renderBullet: function (index, className) {
+                  var index = ++index;
+                  return '<span class="' + className + '">' + (index > 9 ? index : '0'+index) + "</span>";
                 },
             },
         });
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-slider", {
-            loop: true,
+
+        /*====== Testimonial-Photo-Slider ======*/
+        var Testimonial_Photo = new Swiper(".testi-photo-slider", {
+            loop: false,
+            speed: 1000,
+            effect: "coverflow",
+            grabCursor: true,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 100,
+              depth: 500,
+              modifier: 1,
+              slideShadows: false,
+            },
+            breakpoints: {
+                580: {
+                    coverflowEffect: {
+                      rotate: 0,
+                      stretch: 400,
+                      depth: 500,
+                      modifier: 1,
+                      slideShadows: false,
+                    },
+                },
+                1200: {
+                    coverflowEffect: {
+                      rotate: 0,
+                      stretch: 800,
+                      depth: 500,
+                      modifier: 1,
+                      slideShadows: false,
+                    },
+                },
+            },
+        });   
+        
+        /*====== Testimonial-Content-Slider ======*/
+        var Testimonial_Content = new Swiper(".testi-content-slider", {
+            loop: false,
             speed: 1000,
             spaceBetween: 0,
             slidesPerView: 1,
             watchSlidesVisibility: true,
-            watchSlidesProgress: true,
+            watchSlidesProgress: true, 
             navigation: {
-                nextEl: "#testimonial-slider-control .navigation-control .next",
-                prevEl: "#testimonial-slider-control .navigation-control .prev",
+                nextEl: "#testi-pagination .arrow-next",
+                prevEl: "#testi-pagination .arrow-prev",
             },
             pagination: {
                 el: "#testimonial-slider-control .pagination-control",
                 clickable: true,
             },
-        });
-        /*====== Product-Slider ======*/
-        var Product_Slider = new Swiper(".product-slider", {
-            loop: true,
-            speed: 1000,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,            
-            navigation: {
-                nextEl: "#product-slider-control .navigation-control .next",
-                prevEl: "#product-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#product-slider-control .pagination-control",
-                clickable: true,
-            },
-            breakpoints: {
-                575: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 3,
-                },
-                1250: {
-                    slidesPerView: 4,
-                },
-            },
         });        
+        Testimonial_Photo.controller.control = Testimonial_Content;
+        Testimonial_Content.controller.control = Testimonial_Photo;
+                
         /*-- Mail-Chimp Integration--*/
         $('#subscribe-form').ajaxChimp({
             url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL

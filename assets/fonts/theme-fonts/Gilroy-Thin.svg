@@ -983,7 +983,7 @@ d="M125 35l-42 -175h-18l34 175h26zM225 35l-42 -175h-18l34 175h26z" />
 d="M390 512v-18h-150v-494h-20v494h-150v18h150v188h20v-188h150z" />
     <glyph glyph-name="daggerdbl" unicode="&#x2021;" horiz-adv-x="460" 
 d="M390 494h-150v-288h150v-18h-150v-188h-20v188h-150v18h150v288h-150v18h150v188h20v-188h150v-18z" />
-    <glyph glyph-name="bullet" unicode="&#x2022;" horiz-adv-x="240" 
+    <glyph glyph-name="bullet" unicode="&#x2023;" horiz-adv-x="240" 
 d="M121 290q-25 0 -43 18t-18 43t17.5 42t43.5 17q25 0 42 -17t17 -42q0 -26 -17 -43.5t-42 -17.5z" />
     <glyph glyph-name="ellipsis" unicode="&#x2026;" horiz-adv-x="560" 
 d="M90 -10q-10 0 -17.5 7t-7.5 18t7.5 18t17.5 7t17.5 -7t7.5 -18t-7.5 -18t-17.5 -7zM280 -10q-10 0 -17.5 7t-7.5 18t7.5 18t17.5 7t17.5 -7t7.5 -18t-7.5 -18t-17.5 -7zM470 -10q-10 0 -17.5 7t-7.5 18t7.5 18t17.5 7t17.5 -7t7.5 -18t-7.5 -18t-17.5 -7z" />
