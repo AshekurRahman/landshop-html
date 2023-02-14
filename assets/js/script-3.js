@@ -1,30 +1,5 @@
 ;(function($){
     $(document).on('ready', function(){
-        /* Nav-Widget-Toggle */
-        $('.nav-actions .widget-toggle').on('click', function(){
-            $('body').toggleClass('nav-products-active');
-            $(this).toggleClass('active');
-            return false;
-        });
-        /* Nav-Mobile-Toggle */
-        $('.nav-actions .mobile-menu-toggle').on('click', function(){
-            $('.nav-actions .search-toggle').removeClass('active');
-            $('body').removeClass('nav-search-active');
-            $('body').toggleClass('mobile-menu-active');
-            $(this).toggleClass('active');
-            return false;
-        });        
-        /* -- Submenu-Plus-Icon-Add --*/
-        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
-            $(this).parent('li').addClass('have-megamenu');
-        });
-        $('.mainmenu-area .menu-items li ul').each(function(){
-            $(this).parent('li').addClass('have-submenu');
-            $(this).parent('li').append('<span class="plus"></span>');
-            $(this).parent('li').find('.plus').on('click', function(){
-                $(this).parent('li').toggleClass('clicked');
-            });
-        });        
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if($(window).scrollTop() > 300) {
@@ -32,15 +7,28 @@
             } else {
                 $(".mainmenu-area").removeClass('sticky');
             }
-        });
-        /* Search-Toggle */
-        $('.nav-actions .search-toggle').on('click', function(){
-            $('.nav-actions .mobile-menu-toggle').removeClass('active');
-            $('body').removeClass('mobile-menu-active');
-            $('body').toggleClass('nav-search-active');
-            $(this).toggleClass('active');
+        });        
+            
+        $('.menu-toggle').on('click',function(){
+            $(this).toggleClass('button-active');
+            $('.mainmenu-area .nav-row .menu-items').slideToggle();
             return false;
         });
+                
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            var items = $(this).children('li').length;
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            if( 8 < items ){
+                $(this).addClass('over-items');
+            }
+        });
+        
+        $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
+            $(this).parent().toggleClass('menu-open');
+        });
+        
         /* Color-Switch-Background-Set */
         $('.color-switch-options .switch').each(function(){
             var color = $(this).data('color');
@@ -54,29 +42,9 @@
                 $('.header-text .product-image, .header-image .background').css('background-color',color);
             }
         });  
-        /* Accordion-JS */
-        $('.accordion').find('.item .title.active').siblings('.desc').slideDown();
-        $('.accordion').find('.item .title').on('click', function () {
-            var siblingsItem = $(this).parent('.item').siblings('.item');
-            siblingsItem.find('.desc').slideUp();
-            siblingsItem.find('.title').removeClass('active');
-            $(this).siblings('.desc').slideToggle();
-            $(this).toggleClass('active');
-        });
-        /* Toggle-menu-JS */        
-        $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
-            $(this).find('span').toggleClass('ls-toggle-bar');
-            $(this).find('span').toggleClass('ls-close-square');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
-        /* Sticky-Menu-JS */
-        $('.page-wrapper').scroll(function () {
-            if($('.page-wrapper').scrollTop() > 120) {
-                $("body").addClass('sticky-menu');
-            } else {
-                $("body").removeClass('sticky-menu');
-            }
-        });        
+        
+        
+        
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -98,6 +66,8 @@
             origin: 'right',
             interval: 100,
         });
+        
+        
         /*====== Testimonial-Slider ======*/
         var Testimonial_Slider = new Swiper(".testimonial-slider", {
             loop: true,
@@ -120,6 +90,8 @@
                 },
             },
         });
+        
+        
         /*====== Product-Slider ======*/
         var Product_Slider = new Swiper(".product-slider", {
             loop: true,

@@ -77,7 +77,6 @@ img {
 }
 
 /*=== 2. Button-CSS ===*/
-
 .primary-button {
     background: var(--primary-color);
     color: #ffffff;
@@ -239,6 +238,7 @@ img {
     right: 0;
     left: 0;
     top: 0;
+    position: absolute;
 }
 
 .mainmenu-area .container {
@@ -285,10 +285,16 @@ body.transparent-light .page-wrapper {
     flex-grow: 2;
 }
 
+
+.mainmenu-area .nav-row .nav-logo .logo {
+    display: inline-block;
+}
+
 .transparent-light .mainmenu-area:not(.sticky) .nav-row .nav-logo .dark-logo {
     display: none;
 }
 
+body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 .transparent-light .mainmenu-area.sticky .nav-row .nav-logo .light-logo {
     display: none;
 }
@@ -317,6 +323,11 @@ body.transparent-light .page-wrapper {
 .mainmenu-area .nav-actions .primary-button .front {
     background-color: #ffffff;
     color: var(--heading-color);
+}
+
+.transparent-light .mainmenu-area:not(.sticky) .nav-actions .primary-button .front {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
 }
 
 .mainmenu-area .nav-actions .primary-button .back {
@@ -356,7 +367,7 @@ body.transparent-light .page-wrapper {
 }
 
 .mainmenu-area .nav-row .menu-items ul li a {
-    color: #131313;
+    color: var(--heading-color);
     display: inline-block;
 }
 
@@ -459,10 +470,19 @@ body.transparent-light .page-wrapper {
     min-width: 200px;
 }
 
+.mainmenu-area .nav-row .menu-items > ul ul li a {
+    color: #131313;
+}
+
+
+.transparent-light .mainmenu-area:not(.sticky) {
+    --heading-color: #ffffff;
+}
+
 /*=== 8. Header-CSS ===*/
 .header-area {
     background-color: #FFF5F2;
-    padding-top: 140px;
+    padding-top: 120px;
 }
 
 .header-area .header-element-1 {
@@ -649,11 +669,13 @@ body.transparent-light .page-wrapper {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    opacity: 0;
 }
 
 .feature-box-1:hover::before {
     width: 800px;
     height: 800px;
+    opacity: 1;
 }
 
 .feature-box-1 .icon {
@@ -1006,12 +1028,7 @@ body.transparent-light .page-wrapper {
     margin: 0;
 }
 
-.testimonial-item .desc span:first-child {
-    margin-bottom: 8px;
-}
-
 .testimonial-item .desc span:last-child {
-    margin-top: 8px;
     text-align: right;
 }
 
@@ -1217,6 +1234,9 @@ body.transparent-light .page-wrapper {
 .accordion .item .title a {
     display: block;
     color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .accordion .item .title a:after {
@@ -1224,6 +1244,7 @@ body.transparent-light .page-wrapper {
     font-family: 'landshop';
     float: right;
     line-height: 1;
+    margin-left: 10px;
 }
 
 .accordion .item .title a[aria-expanded="true"]:after {
