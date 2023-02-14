@@ -8,13 +8,14 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });        
-            
-        $('.menu-toggle').on('click',function(){
+
+        $('.target-button').on('click', function(){
+            var target = $(this).data('target');
             $(this).toggleClass('button-active');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-            return false;
+            $(target).fadeToggle();
         });
-                
+
+
         /* -- Submenu-Plus-Icon-Add --*/
         $('.mainmenu-area .menu-items li ul').each(function(){
             var items = $(this).children('li').length;

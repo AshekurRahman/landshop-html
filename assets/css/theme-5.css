@@ -1588,6 +1588,10 @@ body.transparent-light .page-wrapper {
     --heading-color: rgba(255, 255, 255, 1);
 }
 
+.footer-area .section-padding {
+    padding: 80px 0;
+}
+
 .footer-widget .footer-logo {
     display: inline-block;
     margin-bottom: 22px;

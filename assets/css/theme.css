@@ -1260,6 +1260,10 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     background-color: #FFF5F2;
 }
 
+.footer-area .section-padding {
+    padding: 80px 0;
+}
+
 .footer-widget .footer-logo {
     display: inline-block;
     margin-bottom: 22px;
