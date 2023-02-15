@@ -1,22 +1,4 @@
-@media screen and (max-width: 1200px) {
-    body {
-        --navbar-height: 90px;
-    }
-
-    .sticky-menu {
-        --navbar-height: 80px;
-    }
-}
-
 @media screen and (max-width: 992px) {
-    body {
-        --navbar-height: 80px;
-    }
-
-    .sticky.mainmenu-area {
-        --navbar-height: 70px;
-    }
-
     .header-area .header-text .main-title {
         font-size: 72px;
     }
@@ -49,7 +31,6 @@
 
 
 @media screen and (max-width: 768px) {
-
     body {
         font-size: 14px;
     }
@@ -101,15 +82,6 @@
 }
 
 @media screen and (max-width: 576px) {
-
-    body {
-        --navbar-height: 70px;
-    }
-
-    .sticky.mainmenu-area {
-        --navbar-height: 60px;
-    }
-
     .header-area .header-text .main-title {
         font-size: 56px;
         margin-bottom: 16px;
@@ -143,15 +115,154 @@
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        --navbar-height: 50px;
-    }
-
     .header-area .header-text .main-title {
         font-size: 36px;
     }
 
     .primary-button .part {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* === Responsive-Mobile-Menu-CSS === */
+@media screen and (max-width: 1300px) {
+    .mainmenu-area .nav-row .menu-items>ul>li {
+        padding: 0 15px;
+    }
+
+    .nav-search-form .type-input {
+        width: 180px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button .part {
+        width: 80px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .mainmenu-area .nav-search,
+    .mainmenu-area .nav-row .menu-items {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-search,
+    .mainmenu-area .nav-row .menu-items {
+        background-color: #FEC202;
+        z-index: 2;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        min-height: var(--navbar-height);
+        order: 8;
+        display: none;
+    }
+
+    .mainmenu-area .nav-search {
+        order: 9;
+    }
+
+    .mainmenu-area .nav-search .nav-search-form {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .mainmenu-area .nav-search .nav-search-form .type-input {
+        width: calc(100% - 48px);
+    }
+
+    [data-target="#nav-menu-items"],
+    [data-target="#nav-search-form"] {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --navbar-height: 80px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button .part {
+        width: 60px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainmenu-area .nav-row .menu-items>ul {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        justify-content: space-between;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li>a {
+        line-height: inherit;
+    }
+
+    .mainmenu-area .nav-row .menu-items li ul {
+        position: static;
+        transform: scaleY(1);
+        opacity: 1;
+        width: 100%;
+        order: 1;
+        margin-top: 10px;
+    }
+
+    .mainmenu-area .nav-row .menu-items li:not(.menu-open)>ul {
+        display: none;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul ul.over-items ul.over-items {
+        grid-template-columns: auto;
+    }
+
+    .mainmenu-area .nav-row .menu-items {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    :root {
+        --navbar-height: 60px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button .part {
+        width: 40px;
+        font-size: 16px;
+    }
+
+    .mainmenu-area .nav-row .nav-logo {
+        max-width: 25vw;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .mainmenu-area .nav-row .menu-items>ul ul.over-items {
+        grid-template-columns: auto;
+    }
+
+    :root {
+        --navbar-height: 50px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button .part {
+        width: 35px;
         font-size: 12px;
     }
 }
