@@ -243,6 +243,22 @@ img {
     display: inline-block;
 }
 
+/* --- Top-Notification-CSS --- */
+.top-notification-bar {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    border-radius: 0;
+}
+
+.top-notification-bar .close-button {
+    border: none;
+    background: none;
+    float: right;
+    font-size: 16px;
+}
+
 /*=== 8. Mainmenu-CSS ===*/
 .mainmenu-area {
     width: 100%;
@@ -295,6 +311,7 @@ body.transparent-light .page-wrapper {
     flex-grow: 2;
     order: 2;
     text-align: center;
+    line-height: var(--navbar-height);
 }
 
 
@@ -324,32 +341,25 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     border-radius: 0;
     background-color: transparent !important;
     box-shadow: none;
+    margin-left: 24px;
 }
 
-.mainmenu-area .nav-actions .primary-button:before {
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    width: 2px;
-    height: calc(var(--navbar-height) / 2);
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: 3;
+.mainmenu-area .nav-actions .primary-button:first-child {
+    margin-left: 0px;
 }
 
 .mainmenu-area .nav-actions .primary-button .part {
     padding: 0;
-    width: var(--navbar-height);
-    height: var(--navbar-height);
+    width: 32px;
+    height: 40px;
     font-size: 32px;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: transparent;
+    color: var(--heading-color);
 }
 
 .mainmenu-area .nav-actions .primary-button .back {
-    background-color: var(--heading-color);
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .mainmenu-area .nav-actions.right-actions {
@@ -458,15 +468,19 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     width: 250px;
 }
 
-.mainmenu-area .nav-search,
 .mainmenu-area .nav-row .menu-items {
+    flex-grow: 2;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainmenu-area .nav-search {
     flex-grow: 2;
     justify-content: center;
     align-items: center;
 }
 
-[data-target="#nav-menu-items"],
-[data-target="#nav-search-form"] {
+.mainmenu-area .nav-actions.left-actions {
     display: none;
 }
 

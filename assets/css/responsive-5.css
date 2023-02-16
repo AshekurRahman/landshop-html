@@ -137,8 +137,9 @@
     }
 
     .mainmenu-area .nav-actions .primary-button .part {
-        width: 80px;
         font-size: 24px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -177,8 +178,7 @@
         width: calc(100% - 48px);
     }
 
-    [data-target="#nav-menu-items"],
-    [data-target="#nav-search-form"] {
+    .mainmenu-area .nav-actions.left-actions {
         display: inline-block;
     }
 }
@@ -188,9 +188,13 @@
         --navbar-height: 80px;
     }
 
+    .mainmenu-area .nav-actions .primary-button {
+        margin-left: 16px;
+    }
     .mainmenu-area .nav-actions .primary-button .part {
-        width: 60px;
         font-size: 20px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -242,8 +246,9 @@
     }
 
     .mainmenu-area .nav-actions .primary-button .part {
-        width: 40px;
         font-size: 16px;
+        width: 20px;
+        height: 20px;
     }
 
     .mainmenu-area .nav-row .nav-logo {
@@ -262,7 +267,8 @@
     }
 
     .mainmenu-area .nav-actions .primary-button .part {
-        width: 35px;
         font-size: 12px;
+        width: 16px;
+        height: 16px;
     }
 }
