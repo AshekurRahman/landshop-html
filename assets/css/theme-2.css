@@ -498,7 +498,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .mainmenu-area .nav-row .menu-items > ul ul li:hover > a {
-    color: var(--primary-color);
+    color: #131313;
 }
 
 
