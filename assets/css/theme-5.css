@@ -951,6 +951,12 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     color: var(--primary-color);
 }
 
+
+.actions-area {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 /* -- Counter-Area-CSS -- */
 .counter-area {
     background-color: var(--primary-color);

@@ -75,6 +75,9 @@
         margin-left: 0;
     }
 
+    .section-title .title {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 576px) {
