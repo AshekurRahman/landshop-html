@@ -17,6 +17,22 @@
 }
 
 
+.ls-briefcase-2:before {
+    content: "\e971";
+}
+
+.ls-calender-2:before {
+    content: "\e972";
+}
+
+.ls-user-2:before {
+    content: "\e973";
+}
+
+.ls-account:before {
+    content: "\e974";
+}
+
 .ls-user:before {
     content: "\e96f";
 }
