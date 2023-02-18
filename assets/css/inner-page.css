@@ -88,6 +88,7 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border: none;
 }
 
 .primary-button:hover {
@@ -112,13 +113,14 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    background-color: var(--primary-color);
 }
 
 .primary-button .back {
     position: absolute;
     top: 100%;
     left: 0%;
-    background-color: rgba(var(--heading-color), 1);
+    background-color: var(--heading-color);
     color: #ffffff;
 }
 
@@ -860,6 +862,170 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 .pagination a:hover {
     background-color: var(--primary-color);
     color: #ffffff;
+}
+
+/* === Error-Page-CSS === */
+.error-page-wraper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background: url('../images/inner-pages/404-bg.jpg') no-repeat scroll center center / cover;
+}
+
+
+/* === FAQ-Page-CSS === */
+.faq-tabs {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+}
+
+.faq-tabs li {
+    width: 100%;
+}
+
+.faq-tabs li button {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: #FFF5F2;
+    color: var(--heading-color);
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.faq-tabs li button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.faq-tabs li button:hover {
+    color: var(--heading-color);
+}
+
+.faq-tabs li button.active {
+    color: #ffffff;
+}
+
+.faq-tabs li button.active:before {
+    width: 100%;
+}
+
+
+.accordion .item {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.accordion .item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion .item .title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.accordion .item .title a {
+    display: block;
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion .item .title a:after {
+    content: "\e963";
+    font-family: 'landshop';
+    float: right;
+    line-height: 1;
+    width: 32px;
+    height: 32px;
+    background-color: var(--heading-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+.accordion .item .title a[aria-expanded="true"]:after {
+    content: "\e962";
+    background-color: var(--primary-color);
+}
+
+.accordion .item .desc p {
+    padding: 0 24px 24px 24px;
+}
+
+/* === Contact-Page-CSS === */
+.google-map {
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.google-map iframe {
+    height: 820px;
+    width: 100%;
+    position: relative;
+}
+
+.field-group {
+    display: block;
+}
+
+.field-group .input-field {
+    min-height: 56px;
+    padding: 14px 24px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.field-group textarea.input-field {
+    min-height: 250px;
+}
+
+.field-group.icon-group {
+    position: relative;
+}
+
+.field-group.icon-group .input-field {
+    padding-left: 58px;
+}
+
+.field-group.icon-group .icon {
+    position: absolute;
+    left: 24px;
+    top: 15px;
+}
+
+.field-group select.input-field {
+    border-right: 20px solid #f6f6f6;
 }
 
 /*=== 17. Footer-CSS ===*/

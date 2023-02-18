@@ -1,6 +1,20 @@
+@media screen and (max-width: 992px) {
+    .section-title .title {
+        font-size: 38px;
+    }
+
+    .site-header .page-title {
+        font-size: 38px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
+    }
+
+    .site-header .page-title {
+        font-size: 30px;
     }
 
     .section-padding {
@@ -62,16 +76,19 @@
         line-height: 50px;
         font-size: 18px;
     }
+
     .section-title .primary-button {
         margin-top: 24px;
     }
+
     .testimonial-item .desc {
         font-size: 18px;
     }
+
     .counter-area {
         padding: 50px 0;
     }
-    
+
     .counter-area .overlay-text {
         font-size: 16vw;
     }
@@ -79,9 +96,13 @@
     .blog-box .content {
         padding: 30px;
     }
-    
+
     .blog-box .content .title {
         font-size: 26px;
+    }
+
+    .faq-tabs {
+        max-width: 100%;
     }
 }
 

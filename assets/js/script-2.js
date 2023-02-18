@@ -31,18 +31,7 @@
         $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
             $(this).parent().toggleClass('menu-open');
         });
-             
-        
-        /* Accordion-JS */
-        $('.accordion').find('.item .title.active').siblings('.desc').slideDown();
-        $('.accordion').find('.item .title').on('click', function () {
-            var siblingsItem = $(this).parent('.item').siblings('.item');
-            siblingsItem.find('.desc').slideUp();
-            siblingsItem.find('.title').removeClass('active');
-            $(this).siblings('.desc').slideToggle();
-            $(this).toggleClass('active');
-        });
-        
+                     
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
