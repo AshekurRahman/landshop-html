@@ -104,7 +104,9 @@ a {
     background-color: transparent;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    color: var(--heading-color);
 }
+
 
 /**
  * Improve readability of focused elements when they are also in an
@@ -115,6 +117,7 @@ a:active,
 a:hover {
     outline: 0;
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* Text-level semantics
@@ -461,4 +464,16 @@ th {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #919EA1;
+}
+
+blockquote {
+    background-color: #FFF5F2;
+    padding: 40px;
+    border-radius: 24px;
+    border-left: 5px solid var(--primary-color);
+    margin: 30px 0 24px;
+}
+
+blockquote b {
+    color: var(--primary-color);
 }
