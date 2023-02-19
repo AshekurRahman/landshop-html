@@ -1,11 +1,9 @@
 ;(function($){
-    $(document).on('ready', function(){
-        /* Toggle-menu-JS */        
-        $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
-            $(this).find('span').toggleClass('ls-toggle-bar');
-            $(this).find('span').toggleClass('ls-close-square');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
+    $(document).on('ready', function(){ 
+        
+        $('img').addClass('lazy');
+        $('.lazy').Lazy();      
+        
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if($(window).scrollTop() > 300) {
@@ -14,17 +12,38 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
-        /* -- Submenu-Plus-Icon-Add --*/
-        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
-            $(this).parent('li').addClass('have-megamenu');
+
+        /* Navbar-Toggle-Button */
+        $('.toggle').on('click',function(){
+            $(this).toggleClass('active');
+            return false;
         });
+        
+        $('.menu-toggle').on('click',function(){
+            $('.mainmenu-area .nav-row .menu-items').slideToggle();
+        });
+        /* -- Submenu-Plus-Icon-Add --*/
         $('.mainmenu-area .menu-items li ul').each(function(){
+            var items = $(this).children('li').length;
             $(this).parent('li').addClass('have-submenu');
             $(this).parent('li').append('<span class="plus"></span>');
-            $(this).parent('li').find('.plus').on('click', function(){
-                $(this).parent('li').toggleClass('clicked');
-            });
-        });        
+            if( 8 < items ){
+                $(this).addClass('over-items');
+            }
+        });
+        
+        $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
+            $(this).parent().toggleClass('menu-open');
+        });
+
+        /*====== QUANTITY MINUS PLUS =====*/
+        $('.product-quantity .add').click(function () {
+            $(this).prev().val(+$(this).prev().val() + 1);
+        });
+        $('.product-quantity .sub').click(function () {
+            $(this).next().val(+$(this).next().val() - 1);
+        });
+             
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
@@ -46,54 +65,13 @@
             origin: 'right',
             interval: 100,
         });
-        /*====== Header-Product-Slider ======*/
-        var Product_Slider = new Swiper(".header-product-slider", {
-            loop: true,
-            speed: 1000,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".header-product-slider .arrow_next",
-                prevEl: ".header-product-slider .arrow_prev",
-            },
-            pagination: {
-                el: ".header-product-slider .slider-custom-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                380: {
-                    slidesPerView: 2,
-                },
-                680: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-        /*====== Testimonial-Slider ======*/
-        var Testimonial_Slider = new Swiper(".testimonial-slider", {
-            loop: true,
-            speed: 1000,
-            spaceBetween: 0,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: "#testimonial-slider-control .navigation-control .next",
-                prevEl: "#testimonial-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#testimonial-slider-control .pagination-control",
-                clickable: true,
-            },
-        });
+        
         /*====== Product-Slider ======*/
-        var Product_Slider = new Swiper(".product-slider", {
+        var client_slider = new Swiper("#client-logo-slider", {
             loop: true,
             speed: 1000,
-            spaceBetween: 0,
-            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerView: 2,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,            
             navigation: {
@@ -106,13 +84,13 @@
             },
             breakpoints: {
                 575: {
-                    slidesPerView: 2,
-                },
-                768: {
                     slidesPerView: 3,
                 },
-                1250: {
+                768: {
                     slidesPerView: 4,
+                },
+                1250: {
+                    slidesPerView: 5,
                 },
             },
         });        

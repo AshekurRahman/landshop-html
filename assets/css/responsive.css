@@ -4,7 +4,7 @@
     }
 
     .header-area .main-title {
-        font-size: 76px;
+        font-size: 64px;
     }
 
     .header-area .info-box {
@@ -39,18 +39,18 @@
 
 @media screen and (max-width: 1200px) {
     .header-area .main-title {
-        font-size: 64px;
+        font-size: 54px;
     }
 
     .header-content .desc {
         margin-bottom: 30px;
     }
-    
+
     .header-product-slider .product-item {
         padding: 15px 0;
         margin: 0 15px;
     }
-    
+
     .mainmenu-area .nav-row .menu-items > ul > li {
         padding: 0 20px;
     }
@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
     .header-area .header-circle-text {
         right: 10vw;
     }
@@ -119,23 +123,75 @@
     }
 
     .section-padding {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .section-padding-top {
-        padding-top: 100px;
+        padding-top: 60px;
     }
 
     .section-padding-bottom {
-        padding-bottom: 100px;
+        padding-bottom: 60px;
+    }
+
+    .feature-box-1 .title,
+    .feature-box-2 .title {
+        font-size: 18px;
+    }
+
+    .counter-box .number {
+        font-size: 38px;
+    }
+
+    .section-title {
+        margin-bottom: 36px
+    }
+    .counter-area {
+        padding: 60px 0;
+    }
+    .product-box .title {
+        font-size: 20px;
+    }
+    .product-box {
+        padding: 24px;
+    }
+    .accordion .item .title {
+        font-size: 14px;
+    }
+    .footer-widget .footer-logo {
+        max-width: 120px;
+        display: inline-block;
+    }
+    .social-menu {
+        margin: -5px;
+    }
+    .social-menu li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .feature-box-1 {
+        padding: 24px;
+    }
+    .counter-area .counter-text-overlay {
+        font-size: 18vw;
+    }
+    .testimonial-item .title {
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 576px) {
 
     .section-title .title {
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    .header-area .top-title {
+        font-size: 14px;
     }
 
     .header-area .header-circle-text {
@@ -144,7 +200,7 @@
     }
 
     .header-area .main-title {
-        font-size: 44px;
+        font-size: 36px;
     }
 
     .header-area .info-box {
@@ -213,174 +269,120 @@
     .testimonial-item .desc span {
         font-size: 22px;
     }
-}
-
-
-
-/* Responsive-Mobile-Menu-CSS-Start */
-@media screen and (max-width: 1360px) {
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
-        width: 25%;
+    .accordion .item .title {
+        padding: 10px 14px;
+    }
+    .accordion .item .desc p {
+        padding: 0 14px 14px 14px;
     }
 }
 
-@media screen and (min-width: 1025px) {
+/* === Responsive-Mobile-Menu-CSS === */
+@media screen and (min-width: 1200px) {
     .mainmenu-area .nav-row .menu-items {
         display: block !important;
     }
 
-    .mainmenu-area .nav-row .menu-items li ul {
-        transition: 0.5s ease;
-        transform: scaleY(0);
-        transform-origin: top center;
-        opacity: 0;
-        visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-row .menu-items {
+        width: 100%;
         position: absolute;
-        left: 0;
         top: 100%;
-    }
-    
-    .mainmenu-area .nav-row .menu-items li ul ul {
-        right: 100%;
-        left: auto;
-        top: 0;
+        left: 0;
+        background-color: #fff;
+        display: none;
     }
 
-    .mainmenu-area .nav-row .menu-items li:hover>ul {
-        transform: scaleY(1);
-        opacity: 1;
-        visibility: visible;
+    .mainmenu-area .nav-actions {
+        order: inherit;
     }
 
-    .mainmenu-area .nav-row .menu-items ul li:hover > .plus:after {
-        transform: rotate(-135deg);
+    .mainmenu-area .nav-actions .primary-button.menu-toggle {
+        display: block;
     }
 }
-@media screen and (max-width: 1024px) {
-    
+
+@media screen and (max-width: 768px) {
     :root {
         --navbar-height: 80px;
     }
     
-    .mainmenu-area .nav-row .nav-actions {
-        -webkit-box-ordinal-group: inherit;
-        -ms-flex-order: inherit;
-        order: inherit;
-    }
-
-    .mainmenu-area .nav-row .nav-logo {
-        width: 30%;
-        display: inline-block;
-        min-height: var(--navbar-height);
-        line-height: var(--navbar-height);
-    }
-
-    .mainmenu-area .nav-row {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-
-    .mainmenu-area .nav-row .nav-actions {
-        width: 70%;
-        min-height: var(--navbar-height);
-    }
-
-    .mainmenu-area .nav-row .menu-items {
-        width: 100%;
-        display: none;
-        max-height: 80vh;
-        overflow: auto;
-    }
-
-    .mainmenu-area .nav-row .menu-items ul {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .mainmenu-area .nav-row .menu-items > ul {
         flex-direction: column;
-        background-color: #ffffff;
     }
 
-    .mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu {
-        display: inline-block;
-    }
-    
-    .mainmenu-area .nav-row .menu-items > ul > li:not(:last-child) {
-        border-bottom: 1px solid #f1f1f1;
-    }
-
-    .mainmenu-area .nav-row .menu-items > ul > li > a {
-        padding: 15px 0;
-        line-height: 1.3em;
-    }
-    
-    .mainmenu-area .nav-row .menu-items ul li.clicked>a,
-    .mainmenu-area .nav-row .menu-items ul li>a.active,
-    .mainmenu-area .nav-row .menu-items ul li:hover>a {
-        color: var(--primary-color);
-    }
-
-    .mainmenu-area .nav-row .menu-items ul li a {
-        width: calc(100% - 20px);
-    }
-    
-    .mainmenu-area .nav-row .menu-items ul.mega-menu li a {
-        width: 100%;
-    }
-    
-    .mainmenu-area .nav-row .menu-items ul li a .plus {
-        margin-left: auto;
-    }
-
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu {
-        padding: 10px 18px;
-        overflow: inherit;
-        max-height: inherit;
-    }    
-
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
-        width: 33.33%;
-        padding: 12px 5px;
-    }
-    
-    .mainmenu-area .nav-row .menu-items li {
-        width: 100%;
+    .mainmenu-area .nav-row .menu-items > ul > li {
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(23, 11, 55, 0.1);
+        flex-wrap: wrap;
     }
 
     .mainmenu-area .nav-row .menu-items li ul {
-        display: none;
-        margin-bottom: 24px;
-    }
-    
-    .mainmenu-area .nav-row .menu-items li.clicked > ul {
-        display: flex;
-    }
-    .mainmenu-area .nav-row .menu-items ul li.have-submenu a:before {
-        display: none;
+        position: static;
+        order: 1;
+        width: 100%;
+        display: none !important;
+        margin-top: 10px;
     }
 
-    .mainmenu-area .nav-row .menu-items ul li.clicked > .plus:after {
-        transform: rotate(-135deg);
+    .mainmenu-area .nav-row .menu-items li.menu-open > ul {
+        display: block !important;
     }
-    
-    .mainmenu-area .nav-row .menu-items li ul li {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+
+    .mainmenu-area .nav-row .menu-items li.menu-open > ul.over-items {
+        display: grid !important;
+    }
+
+    .mainmenu-area .nav-row .menu-items ul li:not(.menu-open) .plus:before {
+        transform: rotate(90deg);
+    }
+
+    .mainmenu-area .nav-row .menu-items > ul > li > a {
+        line-height: 1.6em;
+    }
+
+    .mainmenu-area .nav-row .menu-items {
+        max-height: calc(100vh - var(--navbar-height));
+        overflow-y: auto;
     }
 }
+
 
 @media screen and (max-width: 576px) {
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
-        width: 50%;
+    .mainmenu-area .nav-row .menu-items > ul ul.over-items {
+        grid-template-columns: auto;
     }
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu li a .mega-thumb {
-        margin-bottom: 8px;
+
+    .primary-button .part {
+        padding: 8px 20px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.cirlce .part {
+        width: 43px;
+        height: 43px;
+        font-size: 18px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button {
+        margin-left: 10px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .mainmenu-area .nav-row .menu-items li ul.mega-menu li {
-        width: 100%;
+@media screen and (max-width: 440px) {
+    .mainmenu-area .nav-actions .action-button {
+        display: none;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.cirlce .part {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .mainmenu-area .nav-row .nav-logo .logo {
+        max-width: 120px;
     }
 }
-/* Sub-Menu-CSS-End */

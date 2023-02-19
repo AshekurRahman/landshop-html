@@ -1,6 +1,6 @@
 /* Enter type your CSS */
 
-.ls-icons-list ul {
+.ls-icons-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -10,6 +10,6 @@
     font-size: 40px;
 }
 
-.ls-icons-list ul li {
+.ls-icons-list li {
     margin: 25px 50px;
 }
