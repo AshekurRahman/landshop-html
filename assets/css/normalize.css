@@ -512,3 +512,7 @@ blockquote b {
 .transparent-light .navbar-height {
     display: none;
 }
+
+.current-menu-item {
+    color: var(--primary-color) !important;
+}
