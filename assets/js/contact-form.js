@@ -23,11 +23,11 @@ Ajax Contact Form
 
         // get the form data
         var formData = {
-            'name' : $('input[name="form-name"]').val(),
-            'email' : $('input[name="form-email"]').val(),
-            'subject' : $('input[name="form-subject"]').val(),
-            'date' : $('input[name="form-date"]').val(),
-            'message' : $('textarea[name="form-message"]').val()
+            'name' : $('[name="form-name"]').val(),
+            'email' : $('[name="form-email"]').val(),
+            'subject' : $('[name="form-subject"]').val(),
+            'date' : $('[name="form-date"]').val(),
+            'message' : $('[name="form-message"]').val()
         };
 
         // process the form

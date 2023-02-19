@@ -988,7 +988,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .google-map iframe {
-    height: 820px;
+    height: 760px;
     width: 100%;
     position: relative;
 }
@@ -998,7 +998,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .field-group .input-field {
-    min-height: 56px;
+    min-height: 60px;
     padding: 14px 24px;
     border: none;
     background-color: #F6F6F6;
@@ -1007,7 +1007,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .field-group textarea.input-field {
-    min-height: 250px;
+    min-height: 200px;
 }
 
 .field-group.icon-group {
@@ -1026,6 +1026,37 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .field-group select.input-field {
     border-right: 20px solid #f6f6f6;
+}
+
+.contact-info-box {
+    padding: 32px;
+    text-align: center;
+    background-color: #FFF5F2;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-info-box .icon {
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff;
+    line-height: 64px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-bottom: 24px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.contact-info-box:hover {
+    background-color: var(--primary-color);
+}
+
+.contact-info-box:hover>* {
+    color: #ffffff;
+}
+
+.contact-info-box>* {
+    transition: 0.3s;
 }
 
 /*=== 17. Footer-CSS ===*/

@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['subject'] = 'Subject is required.';
     }
     if (empty($date)) {
-        $errors['date'] = 'Date is required.';
+        $date = date("Y/m/d");
     }
     if (empty($message)) {
         $errors['message'] = 'Message is required.';
