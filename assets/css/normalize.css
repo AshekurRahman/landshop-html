@@ -472,8 +472,43 @@ blockquote {
     border-radius: 24px;
     border-left: 5px solid var(--primary-color);
     margin: 30px 0 24px;
+    position: relative;
+    z-index: 1;
+}
+
+blockquote:before {
+    content: "\e952";
+    font-family: 'landshop';
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 120px;
+    line-height: 120px;
 }
 
 blockquote b {
     color: var(--primary-color);
+}
+
+.g-4, .gy-4 {
+    --bs-gutter-y: 30px;
+}
+.g-4, .gx-4 {
+    --bs-gutter-x: 30px;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.navbar-height {
+    min-height: var(--navbar-height);
+    width: 100%;
+}
+
+.transparent-dark .navbar-height,
+.transparent-light .navbar-height {
+    display: none;
 }

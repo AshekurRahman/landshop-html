@@ -247,19 +247,6 @@ img {
     align-items: center;
 }
 
-.page-wrapper {
-    padding-top: var(--navbar-height);
-}
-
-body.transparent-dark .page-wrapper,
-body.transparent-light .page-wrapper {
-    padding-top: 0;
-}
-
-.transparent-dark .mainmenu-area {
-    position: absolute;
-}
-
 .mainmenu-area.sticky {
     position: fixed;
     background-color: #ffffff;
@@ -467,7 +454,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .mainmenu-area .nav-row .menu-items > ul ul li {
     padding: 3px 24px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .mainmenu-area .nav-row .menu-items > ul ul li a {

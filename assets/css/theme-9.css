@@ -346,6 +346,7 @@ img {
 .mainmenu-area {
     width: 100%;
     z-index: 99;
+    position: absolute;
     right: 0;
     left: 0;
     top: 0;
@@ -356,19 +357,6 @@ img {
     min-height: var(--navbar-height);
     display: flex;
     align-items: center;
-}
-
-.page-wrapper {
-    padding-top: var(--navbar-height);
-}
-
-body.transparent-dark .page-wrapper,
-body.transparent-light .page-wrapper {
-    padding-top: 0;
-}
-
-.transparent-dark .mainmenu-area {
-    position: absolute;
 }
 
 .mainmenu-area.sticky {
@@ -570,7 +558,7 @@ body.transparent-light .page-wrapper {
 
 .mainmenu-area .nav-row .menu-items > ul ul li {
     padding: 3px 24px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 /*=== 10. Header-Area-CSS ===*/

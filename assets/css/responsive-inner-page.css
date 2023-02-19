@@ -104,6 +104,38 @@
     .faq-tabs {
         max-width: 100%;
     }
+
+    .comments-list .comment-body {
+        padding-left: 0;
+    }
+
+    .comment-body .comment-author img {
+        position: static;
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .comment-body .comment-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-body .comment-footer .comment-author .fn {
+        font-size: 22px;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .comments-list .children .comment {
+        padding-left: 40px;
+    }
+    .blog-details .title {
+        font-size: 28px;
+    }
+    .comment-respond-title,
+    .comment-list-title {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 576px) {

@@ -39,7 +39,6 @@ body {
 
 .page-wrapper {
     position: relative;
-    padding-top: var(--navbar-height);
     width: 100%;
     overflow: hidden;
 }
@@ -104,12 +103,6 @@ body {
     margin: 0 auto;
     overflow: hidden;
     background-color: #ffffff;
-    padding-top: var(--navbar-height);
-}
-
-body.transparent-dark .page-wrapper,
-body.transparent-light .page-wrapper {
-    padding-top: 0;
 }
 
 /*=== 2. Button-CSS ===*/
@@ -300,15 +293,6 @@ body.transparent-light .page-wrapper {
     min-height: var(--navbar-height);
     display: flex;
     align-items: center;
-}
-
-body.transparent-dark .page-wrapper,
-body.transparent-light .page-wrapper {
-    padding-top: 0;
-}
-
-.transparent-dark .mainmenu-area {
-    position: absolute;
 }
 
 .mainmenu-area.sticky {
@@ -544,7 +528,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .mainmenu-area .nav-row .menu-items>ul ul li {
     padding: 3px 24px;
-    min-width: 200px;
+    min-width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

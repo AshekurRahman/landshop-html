@@ -33,6 +33,14 @@
         $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
             $(this).parent().toggleClass('menu-open');
         });
+
+        /*====== QUANTITY MINUS PLUS =====*/
+        $('.product-quantity .add').click(function () {
+            $(this).prev().val(+$(this).prev().val() + 1);
+        });
+        $('.product-quantity .sub').click(function () {
+            $(this).next().val(+$(this).next().val() - 1);
+        });
              
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
