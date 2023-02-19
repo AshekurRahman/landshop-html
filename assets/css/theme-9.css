@@ -559,6 +559,9 @@ img {
 .mainmenu-area .nav-row .menu-items > ul ul li {
     padding: 3px 24px;
     min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*=== 10. Header-Area-CSS ===*/
