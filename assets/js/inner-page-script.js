@@ -1,5 +1,8 @@
 ;(function($){
-    $(document).on('ready', function(){       
+    $(document).on('ready', function(){ 
+        
+        $('img').addClass('lazy');
+        $('.lazy').Lazy();      
         
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
@@ -9,7 +12,6 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
-
 
         /* Navbar-Toggle-Button */
         $('.toggle').on('click',function(){

@@ -2,6 +2,10 @@
 (function ($) {
     $(document).on('ready', function () {
 
+        
+        $('img').addClass('lazy');
+        $('.lazy').Lazy();
+        
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if ($(window).scrollTop() > 300) {
