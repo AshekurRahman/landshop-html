@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -25,13 +25,14 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/lity.min.css">
     <link rel="stylesheet" href="assets/css/theme-icons.css">
     <link rel="stylesheet" href="assets/css/theme-font.css">
     <link rel="stylesheet" href="assets/css/theme-4.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="assets/css/responsive-4.css">
 </head>
 
@@ -43,318 +44,263 @@
     </div>
     <!-- preloader end -->
 
-    <!-- Mainmenu-Area-Start -->
-    <div class="mainmenu-area">
-        <div class="container-fluid p-0">
-            <div class="nav-row">
-                <div class="nav-left">
+    <!-- Page-Wrapper-Start -->
+    <div class="page-wrapper">
+
+
+        <div class="navbar-height" id="home-section"></div>
+        <!-- Mainmenu-Area-Start -->
+        <div class="mainmenu-area">
+            <div class="container-fluid p-0">
+                <div class="nav-row">
                     <!-- Nav-Actions-Start -->
-                    <div class="nav-actions">
-                        <a href="#" class="nav-action widget-toggle toggle"><span class="ls-circle-dots"></span><span
-                                class="ls-close-line"></span></a>
-                        <a href="#" class="nav-action mobile-menu-toggle toggle"><span class="ls-bar"></span><span
-                                class="ls-close-line"></span></a>
-                        <a href="#" class="nav-action search-toggle toggle"><span class="ls-search-line"></span><span
-                                class="ls-close-line"></span></a>
+                    <div class="nav-actions left-actions">
+                        <a href="javascript:void(0)" class="primary-button target-button"
+                            data-target="#nav-product-popup">
+                            <span class="part front"><span class="ls-circle-dots"></span></span>
+                            <span class="part back"><span class="ls-circle-dots"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button target-button" data-target="#nav-menu-items">
+                            <span class="part front"><span class="ls-bar"></span></span>
+                            <span class="part back"><span class="ls-bar"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button target-button"
+                            data-target="#nav-search-form">
+                            <span class="part front"><span class="ls-search"></span></span>
+                            <span class="part back"><span class="ls-search"></span></span>
+                        </a>
+                    </div>
+                    <!-- Nav-Actions-End -->
+                    <!-- Logo-Start -->
+                    <div class="nav-logo">
+                        <a href="index.html" class="logo light-logo"><img src="assets/images/theme-4/logo-light.svg"
+                                alt=""></a>
+                        <a href="index.html" class="logo dark-logo"><img src="assets/images/theme-4/logo-dark.svg"
+                                alt=""></a>
+                    </div>
+                    <!-- Logo-End -->
+                    <!-- Nav-Search-Start-->
+                    <div class="nav-search" id="nav-search-form">
+                        <form class="nav-search-form">
+                            <input type="text" placeholder="Search" class="type-input" >
+                            <button type="submit"><span class="ls-search"></span></button>
+                        </form>
+                    </div>
+                    <!-- Nav-Search-End-->
+                    <!-- Nav-Actions-Start -->
+                    <div class="nav-actions right-actions">
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-love-fill"></span></span>
+                            <span class="part back"><span class="ls-love-fill"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-shop"></span></span>
+                            <span class="part back"><span class="ls-shop"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-account"></span></span>
+                            <span class="part back"><span class="ls-account"></span></span>
+                        </a>
                     </div>
                     <!-- Nav-Actions-End -->
                     <!-- Menu-Items-Start -->
-                    <nav class="menu-items">
+                    <nav class="menu-items" id="nav-menu-items">
                         <ul>
                             <li>
                                 <a class="active" href="#home-section">Home</a>
-                                <ul class="mega-menu">
-                                    <li>
-                                        <a href="index.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-1-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Backpack</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-2-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Virtual Reality</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-3.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-3-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">HomePod</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-4.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-4-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Bicycle</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-5.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-5-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Security Camera</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-6.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-6-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Drone</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-7.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-7-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Electric Scooter</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-8.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-8-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Sunglas</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-9.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-9-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">AirPod</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-10.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-10-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Mobile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-11.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-11-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Headphone</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-12.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-12-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Router</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-13.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-13-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Skateboard</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-14.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-14-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Watch</span>
-                                        </a>
-                                    </li>
+                                <ul>
+                                    <li><a href="index.html">Backpack</a></li>
+                                    <li><a href="index-2.html">Virtual Reality</a></li>
+                                    <li><a href="index-3.html">HomePod</a></li>
+                                    <li><a class="current-menu-item" href="index-4.html">Bicycle</a></li>
+                                    <li><a href="index-5.html">Security Camera</a></li>
+                                    <li><a href="index-6.html">Drone</a></li>
+                                    <li><a href="index-7.html">Electric Scooter</a></li>
+                                    <li><a href="index-8.html">Sunglas</a></li>
+                                    <li><a href="index-9.html">AirPod</a></li>
+                                    <li class="soon"><a href="index-10.html">Mobile</a></li>
+                                    <li class="soon"><a href="index-11.html">Headphone</a></li>
+                                    <li class="soon"><a href="index-12.html">Router</a></li>
+                                    <li class="soon"><a href="index-13.html">Skateboard</a></li>
+                                    <li class="soon"><a href="index-14.html">Watch</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#overview-section">Overview</a></li>
                             <li><a href="#features-section">Features</a></li>
-                            <li><a href="#testimonial-section">Reviews</a></li>
-                            <li><a href="#product-section">Product</a></li>
+                            <li><a href="#reviews-section">Pages</a>
+                                <ul>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="#product-section">Product</a>
+                                        <ul>
+                                            <li><a href="products.html">Product List</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- Menu-Items-End -->
                 </div>
-                <div class="nav-middle">
-                    <!-- Logo-Start -->
-                    <a href="index-4.html" class="nav-logo">
-                        <img src="assets/images/theme-4/logo-dark.svg" alt="" class="dark-logo" >
-                        <img src="assets/images/theme-4/logo-light.svg" alt="" class="light-logo" >
-                    </a>
-                    <!-- Logo-End -->
-                </div>
-                <div class="nav-right">
-                    <!-- Nav-Search-Form-Start -->
-                    <form class="nav-search">
-                        <input type="search" class="input-field" placeholder="Search">
-                        <button type="submit"><span class="ls-search-line"></span></button>
-                    </form>
-                    <!-- Nav-Search-Form-End -->
-                    <!-- Nav-Actions-Start -->
-                    <div class="nav-actions">
-                        <a href="#search" class="nav-action"><span class="ls-love-fill"></span></a>
-                        <a href="#shop" class="nav-action"><span class="ls-shop"></span><sup class="count">2</sup></a>
-                        <a href="#user" class="nav-action"><span class="ls-user"></span></a>
-                    </div>
-                    <!-- Nav-Actions-End -->
-                </div>
             </div>
         </div>
-    </div>
-    <!-- Mainmenu-Area-End -->
-    <!-- Nav-Popup-Product-Start -->
-    <div class="nav-products-area section-padding">
-        <div class="container">
-            <div class="row g-3 g-md-4 g-xl-5">
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
-                            </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
-                            </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
+        <!-- Mainmenu-Area-End -->
+
+        <!-- Nav-Popup-Product-Start -->
+        <div class="nav-product-popup" id="nav-product-popup">
+            <div class="container">
+                <div class="row g-3 g-md-4 g-xl-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
-                            </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
-                            </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
-                            </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">                    
-                    <div class="product-box">
-                        <figure class="thumb">
-                            <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
-                            <div class="hover">
-                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
                             </div>
-                        </figure>
-                        <div class="content">
-                            <h3 class="title">Checkpoint SLR 6 eTap</h3>
-                            <div class="price">€27.99</div>
-                            <div class="color-select">
-                                <button type="button" class="color" data-color="#FDA800"></button>
-                                <button type="button" class="color" data-color="#3CB868"></button>
-                                <button type="button" class="color" data-color="#FF6B31"></button>
-                                <button type="button" class="color" data-color="#8B44FF"></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <figure class="thumb">
+                                <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
+                                <div class="hover">
+                                    <a href="javascript:void(0)" class="action"><span class="ls-heart"></span></a>
+                                    <a href="javascript:void(0)" class="action"><span class="ls-cart"></span></a>
+                                    <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span
+                                            class="ls-eye"></span></a>
+                                </div>
+                            </figure>
+                            <div class="content">
+                                <h3 class="title">Checkpoint SLR 6 eTap</h3>
+                                <div class="price">€27.99</div>
+                                <div class="color-select">
+                                    <button type="button" class="color" data-color="#FDA800"></button>
+                                    <button type="button" class="color" data-color="#3CB868"></button>
+                                    <button type="button" class="color" data-color="#FF6B31"></button>
+                                    <button type="button" class="color" data-color="#8B44FF"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Nav-Popup-Product-End -->
-    <!-- Page-Wrapper-Start -->
-    <div class="page-wrapper">
+        <!-- Nav-Popup-Product-End -->
         <!-- Header-Area-Start -->
         <header class="header-area">
             <img src="assets/images/theme-4/header-element-1.svg" alt="" class="element element-1">
@@ -367,7 +313,7 @@
                     <div class="col-12">
                         <div class="header-text">
                             <h1 class="main-title anim_bottom">Fenix Adventure</h1>
-                            <a href="#" class="primary-button white anim_bottom">
+                            <a href="javascript:void(0)" class="primary-button white anim_bottom">
                                 <span class="front part">Purchase Now <span class="icon ls-angle-right"></span></span>
                                 <span class="back part">Purchase Now <span class="icon ls-angle-right"></span></span>
                             </a>
@@ -455,9 +401,13 @@
                         <div class="about-text">
                             <h3 class="title anim_bottom">Guard Every Corner of Your House</h3>
                             <div class="desc mb-4 mb-lg-5 anim_bottom">
-                                <p>Checkpoint SLR 7 is a carbon gravel bike that's built for crushing the world's greatest gravel races. The lightweight 700 Series OCLV Carbon frame has gravel-smoothing IsoSpeed and a nimble-yet-stable progressive geometry. Plus, a Shimano GRX drivetrain that shifts smoothly even in the gnarliest gravel, and extra mounts for gear and accessories.</p>
+                                <p>Checkpoint SLR 7 is a carbon gravel bike that's built for crushing the world's
+                                    greatest gravel races. The lightweight 700 Series OCLV Carbon frame has
+                                    gravel-smoothing IsoSpeed and a nimble-yet-stable progressive geometry. Plus, a
+                                    Shimano GRX drivetrain that shifts smoothly even in the gnarliest gravel, and extra
+                                    mounts for gear and accessories.</p>
                             </div>
-                            <a href="#" class="primary-button anim_bottom">
+                            <a href="javascript:void(0)" class="primary-button anim_bottom">
                                 <span class="front part">Learn More <span class="icon ls-angle-right"></span></span>
                                 <span class="back part">Learn More <span class="icon ls-angle-right"></span></span>
                             </a>
@@ -473,7 +423,7 @@
         </section>
         <!-- About-Area-End -->
         <!-- Feature-Area-Start -->
-        <section class="feature-area section-padding">
+        <section class="feature-area section-padding" id="features-section">
             <img src="assets/images/theme-4/feature-star-1.png" alt="star" class="element element-1">
             <img src="assets/images/theme-4/feature-star-2.png" alt="star" class="element element-2">
             <div class="container">
@@ -496,7 +446,9 @@
                             </figure>
                             <h4 class="title">Women Specific Bikes</h4>
                             <div class="desc">
-                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer is leader in every aspect of carbon development and supplier to absolute top world brands.</p>
+                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer
+                                    is leader in every aspect of carbon development and supplier to absolute top world
+                                    brands.</p>
                             </div>
                         </div>
                     </div>
@@ -507,7 +459,9 @@
                             </figure>
                             <h4 class="title">Women Specific Bikes</h4>
                             <div class="desc">
-                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer is leader in every aspect of carbon development and supplier to absolute top world brands.</p>
+                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer
+                                    is leader in every aspect of carbon development and supplier to absolute top world
+                                    brands.</p>
                             </div>
                         </div>
                     </div>
@@ -518,7 +472,9 @@
                             </figure>
                             <h4 class="title">Women Specific Bikes</h4>
                             <div class="desc">
-                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer is leader in every aspect of carbon development and supplier to absolute top world brands.</p>
+                                <p>Our carbon is manufactured by world market leader: Toray. The Japanese manufacturer
+                                    is leader in every aspect of carbon development and supplier to absolute top world
+                                    brands.</p>
                             </div>
                         </div>
                     </div>
@@ -534,15 +490,16 @@
                         <div class="section-title mb-5">
                             <h2 class="title anim_bottom">Designed And Built for Performance</h2>
                             <div class="desc anim_bottom">
-                                <p>There are many variations of passages available the majority have suffered alteration in some form, by injected humour, or randomised words slightly believable.</p>
+                                <p>There are many variations of passages available the majority have suffered alteration
+                                    in some form, by injected humour, or randomised words slightly believable.</p>
                                 <ul class="check-list">
                                     <li>Flexible & affordable plans.</li>
                                     <li>Store alert recordings up to 30 days of video history</li>
                                     <li>Other features and unlock your peace of mind!</li>
-                                </ul> 
-                            </div>    
-                        </div>                       
-                        <a href="#" class="primary-button anim_bottom">
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="primary-button anim_bottom">
                             <span class="front part">Learn More <span class="icon ls-angle-right"></span></span>
                             <span class="back part">Learn More <span class="icon ls-angle-right"></span></span>
                         </a>
@@ -627,13 +584,19 @@
                     <div class="col-sm-6 col-md-5 mb-4 mb-sm-0 anim_bottom">
                         <h3 class="title">It's Right for You If...</h3>
                         <div class="desc">
-                            <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You want our most advanced Checkpoint frame, one that's made specifically for gravel racing.</p>
+                            <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound
+                                Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You
+                                want our most advanced Checkpoint frame, one that's made specifically for gravel racing.
+                            </p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-5 offset-md-2 anim_bottom">
                         <h3 class="title">The Tech You Get</h3>
                         <div class="desc">
-                            <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You want our most advanced Checkpoint frame, one that's made specifically for gravel racing.</p>
+                            <p>You have big dreams for the likes of The Mid-South, Belgian Waffle Rides, and Unbound
+                                Gravel, and know you'll need the most dialed gravel bike for these epic adventures. You
+                                want our most advanced Checkpoint frame, one that's made specifically for gravel racing.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -663,9 +626,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-1.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -685,9 +651,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-2.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-2.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -707,9 +676,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-3.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-3.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -729,9 +701,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-1.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-1.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-1.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -751,9 +726,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-2.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-2.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-2.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -773,9 +751,12 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-4/header-slide-3.png" alt="Nike Backpack">
                                             <div class="hover">
-                                                <a href="#" class="action"><span class="ls-heart"></span></a>
-                                                <a href="#" class="action"><span class="ls-cart"></span></a>
-                                                <a href="assets/images/theme-4/header-slide-3.png" data-lity class="action"><span class="ls-eye"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-heart"></span></a>
+                                                <a href="javascript:void(0)" class="action"><span
+                                                        class="ls-cart"></span></a>
+                                                <a href="assets/images/theme-4/header-slide-3.png" data-lity
+                                                    class="action"><span class="ls-eye"></span></a>
                                             </div>
                                         </figure>
                                         <div class="content">
@@ -845,14 +826,18 @@
                                         <div class="testimonial-header">
                                             <div class="quote">
                                                 <span class="ls-quote-left"></span>
-                                            </div>                                            
+                                            </div>
                                             <div class="rating-star">
                                                 <span class="star front"></span>
                                                 <span class="star back"></span>
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
-                                            <p>1 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                            <p>1 There are many variations of passages of the Ipsum available, but
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised for words which don't look even slightly believable making
+                                                this the first true the floating above the road surface. These bikes are
+                                                seen everywhere - ridden by top professionals to novice cyclists.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -861,14 +846,18 @@
                                         <div class="testimonial-header">
                                             <div class="quote">
                                                 <span class="ls-quote-left"></span>
-                                            </div>                                            
+                                            </div>
                                             <div class="rating-star">
                                                 <span class="star front"></span>
                                                 <span class="star back"></span>
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
-                                            <p>2 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                            <p>2 There are many variations of passages of the Ipsum available, but
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised for words which don't look even slightly believable making
+                                                this the first true the floating above the road surface. These bikes are
+                                                seen everywhere - ridden by top professionals to novice cyclists.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -877,18 +866,22 @@
                                         <div class="testimonial-header">
                                             <div class="quote">
                                                 <span class="ls-quote-left"></span>
-                                            </div>                                            
+                                            </div>
                                             <div class="rating-star">
                                                 <span class="star front"></span>
                                                 <span class="star back"></span>
                                             </div>
                                         </div>
                                         <div class="testimonial-body">
-                                            <p>3 There are many variations of passages of the Ipsum available, but majority have suffered alteration in some form, by injected humour, or randomised for words which don't look even slightly believable making this the first true the floating above the road surface. These bikes are seen everywhere - ridden by top professionals to novice cyclists.</p>
+                                            <p>3 There are many variations of passages of the Ipsum available, but
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised for words which don't look even slightly believable making
+                                                this the first true the floating above the road surface. These bikes are
+                                                seen everywhere - ridden by top professionals to novice cyclists.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="testimonial-navigate-slide swiper anim_bottom">
                             <div class="swiper-wrapper">
@@ -931,10 +924,10 @@
                                     eveniet ut et voluptates.</p>
                             </div>
                             <ul class="social-menu">
-                                <li><a href="#"><span class="ls-facebook"></span></a></li>
-                                <li><a href="#"><span class="ls-twitter"></span></a></li>
-                                <li><a href="#"><span class="ls-instagram"></span></a></li>
-                                <li><a href="#"><span class="ls-linkedin"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-twitter"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-instagram"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-linkedin"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -942,10 +935,10 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Product</h4>
                             <ul class="block-list">
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Pricing Plan</a></li>
-                                <li><a href="#">Purchase Guide</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="javascript:void(0)">Features</a></li>
+                                <li><a href="javascript:void(0)">Pricing Plan</a></li>
+                                <li><a href="javascript:void(0)">Purchase Guide</a></li>
+                                <li><a href="javascript:void(0)">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -953,10 +946,10 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Support</h4>
                             <ul class="block-list">
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">FAQ Questions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Help Center</a></li>
+                                <li><a href="javascript:void(0)">Terms & Condition</a></li>
+                                <li><a href="javascript:void(0)">FAQ Questions</a></li>
                             </ul>
                         </div>
                     </div>
@@ -981,7 +974,7 @@
                 </div>
                 <div class="row footer-bottom">
                     <div class="copyrights anim_bottom">
-                        <p>&copy;2022 All rights reserved. Powered by DevignEdge</p>
+                        <p>&copy;2023 All rights reserved. Powered by DevignEdge</p>
                     </div>
                 </div>
             </div>
@@ -998,6 +991,7 @@
     <script src="assets/js/jquery-mailchimp.min.js"></script>
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
     <script src="assets/js/script-4.js"></script>
 </body>
 

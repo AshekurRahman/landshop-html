@@ -1,25 +1,9 @@
 ;(function($){
     $(document).on('ready', function(){
 
-        /* Toggle-menu-JS */        
-        $('.mainmenu-area .nav-row .nav-actions .nav-action.toggle-menu').on('click',function(){
-            $(this).find('span').toggleClass('ls-toggle-bar');
-            $(this).find('span').toggleClass('ls-close-square');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
-
-        /* -- Submenu-Plus-Icon-Add --*/
-        $('.mainmenu-area .menu-items li ul.mega-menu').each(function(){
-            $(this).parent('li').addClass('have-megamenu');
-        });
-        $('.mainmenu-area .menu-items li ul').each(function(){
-            $(this).parent('li').addClass('have-submenu');
-            $(this).parent('li').append('<span class="plus"></span>');
-            $(this).parent('li').find('.plus').on('click', function(){
-                $(this).parent('li').toggleClass('clicked');
-            });
-        });
-
+        $('img').addClass('lazy');
+        $('.lazy').Lazy();        
+        
         /* Sticky-Menu-JS */
         $(window).scroll(function () {
             if($(window).scrollTop() > 300) {
@@ -28,6 +12,29 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
+
+        
+        $('.menu-toggle').on('click',function(){
+            $(this).toggleClass('button-active');
+            $('.mainmenu-area .nav-row .menu-items').slideToggle();
+            return false;
+        });
+        
+        
+        /* -- Submenu-Plus-Icon-Add --*/
+        $('.mainmenu-area .menu-items li ul').each(function(){
+            var items = $(this).children('li').length;
+            $(this).parent('li').addClass('have-submenu');
+            $(this).parent('li').append('<span class="plus"></span>');
+            if( 8 < items ){
+                $(this).addClass('over-items');
+            }
+        });
+        
+        $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
+            $(this).parent().toggleClass('menu-open');
+        });
+             
         
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({

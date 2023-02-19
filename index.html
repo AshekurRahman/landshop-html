@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -26,13 +26,14 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/lity.min.css">
     <link rel="stylesheet" href="assets/css/theme-icons.css">
     <link rel="stylesheet" href="assets/css/theme-font.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/theme-1.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -45,22 +46,37 @@
     <!-- preloader end -->
     <!-- Page-Wrapper-Start -->
     <div class="page-wrapper">
+        <div class="navbar-height" id="home-section"></div>   
         <!-- Mainmenu-Area-Start -->
         <div class="mainmenu-area">
             <div class="container">
                 <div class="nav-row">
                     <!-- Logo-Start -->
-                    <a href="index.html" class="nav-logo">
-                        <span class="logo light-logo"><img src="assets/images/theme-1/logo-light.svg" alt=""></span>
-                        <span class="logo dark-logo"><img src="assets/images/theme-1/logo-dark.svg" alt=""></span>
-                    </a>
+                    <div class="nav-logo">
+                        <a href="index.html" class="logo light-logo"><img src="assets/images/theme-1/logo-light.svg"
+                                alt=""></a>
+                        <a href="index.html" class="logo dark-logo"><img src="assets/images/theme-1/logo-dark.svg"
+                                alt=""></a>
+                    </div>
                     <!-- Logo-End -->
                     <!-- Nav-Actions-Start -->
                     <div class="nav-actions">
-                        <a href="#" class="nav-action"><span class="ls-search"></span></a>
-                        <a href="#" class="nav-action"><span class="ls-user"></span></a>
-                        <a href="#" class="nav-action"><span class="ls-shop"></span><sup class="count">2</sup></a>
-                        <a href="#" class="nav-action toggle-menu"><span class="ls-toggle-bar"></span></a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-love-fill"></span></span>
+                            <span class="part back"><span class="ls-love-fill"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-user"></span></span>
+                            <span class="part back"><span class="ls-user"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-shop"></span></span>
+                            <span class="part back"><span class="ls-shop"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce toggle menu-toggle">
+                            <span class="part front"><span class="ls-bar"></span></span>
+                            <span class="part back"><span class="ls-close-line"></span></span>
+                        </a>
                     </div>
                     <!-- Nav-Actions-End -->
                     <!-- Menu-Items-Start -->
@@ -68,126 +84,46 @@
                         <ul>
                             <li>
                                 <a class="active" href="#home-section">Home</a>
-                                <ul class="mega-menu">
-                                    <li>
-                                        <a href="index.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-1-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Backpack</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-2-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Virtual Reality</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-3.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-3-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">HomePod</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-4.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-4-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Bicycle</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-5.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-5-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Security Camera</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-6.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-6-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Drone</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-7.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-7-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Electric Scooter</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-8.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-8-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Sunglas</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-9.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-9-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">AirPod</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-10.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-10-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Mobile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-11.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-11-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Headphone</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-12.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-12-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Router</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-13.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-13-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Skateboard</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-14.html">
-                                            <figure class="mega-thumb">
-                                                <img src="./assets/images/pages-thumb/home-14-min.jpg" alt="">
-                                            </figure>
-                                            <span class="label">Watch</span>
-                                        </a>
-                                    </li>
-                                </ul>                            
+                                <ul>
+                                    <li><a class="active" href="index.html">Backpack</a></li>
+                                    <li><a href="index-2.html">Virtual Reality</a></li>
+                                    <li><a href="index-3.html">HomePod</a></li>
+                                    <li><a href="index-4.html">Bicycle</a></li>
+                                    <li><a href="index-5.html">Security Camera</a></li>
+                                    <li><a href="index-6.html">Drone</a></li>
+                                    <li><a href="index-7.html">Electric Scooter</a></li>
+                                    <li><a href="index-8.html">Sunglas</a></li>
+                                    <li><a href="index-9.html">AirPod</a></li>
+                                    <li class="soon"><a href="index-10.html">Mobile</a></li>
+                                    <li class="soon"><a href="index-11.html">Headphone</a></li>
+                                    <li class="soon"><a href="index-12.html">Router</a></li>
+                                    <li class="soon"><a href="index-13.html">Skateboard</a></li>
+                                    <li class="soon"><a href="index-14.html">Watch</a></li>
+                                </ul>
                             </li>
                             <li><a href="#features-section">Features</a></li>
                             <li><a href="#overview-section">Overview</a></li>
-                            <li><a href="#reviews-section">Reviews</a></li>
-                            <li><a href="#product-section">Product</a></li>
-                            <li><a href="#faq-section">FAQ</a></li>
+                            <li><a href="#reviews-section">Pages</a>
+                                <ul>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="#product-section">Product</a>
+                                        <ul>
+                                            <li><a href="products.html">Product List</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- Menu-Items-End -->
@@ -196,7 +132,7 @@
         </div>
         <!-- Mainmenu-Area-End -->
         <!-- Header-Area-Start -->
-        <header class="header-area" id="home-section">
+        <header class="header-area" >
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -245,7 +181,8 @@
                                 </div>
                             </div>
                             <div class="text-center anim_bottom">
-                                <a href="#" class="button-link">Check Now <span class="ls-arrow-right"></span></a>
+                                <a href="javascript:void(0)" class="button-link">Check Now <span
+                                        class="ls-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -499,8 +436,8 @@
                         <h4 class="mb-4">Get 30% Off Your First Order & Free Shipping</h4>
                         <div class="desc">
                             <p>Ut enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        </div>                  
-                        <a href="#" class="primary-button mt-4">
+                        </div>
+                        <a href="javascript:void(0)" class="primary-button mt-4">
                             <span class="part front">Buy Now <span class="ls-angle-right"></span></span>
                             <span class="part back">Buy Now <span class="ls-angle-right"></span></span>
                         </a>
@@ -521,8 +458,8 @@
                                     accessories pockets help keep your lanyards, calculator and phone organised and easy
                                     to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
                                     your gear and go.</p>
-                            </div>                  
-                            <a href="#" class="primary-button anim_bottom">
+                            </div>
+                            <a href="javascript:void(0)" class="primary-button anim_bottom">
                                 <span class="part front">Learn More <span class="ls-angle-right"></span></span>
                                 <span class="part back">Learn More <span class="ls-angle-right"></span></span>
                             </a>
@@ -551,8 +488,8 @@
                                     accessories pockets help keep your lanyards, calculator and phone organised and easy
                                     to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
                                     your gear and go.</p>
-                            </div>                                                       
-                            <a href="#" class="primary-button anim_bottom">
+                            </div>
+                            <a href="javascript:void(0)" class="primary-button anim_bottom">
                                 <span class="part front">Learn More <span class="ls-angle-right"></span></span>
                                 <span class="part back">Learn More <span class="ls-angle-right"></span></span>
                             </a>
@@ -659,8 +596,8 @@
                         <figure class="testimonial-image anim_bottom">
                             <img src="assets/images/theme-1/testimonial-image.png" alt="">
                         </figure>
-                        <img src="assets/images/theme-1/testimonial-element-1.png" class="testimonial-element-1 anim_right"
-                            alt="">
+                        <img src="assets/images/theme-1/testimonial-element-1.png"
+                            class="testimonial-element-1 anim_right" alt="">
                     </div>
                 </div>
             </div>
@@ -700,10 +637,12 @@
                                             </div>
                                         </div>
                                         <div class="hover">
-                                            <a href="#" class="action"><span class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-1.png" data-lity class="action"><span
-                                                    class="ls-eye"></span></a>
-                                            <a href="#" class="action"><span class="ls-cart"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-1.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -723,10 +662,12 @@
                                             </div>
                                         </div>
                                         <div class="hover">
-                                            <a href="#" class="action"><span class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-2.png" data-lity class="action"><span
-                                                    class="ls-eye"></span></a>
-                                            <a href="#" class="action"><span class="ls-cart"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-2.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -746,10 +687,12 @@
                                             </div>
                                         </div>
                                         <div class="hover">
-                                            <a href="#" class="action"><span class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-3.png" data-lity class="action"><span
-                                                    class="ls-eye"></span></a>
-                                            <a href="#" class="action"><span class="ls-cart"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-3.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -769,10 +712,12 @@
                                             </div>
                                         </div>
                                         <div class="hover">
-                                            <a href="#" class="action"><span class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-4.png" data-lity class="action"><span
-                                                    class="ls-eye"></span></a>
-                                            <a href="#" class="action"><span class="ls-cart"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-4.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -806,9 +751,10 @@
                 </div>
                 <div class="row flex-row-reverse">
                     <div class="col-lg-7 col-xl-6 offset-xl-1">
-                        <div  id="accordion1" class="accordion anim_bottom">
+                        <div id="accordion1" class="accordion anim_bottom">
                             <div class="item">
-                                <h4 class="title"><a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true"> Is there anything else we should know about you? </a></h4>
+                                <h4 class="title"><a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                        Is there anything else we should know about you? </a></h4>
                                 <div id="collapseOne" class="collapse show desc" data-bs-parent="#accordion1">
                                     <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
                                         aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
@@ -816,7 +762,8 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <h4 class="title"><a  class="collapsed" data-bs-toggle="collapse" href="#collapseTwo"> Is there anything else we should know about you? </a></h4>
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo"> Is
+                                        there anything else we should know about you? </a></h4>
                                 <div id="collapseTwo" class="collapse desc" data-bs-parent="#accordion1">
                                     <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
                                         aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
@@ -824,7 +771,8 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <h4 class="title"><a  class="collapsed" data-bs-toggle="collapse" href="#collapseThree"> Is there anything else we should know about you? </a></h4>
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseThree">
+                                        Is there anything else we should know about you? </a></h4>
                                 <div id="collapseThree" class="collapse desc" data-bs-parent="#accordion1">
                                     <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
                                         aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
@@ -832,7 +780,8 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <h4 class="title"><a  class="collapsed" data-bs-toggle="collapse" href="#collapseFour"> Is there anything else we should know about you? </a></h4>
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseFour">
+                                        Is there anything else we should know about you? </a></h4>
                                 <div id="collapseFour" class="collapse desc" data-bs-parent="#accordion1">
                                     <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
                                         aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
@@ -864,10 +813,10 @@
                                     eveniet ut et voluptates.</p>
                             </div>
                             <ul class="social-menu">
-                                <li><a href="#"><span class="ls-facebook"></span></a></li>
-                                <li><a href="#"><span class="ls-twitter"></span></a></li>
-                                <li><a href="#"><span class="ls-instagram"></span></a></li>
-                                <li><a href="#"><span class="ls-linkedin"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-twitter"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-instagram"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-linkedin"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -875,10 +824,10 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Product</h4>
                             <ul class="block-list">
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Pricing Plan</a></li>
-                                <li><a href="#">Purchase Guide</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="javascript:void(0)">Features</a></li>
+                                <li><a href="javascript:void(0)">Pricing Plan</a></li>
+                                <li><a href="javascript:void(0)">Purchase Guide</a></li>
+                                <li><a href="javascript:void(0)">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -886,10 +835,10 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Support</h4>
                             <ul class="block-list">
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">FAQ Questions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Help Center</a></li>
+                                <li><a href="javascript:void(0)">Terms & Condition</a></li>
+                                <li><a href="javascript:void(0)">FAQ Questions</a></li>
                             </ul>
                         </div>
                     </div>
@@ -914,7 +863,7 @@
                 </div>
                 <div class="row footer-bottom">
                     <div class="copyrights">
-                        <p>&copy;2022 All rights reserved. Powered by DevignEdge</p>
+                        <p>&copy;2023 All rights reserved. Powered by DevignEdge</p>
                     </div>
                 </div>
             </div>
@@ -931,7 +880,8 @@
     <script src="assets/js/jquery-mailchimp.min.js"></script>
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <script src="assets/js/script-1.js"></script>
 </body>
 
 </html>
