@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -201,7 +201,7 @@
                                 <div class="col-sm-4">
                                     <div class="product-quantity">
                                         <button type="button" class="sub"><i class="ls-minus"></i></button>
-                                        <input type="text" value="1" min="1" max="3" />
+                                        <input type="text" value="1" >
                                         <button type="button" class="add"><i class="ls-plus"></i></button>
                                     </div>
                                 </div>
@@ -254,22 +254,18 @@
                         <!-- Product-Tabs-Start -->
                         <div class="product-tab-panel">
                             <!-- Product-Tabs-Menu -->
-                            <ul class="nav product-tabs">
+                            <ul class="nav product-tabs" id="product-tabs" role="tablist">
                                 <li class="nav-item">
-                                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
-                                        data-bs-target="#description-tab-pane" type="button" role="tab"
-                                        aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" role="tab" data-bs-target="#description-tab-pane" type="button" aria-controls="description-tab-pane" aria-selected="true">Description</button>
                                 </li>
                                 <li class="nav-item">
-                                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab"
-                                        data-bs-target="#reviews-tab-pane" type="button" role="tab"
-                                        aria-controls="reviews-tab-pane" aria-selected="false">Reviews</button>
+                                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" role="tab" data-bs-target="#reviews-tab-pane" type="button" aria-controls="reviews-tab-pane" aria-selected="false">Reviews</button>
                                 </li>
                             </ul>
                             <!-- Product-Tabs-Content-Start -->
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
-                                    aria-labelledby="description-tab" tabindex="0">
+                                aria-labelledby="description-tab" tabindex="0">
                                     <div class="desc mt-4">
                                         <h4>Description</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -289,7 +285,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel"
-                                    aria-labelledby="reviews-tab" tabindex="0">
+                                aria-labelledby="reviews-tab" tabindex="0">
                                     <!-- Comment-Form-Start -->
                                     <div class="comment-respond mt-4">
                                         <p>There are no reviews yet.</p>
