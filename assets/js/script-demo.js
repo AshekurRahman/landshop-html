@@ -48,12 +48,15 @@
             slidesPerView:'auto',
             allowTouchMove: false,
             disableOnInteraction: true,
-            spaceBetween: 20,
+            spaceBetween: 0,
             breakpoints: {
                 320: {
+                    slidesPerView: 2,
+                },
+                576: {
                     slidesPerView: 3,
                 },
-                780: {
+                768: {
                     slidesPerView: 4,
                 },
                 992: {
@@ -73,12 +76,15 @@
             slidesPerView:'auto',
             allowTouchMove: false,
             disableOnInteraction: true,
-            spaceBetween: 20,
+            spaceBetween: 0,
             breakpoints: {
                 320: {
+                    slidesPerView: 2,
+                },
+                576: {
                     slidesPerView: 3,
                 },
-                780: {
+                768: {
                     slidesPerView: 4,
                 },
                 992: {

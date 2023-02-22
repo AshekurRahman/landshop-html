@@ -582,15 +582,15 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 810px;
-    height: 500px;
+    width: 60vw;
+    height: 36vw;
     max-width: 60vw;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     margin: -12px;
     z-index: -1;
-    transform: rotate(-30deg) translate(8%, 30%);
+    transform: rotate(-30deg) translate(6vw, 14vw);
 }
 
 .header-area .header-pages img {
@@ -679,14 +679,13 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .demo-box .thumb img {
     width: 100%;
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
     transition: 0.5s;
     filter: brightness(1);
 }
 
 .demo-box:hover .thumb img {
-    transform: scale(1.05);
-    filter: brightness(0.8);
+    transform: scale(1.1) rotate(-5deg);
 }
 
 .demo-box .title {
@@ -733,6 +732,22 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     -webkit-transition-timing-function: linear !important;
     transition-timing-function: linear !important;
     position: relative;
+}
+
+.inner-page-slider-1 {
+    margin: -65px 0;
+}
+
+.inner-page-slider-2 {
+    margin: -50px 0 -65px;
+}
+
+.inner-section .inner-image {
+    box-shadow: 0px 15px 65px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    margin: 65px 22px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .feature-section {
