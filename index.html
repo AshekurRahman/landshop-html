@@ -32,9 +32,9 @@
     <link rel="stylesheet" href="assets/css/lity.min.css">
     <link rel="stylesheet" href="assets/css/theme-icons.css">
     <link rel="stylesheet" href="assets/css/theme-font.css">
-    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/theme-1.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="assets/css/responsive-demo.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".mainmenu-area .menu-items" data-bs-offset="50" class="transparent-dark">
@@ -46,7 +46,7 @@
     <!-- preloader end -->
     <!-- Page-Wrapper-Start -->
     <div class="page-wrapper">
-        <div class="navbar-height" id="home-section"></div>
+        <div class="navbar-height" id="home-section"></div>   
         <!-- Mainmenu-Area-Start -->
         <div class="mainmenu-area">
             <div class="container">
@@ -61,9 +61,17 @@
                     <!-- Logo-End -->
                     <!-- Nav-Actions-Start -->
                     <div class="nav-actions">
-                        <a href="javascript:void(0)" class="secondary-button">
-                            <span class="part front">Purchase Now</span>
-                            <span class="part back">Purchase Now</span>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-love-fill"></span></span>
+                            <span class="part back"><span class="ls-love-fill"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-user"></span></span>
+                            <span class="part back"><span class="ls-user"></span></span>
+                        </a>
+                        <a href="javascript:void(0)" class="primary-button cirlce">
+                            <span class="part front"><span class="ls-shop"></span></span>
+                            <span class="part back"><span class="ls-shop"></span></span>
                         </a>
                         <a href="javascript:void(0)" class="primary-button cirlce toggle menu-toggle">
                             <span class="part front"><span class="ls-bar"></span></span>
@@ -74,10 +82,48 @@
                     <!-- Menu-Items-Start -->
                     <nav class="menu-items">
                         <ul>
-                            <li><a href="#header-section">Start</a></li>
-                            <li><a href="#demo-section">Homepages</a></li>
-                            <li><a href="#inner-section">Innerpages</a></li>
-                            <li><a href="#feature-section">Features</a></li>
+                            <li>
+                                <a class="active" href="#home-section">Home</a>
+                                <ul>
+                                    <li><a class="active" href="index.html">1. Backpack</a></li>
+                                    <li><a href="index-2.html">2. Virtual Reality</a></li>
+                                    <li><a href="index-3.html">3. HomePod</a></li>
+                                    <li><a href="index-4.html">4. Bicycle</a></li>
+                                    <li><a href="index-5.html">5. Security Camera</a></li>
+                                    <li><a href="index-6.html">6. Drone</a></li>
+                                    <li><a href="index-7.html">7. Electric Scooter</a></li>
+                                    <li><a href="index-8.html">8. Sunglas</a></li>
+                                    <li><a href="index-9.html">9. AirPod</a></li>
+                                    <li class="soon"><a href="index-10.html">10. Mobile</a></li>
+                                    <li class="soon"><a href="index-11.html">11. Headphone</a></li>
+                                    <li class="soon"><a href="index-12.html">12. Router</a></li>
+                                    <li class="soon"><a href="index-13.html">13. Skateboard</a></li>
+                                    <li class="soon"><a href="index-14.html">14. Watch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#features-section">Features</a></li>
+                            <li><a href="#overview-section">Overview</a></li>
+                            <li><a href="#reviews-section">Pages</a>
+                                <ul>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="#product-section">Product</a>
+                                        <ul>
+                                            <li><a href="products.html">Product List</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- Menu-Items-End -->
@@ -85,39 +131,91 @@
             </div>
         </div>
         <!-- Mainmenu-Area-End -->
-
-
         <!-- Header-Area-Start -->
-        <header class="header-area" id="header-section">
-            <img src="./assets/images/demo/header-element-1.png" alt="" class="element no-1">
-            <img src="./assets/images/demo/header-element-2.png" alt="" class="element no-2">
-            <img src="./assets/images/demo/header-element-3.png" alt="" class="element no-3">
-            <div class="header-pages">
-                <img src="./assets/images/demo/header-page-elemnt-1.jpg" alt="" class="page-elemnt no-5">
-                <img src="./assets/images/demo/header-page-elemnt-6.jpg" alt="" class="page-elemnt no-2">
-                <img src="./assets/images/demo/header-page-elemnt-5.jpg" alt="" class="page-elemnt no-1">
-                <img src="./assets/images/demo/header-page-elemnt-2.jpg" alt="" class="page-elemnt no-4">
-                <img src="./assets/images/demo/header-page-elemnt-3.jpg" alt="" class="page-elemnt no-6">
-                <img src="./assets/images/demo/header-page-elemnt-4.jpg" alt="" class="page-elemnt no-3">
-            </div>
+        <header class="header-area" >
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <div class="header-text">
-                            <h1 class="title anim_bottom">Landshop - Product Landing Website Template</h1>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="header-element-1">
+                            <img src="assets/images/theme-1/header-ele-1.png" alt="">
+                        </div>
+                        <div class="header-content">
+                            <h5 class="top-title anim_bottom">More Than Just A Backpack</h5>
+                            <h1 class="main-title anim_bottom">Backpacks for All Preference</h1>
                             <div class="desc anim_bottom">
-                                <p>Discover the template that gives you the freedom to create, design, manage and develop
-                                    your business.</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form.</p>
                             </div>
-                            <div class="d-flex">
-                                <a href="javascript:void(0)" class="primary-button anim_bottom me-3 me-md-4">
-                                    <span class="part front">Purchase Now <span class="icon ls-bag"></span></span>
-                                    <span class="part back">Purchase Now <span class="icon ls-bag"></span></span>
-                                </a>
-                                <a href="#demo-section" class="secondary-button anim_bottom">
-                                    <span class="part front">Explore Demos</span>
-                                    <span class="part back">Explore Demos</span>
-                                </a>
+                            <div class="swiper header-product-slider anim_bottom">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="product-item"
+                                            style="background-image: url('assets/images/theme-1/header-product-bg-1.png');">
+                                            <img src="assets/images/theme-1/header-product-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="product-item"
+                                            style="background-image: url('assets/images/theme-1/header-product-bg-2.png');">
+                                            <img src="assets/images/theme-1/header-product-2.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="product-item"
+                                            style="background-image: url('assets/images/theme-1/header-product-bg-3.png');">
+                                            <img src="assets/images/theme-1/header-product-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="product-item"
+                                            style="background-image: url('assets/images/theme-1/header-product-bg-1.png');">
+                                            <img src="assets/images/theme-1/header-product-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="product-item"
+                                            style="background-image: url('assets/images/theme-1/header-product-bg-2.png');">
+                                            <img src="assets/images/theme-1/header-product-2.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center anim_bottom">
+                                <a href="javascript:void(0)" class="button-link">Check Now <span
+                                        class="ls-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-circle-text anim_right">
+                            <svg viewBox="0 0 100 100">
+                                <defs>
+                                    <path id="textCircle" d="
+                                      M 50, 50
+                                      m -37, 0
+                                      a 37,37 0 1,1 74,0
+                                      a 37,37 0 1,1 -74,0" />
+                                </defs>
+                                <text>
+                                    <textPath xlink:href="#textCircle">
+                                        100% Certified Fabric & Smart Zipper
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="middle-icon">
+                                <img src="assets/images/theme-1/icon-backpack.svg" alt="">
+                            </div>
+                        </div>
+                        <figure class="header-image anim_bottom">
+                            <img src="assets/images/theme-1/header-image.png" alt="Backpack">
+                        </figure>
+                        <div class="info-box anim_right">
+                            <div class="icon">
+                                <img src="assets/images/theme-1/header-icon-bag.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Save Upto 20%</h6>
+                                <span class="desc">On Backpack</span>
                             </div>
                         </div>
                     </div>
@@ -125,524 +223,652 @@
             </div>
         </header>
         <!-- Header-Area-End -->
-
-
-        <div class="demo-section section-padding" id="demo-section">
+        <!-- Feature-Area-Start -->
+        <section class="feature-area section-padding" id="features-section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 col-lg-10 col-xl-8">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Unique Demo Collections</h2>
-                            <div class="desc anim_bottom">
-                                <p>Get creative with custom hand crafted designs. Installing demos & templates has never been easier - just one click and you're done! Mix & Match to your heart's content for stunning results!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5">
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-1.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-1.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Backpack Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-2.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-2.jpg" alt="">
-                            </figure>
-                            <h4 class="title">VR Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-3.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-3.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Speakers Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-4.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-4.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Cycle Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-5.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-5.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Webcam Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-6.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-6.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Drone Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-7.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-7.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Skateboard Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-8.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-8.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Sunglass Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="index-9.html" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-9.jpg" alt="">
-                            </figure>
-                            <h4 class="title">Airpods Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="javascript:void(0)" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-10.jpg" alt="">
-                                <span class="soon-banner">Coming Soon...</span>
-                            </figure>
-                            <h4 class="title">Phone Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="javascript:void(0)" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-11.jpg" alt="">
-                                <span class="soon-banner">Coming Soon...</span>
-                            </figure>
-                            <h4 class="title">Headphone Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="javascript:void(0)" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-12.jpg" alt="">
-                                <span class="soon-banner">Coming Soon...</span>
-                            </figure>
-                            <h4 class="title">Router Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="javascript:void(0)" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-13.jpg" alt="">
-                                <span class="soon-banner">Coming Soon...</span>
-                            </figure>
-                            <h4 class="title">Skateboard Landing Page</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 anim_bottom">
-                        <a href="javascript:void(0)" class="demo-box">
-                            <figure class="thumb">
-                                <img src="./assets/images/demo/home-14.jpg" alt="">
-                                <span class="soon-banner">Coming Soon...</span>
-                            </figure>
-                            <h4 class="title">Watch Landing Page</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="element-section section-padding">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 col-lg-10 col-xl-8">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Customizable Menus and Footers</h2>
-                            <div class="desc anim_bottom">
-                                <p>You can design and implement the menus & footers of your website to display precisely what you require for your business needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 components">
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-1.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-2.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-3.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-4.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-5.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-6.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-7.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-8.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-9.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/menu-component-10.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/footer-component-1.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/footer-component-2.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/footer-component-3.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-sm-6 anim_bottom">
-                        <figure class="m-0">
-                            <img src="./assets/images/demo/footer-component-4.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="inner-section section-padding" id="inner-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 col-lg-10 col-xl-8">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Must Needed Inner Pages</h2>
-                            <div class="desc anim_bottom">
-                                <p>The inner pages of your website have been thoughtfully crafted so that you can quickly and easily customize it according to your specific requirements.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid p-0">                
                 <div class="row">
-                    <div class="col-12">
-                        <div class="swiper inner-page-slider-1 anim_bottom">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-3.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-4.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-5.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-6.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-7.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-8.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-9.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-10.jpg" alt="">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="swiper inner-page-slider-2 anim_bottom">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-3.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-4.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-5.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-6.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-7.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-8.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-9.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="inner-image">
-                                        <img src="./assets/images/demo/innper-page-10.jpg" alt="">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="feature-section section-padding" id="feature-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-11 col-lg-10 col-xl-8">
+                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
                         <div class="section-title">
-                            <h2 class="title anim_bottom">Awesome Template Features</h2>
+                            <h2 class="title anim_bottom">Awesome Features</h2>
                             <div class="desc anim_bottom">
-                                <p>Our themes have powerful design tools and features that can make you feel like a professional designer in a short amount of time. All you have to do is just click away!</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-contact" />
-                                </svg>
+                <div class="row">
+                    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+                        <div class="feature-box-1 anim_bottom">
+                            <div class="icon"><span class="ls-wool"></span></div>
+                            <h3 class="title">Certified Fabric</h3>
+                            <div class="desc">
+                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
                             </div>
-                            <h4 class="title">Contact Form</h4>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-bootstrap" />
-                                </svg>
+                    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
+                        <div class="feature-box-1 anim_bottom">
+                            <div class="icon"><span class="ls-zipper"></span></div>
+                            <h3 class="title">Smart Zippers</h3>
+                            <div class="desc">
+                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
                             </div>
-                            <h4 class="title">Bootstrap</h4>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-layer" />
-                                </svg>
+                    <div class="col-sm-6 col-xl-3 mb-4 mb-sm-0">
+                        <div class="feature-box-1 anim_bottom">
+                            <div class="icon"><span class="ls-drop"></span></div>
+                            <h3 class="title">Water Resistant</h3>
+                            <div class="desc">
+                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
                             </div>
-                            <h4 class="title">Layer Animation</h4>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-css" />
-                                </svg>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="feature-box-1 anim_bottom">
+                            <div class="icon"><span class="ls-locked"></span></div>
+                            <h3 class="title">Anti Theft Lock</h3>
+                            <div class="desc">
+                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
                             </div>
-                            <h4 class="title">CSS3 Effect</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-slider" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Swiper Slider</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-popup" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Lity Lightbox</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-menu" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Mega Menu Supported</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-desktop" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Developer Friendly</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-devices" />
-                                </svg>
-                            </div>
-                            <h4 class="title">All Device Supported</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-code" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Clean Code</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-headphone" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Lifetime Support</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-xl-3 anim_bottom">
-                        <div class="feature-box">
-                            <div class="icon">
-                                <svg class="svg_element">
-                                    <use xlink:href="#ic-loading" />
-                                </svg>
-                            </div>
-                            <h4 class="title">Upcoming More...</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <footer class="footer-area" style="background-image: url('./assets/images/demo/footer-bg.jpg');">
+        </section>
+        <!-- Feature-Area-End -->
+        <!-- Counter-Area-Start -->
+        <section class="counter-area">
+            <div class="counter-text-overlay anim_left">Backpack</div>
             <div class="container">
-                <div class="row footer-top justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="logo anim_bottom">
-                            <img src="./assets/images/theme-1/logo-light.svg" alt="">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title text-start mb-lg-0">
+                            <h2 class="title mb-0 anim_left">Trusted By 4k+ Customers Worldwide Since 2018</h2>
                         </div>
-                        <h2 class="footer-title anim_bottom">Launching A Product? Looking For Landing Page to Sell Your Product?
-                        </h2>
-                        <a href="javascript:void(0)" class="primary-button anim_bottom">
-                            <span class="part front">Buy Landshop <span class="icon ls-bag"></span></span>
-                            <span class="part back">Buy Landshop <span class="icon ls-bag"></span></span>
+                    </div>
+                    <div class="col-lg-5 g-md-4 g-xl-5 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <div class="counter-box active anim_right">
+                                    <h3 class="number">4.9</h3>
+                                    <div class="rating-star">
+                                        <span class="star front"></span>
+                                        <span class="star back"></span>
+                                    </div>
+                                    <br>
+                                    <span class="title">2028 Total Ratings</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="counter-box anim_right">
+                                    <h3 class="number">2k+</h3>
+                                    <span class="title">Worldwide product <br> sale per year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counter-Area-End -->
+        <!-- Premium-Area-Start -->
+        <section class="premium-area section-padding" id="overview-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                        <div class="section-title">
+                            <h2 class="title anim_bottom">Backpack Premium Details</h2>
+                            <div class="desc anim_bottom">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-n40">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box-2 align-right anim_right">
+                            <div class="icon">
+                                <span class="ls-backpack"></span>
+                            </div>
+                            <h3 class="title">Haul Handle</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box-2 align-right anim_right">
+                            <div class="icon">
+                                <span class="ls-needle"></span>
+                            </div>
+                            <h3 class="title">100% Polyester</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box-2 align-right anim_right">
+                            <div class="icon">
+                                <span class="ls-sapling"></span>
+                            </div>
+                            <h3 class="title">Spot Clean</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <figure class="premium-backpack anim_top">
+                            <img src="assets/images/theme-1/premium-backpack.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box-2 anim_left">
+                            <div class="icon">
+                                <span class="ls-plate"></span>
+                            </div>
+                            <h3 class="title">Colour Shown</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box-2 anim_left">
+                            <div class="icon">
+                                <span class="ls-jaket"></span>
+                            </div>
+                            <h3 class="title">Internal Padded Sleeve</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box-2 anim_left">
+                            <div class="icon">
+                                <span class="ls-pocket"></span>
+                            </div>
+                            <h3 class="title">Side Pocket</h3>
+                            <div class="desc">
+                                <p>It is a longes established fact that will be readable content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Premium-Area-End -->
+        <!-- Video-Area-Start -->
+        <div class="video-area">
+            <div class="container">
+                <div class="video-play-box anim_bottom">
+                    <a href="https://www.youtube.com/watch?v=GQcm5ckZMUo" data-lity class="play-button"><span
+                            class="ls-play"></span></a>
+                    <div class="wave-effect">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video-Area-End -->
+        <!-- Product-Detials-Start -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 anim_bottom mb-5 mb-md-0">
+                        <h4 class="mb-4">Backpack Specification</h4>
+                        <ul class="icon-list">
+                            <li>Light Madder Root/Black/Sail</li>
+                            <li>Fabric: 100% polyester</li>
+                            <li>Dimensions: 46cm H x 30cm W x 13cm D</li>
+                            <li>Style: BA6030-630</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 anim_bottom mb-5 mb-md-0">
+                        <h4 class="mb-4">What's New Here in Backpack?</h4>
+                        <ul class="icon-list">
+                            <li>Enim minim veniam nostrud exercitation</li>
+                            <li>Praesent vitae dui vitae massa</li>
+                            <li>Nulla consectetur dui a maximus finibus</li>
+                            <li>Vivamus sed turpis non tortor</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 anim_bottom">
+                        <h4 class="mb-4">Get 30% Off Your First Order & Free Shipping</h4>
+                        <div class="desc">
+                            <p>Ut enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="primary-button mt-4">
+                            <span class="part front">Buy Now <span class="ls-angle-right icon"></span></span>
+                            <span class="part back">Buy Now <span class="ls-angle-right icon"></span></span>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product-Detials-End -->
+        <!-- Call-Top-Actions-Start -->
+        <section class="actions-area section-padding">
+            <div class="container">
+                <div class="row actions-one align-items-center">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="section-title text-start mb-0">
+                            <h2 class="title anim_bottom">Water Resistant Coating Helps keep Gear Dry</h2>
+                            <div class="desc anim_bottom">
+                                <p>An internal padded sleeve provides quick access to your laptop while front and side
+                                    accessories pockets help keep your lanyards, calculator and phone organised and easy
+                                    to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
+                                    your gear and go.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="primary-button anim_bottom">
+                                <span class="part front">Learn More <span class="ls-angle-right icon"></span></span>
+                                <span class="part back">Learn More <span class="ls-angle-right icon"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-md-1">
+                        <figure class="action-image anim_right">
+                            <img src="assets/images/theme-1/action-image-1.png" alt="">
+                            <div class="action-tip tip-1">
+                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
+                                <span class="label">Slip Pokects</span>
+                            </div>
+                            <div class="action-tip tip-2">
+                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
+                                <span class="label">Laptop Sleeves</span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row actions-two align-items-center flex-row-reverse section-padding-top">
+                    <div class="col-md-6 offset-md-1 mb-5 mb-md-0">
+                        <div class="section-title text-start mb-0">
+                            <h2 class="title anim_bottom">A Large Zipped Offers Your Books and Laptop</h2>
+                            <div class="desc anim_bottom">
+                                <p>An internal padded sleeve provides quick access to your laptop while front and side
+                                    accessories pockets help keep your lanyards, calculator and phone organised and easy
+                                    to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
+                                    your gear and go.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="primary-button anim_bottom">
+                                <span class="part front">Learn More <span class="ls-angle-right icon"></span></span>
+                                <span class="part back">Learn More <span class="ls-angle-right icon"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <figure class="action-image anim_left">
+                            <img src="assets/images/theme-1/action-image-2.png" alt="">
+                            <div class="action-tip tip-3">
+                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
+                                <span class="label">Strong Hook</span>
+                            </div>
+                            <div class="action-tip tip-4">
+                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
+                                <span class="label">Easy to Carry</span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call-Top-Actions-End -->
+        <!-- Testimonial-Area-Start -->
+        <section class="testimonial-area section-padding" id="reviews-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title text-start pe-md-5">
+                            <h2 class="title anim_bottom">Customer Feedback</h2>
+                            <div class="desc anim_bottom">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider swiper anim_bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="desc">
+                                            <span class="ls-quote-right"></span>
+                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                                chunks as necessary, making this the first true generator on the
+                                                Internet. It uses a dictionary of over words, combined with a handful of
+                                                model sentence structures, to generate which looks reasonable.</p>
+                                            <span class="ls-quote-left"></span>
+                                        </div>
+                                        <h4 class="title">Helena Paitora</h4>
+                                        <div class="position">Digital Marketer</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="desc">
+                                            <span class="ls-quote-right"></span>
+                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                                chunks as necessary, making this the first true generator on the
+                                                Internet. It uses a dictionary of over words, combined with a handful of
+                                                model sentence structures, to generate which looks reasonable.</p>
+                                            <span class="ls-quote-left"></span>
+                                        </div>
+                                        <h4 class="title">Helena Paitora</h4>
+                                        <div class="position">Digital Marketer</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="desc">
+                                            <span class="ls-quote-right"></span>
+                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                                chunks as necessary, making this the first true generator on the
+                                                Internet. It uses a dictionary of over words, combined with a handful of
+                                                model sentence structures, to generate which looks reasonable.</p>
+                                            <span class="ls-quote-left"></span>
+                                        </div>
+                                        <h4 class="title">Helena Paitora</h4>
+                                        <div class="position">Digital Marketer</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="desc">
+                                            <span class="ls-quote-right"></span>
+                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                                chunks as necessary, making this the first true generator on the
+                                                Internet. It uses a dictionary of over words, combined with a handful of
+                                                model sentence structures, to generate which looks reasonable.</p>
+                                            <span class="ls-quote-left"></span>
+                                        </div>
+                                        <h4 class="title">Helena Paitora</h4>
+                                        <div class="position">Digital Marketer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-controls" id="testimonial-slider-control">
+                            <div class="navigation-control">
+                                <button type="button" class="control next"><span class="ls-angle-left"></span></button>
+                                <button type="button" class="control prev"><span class="ls-angle-right icon"></span></button>
+                            </div>
+                            <div class="pagination-control"></div>
+                        </div> -->
+                    </div>
+                    <div class="col-md-5 offset-md-1 d-none d-lg-block">
+                        <figure class="testimonial-image anim_bottom">
+                            <img src="assets/images/theme-1/testimonial-image.png" alt="">
+                        </figure>
+                        <img src="assets/images/theme-1/testimonial-element-1.png"
+                            class="testimonial-element-1 anim_right" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial-Area-End -->
+        <!-- Product-Area-Start -->
+        <section class="product-area section-padding" id="product-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                        <div class="section-title">
+                            <h2 class="title anim_bottom">Choose Similar Products</h2>
+                            <div class="desc anim_bottom">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-slider swiper anim_bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-box">
+                                        <figure class="thumb">
+                                            <img src="assets/images/theme-1/product-1.png" alt="Nike Backpack">
+                                        </figure>
+                                        <div class="content">
+                                            <h3 class="title">Heritage Backpack</h3>
+                                            <div class="price-and-rating">
+                                                <span class="price">€27.99</span>
+                                                <div class="rating-star">
+                                                    <span class="star front"></span>
+                                                    <span class="star back"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover">
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-1.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-box">
+                                        <figure class="thumb">
+                                            <img src="assets/images/theme-1/product-2.png" alt="Nike Backpack">
+                                        </figure>
+                                        <div class="content">
+                                            <h3 class="title">Heritage Backpack</h3>
+                                            <div class="price-and-rating">
+                                                <span class="price">€27.99</span>
+                                                <div class="rating-star">
+                                                    <span class="star front"></span>
+                                                    <span class="star back"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover">
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-2.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-box">
+                                        <figure class="thumb">
+                                            <img src="assets/images/theme-1/product-3.png" alt="Nike Backpack">
+                                        </figure>
+                                        <div class="content">
+                                            <h3 class="title">Heritage Backpack</h3>
+                                            <div class="price-and-rating">
+                                                <span class="price">€27.99</span>
+                                                <div class="rating-star">
+                                                    <span class="star front"></span>
+                                                    <span class="star back"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover">
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-3.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-box">
+                                        <figure class="thumb">
+                                            <img src="assets/images/theme-1/product-4.png" alt="Nike Backpack">
+                                        </figure>
+                                        <div class="content">
+                                            <h3 class="title">Heritage Backpack</h3>
+                                            <div class="price-and-rating">
+                                                <span class="price">€27.99</span>
+                                                <div class="rating-star">
+                                                    <span class="star front"></span>
+                                                    <span class="star back"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hover">
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-heart"></span></a>
+                                            <a href="assets/images/theme-1/product-3x-4.png" data-lity
+                                                class="action"><span class="ls-eye"></span></a>
+                                            <a href="javascript:void(0)" class="action"><span
+                                                    class="ls-cart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-controls" id="product-slider-control">
+                            <!-- <div class="navigation-control">
+                                <button type="button" class="control next"><span class="ls-angle-left"></span></button>
+                                <button type="button" class="control prev"><span class="ls-angle-right icon"></span></button>
+                            </div> -->
+                            <div class="pagination-control"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product-Area-End -->
+        <!-- FAQ-Area-Start -->
+        <section class="faq-area section-padding" id="faq-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                        <div class="section-title">
+                            <h2 class="title anim_bottom">Frequently Asked Questions</h2>
+                            <div class="desc anim_bottom">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-7 col-xl-6 offset-xl-1">
+                        <div id="accordion1" class="accordion anim_bottom">
+                            <div class="item">
+                                <h4 class="title"><a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                        Is there anything else we should know about you? </a></h4>
+                                <div id="collapseOne" class="collapse show desc" data-bs-parent="#accordion1">
+                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
+                                        ipsam voluptatem quia voluptas.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo"> Is
+                                        there anything else we should know about you? </a></h4>
+                                <div id="collapseTwo" class="collapse desc" data-bs-parent="#accordion1">
+                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
+                                        ipsam voluptatem quia voluptas.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseThree">
+                                        Is there anything else we should know about you? </a></h4>
+                                <div id="collapseThree" class="collapse desc" data-bs-parent="#accordion1">
+                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
+                                        ipsam voluptatem quia voluptas.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseFour">
+                                        Is there anything else we should know about you? </a></h4>
+                                <div id="collapseFour" class="collapse desc" data-bs-parent="#accordion1">
+                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
+                                        ipsam voluptatem quia voluptas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 g-md-4 g-xl-5 mt-5 mt-lg-0 text-center">
+                        <figure class="faq-image anim_left">
+                            <img src="assets/images/theme-1/faq-image.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ-Area-End -->
+        <!-- Footer-Area-Start -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row footer-top section-padding">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="footer-widget pe-lg-3 g-md-4 g-xl-5">
+                            <a href="index.html" class="footer-logo">
+                                <img src="assets/images/theme-1/logo-dark.svg" alt="Landshop">
+                            </a>
+                            <div class="desc">
+                                <p>Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepde
+                                    eveniet ut et voluptates.</p>
+                            </div>
+                            <ul class="social-menu">
+                                <li><a href="javascript:void(0)"><span class="ls-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-twitter"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-instagram"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="ls-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 mb-5 mb-lg-0">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Product</h4>
+                            <ul class="block-list">
+                                <li><a href="javascript:void(0)">Features</a></li>
+                                <li><a href="javascript:void(0)">Pricing Plan</a></li>
+                                <li><a href="javascript:void(0)">Purchase Guide</a></li>
+                                <li><a href="javascript:void(0)">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 mb-5 mb-lg-0">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <ul class="block-list">
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Help Center</a></li>
+                                <li><a href="javascript:void(0)">Terms & Condition</a></li>
+                                <li><a href="javascript:void(0)">FAQ Questions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Subscribe Newsletter</h4>
+                            <div class="desc">
+                                <p>At vero eos et accusamus etablish iustod odio an dignissimos ducimus qui blanditiis
+                                </p>
+                            </div>
+                            <form class="subscribe-form" id="subscribe-form">
+                                <div class="form-group">
+                                    <span class="ls-envelope"></span>
+                                    <input type="email" id="subs-control" name="EMAIL" class="input-control"
+                                        placeholder="Enter your mail address">
+                                    <button type="submit"><span class="ls-paper-plane"></span></button>
+                                </div>
+                                <label></label>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="row footer-bottom">
-                    <div class="col-12">
-                        <div class="desc">
-                            <p>Copyright &copy;2023 ThemeCTG. All Rights Reserved</p>
-                        </div>
+                    <div class="copyrights">
+                        <p>&copy;2023 All rights reserved. Powered by ThemeCTG</p>
                     </div>
                 </div>
             </div>
         </footer>
-
-
+        <!-- Footer-Area-End -->
     </div>
     <!-- Page-Wrapper-End -->
 
@@ -655,7 +881,7 @@
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
     <script src="assets/js/jquery.lazy.min.js"></script>
-    <script src="assets/js/script-demo.js"></script>
+    <script src="assets/js/script-1.js"></script>
 </body>
 
 </html>
