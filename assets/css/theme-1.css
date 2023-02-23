@@ -118,7 +118,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0%;
-    background-color: rgba(var(--heading-color),1);
+    background-color: var(--heading-color);
     color: #ffffff;
 }
 

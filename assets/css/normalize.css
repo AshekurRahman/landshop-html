@@ -516,3 +516,11 @@ blockquote b {
 .current-menu-item {
     color: var(--primary-color) !important;
 }
+
+.mainmenu-area .nav-row .menu-items > ul ul li.soon > a {
+    text-decoration: line-through;
+}
+
+.mainmenu-area .nav-row .menu-items > ul ul li.soon:hover > a {
+    color: #131313;
+}
