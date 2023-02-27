@@ -1,887 +1,1583 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landshop - Product landing HTML5 Template</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>Documentation | Landshop - Product Landing Website Template</title>
+  <meta name="description"
+    content="Landshop is a multipurpose product landing website template designed to help you showcase your product or service effectively. With customizable sections, custom fonts, layer animation, Swiper Slider, video popups, animated buttons, and multiple menu styles, Landshop provides a wide range of features to help you create a unique and engaging website.">
+  <meta name="author" content="themectg.com">
 
-    <!-- Favicon-Links -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/lity.min.css">
-    <link rel="stylesheet" href="assets/css/theme-icons.css">
-    <link rel="stylesheet" href="assets/css/theme-font.css">
-    <link rel="stylesheet" href="assets/css/theme-1.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".mainmenu-area .menu-items" data-bs-offset="50" class="transparent-dark">
-    <!-- preloader  -->
-    <div class="preloader">
-        <div class="load"></div>
-        <div class="count"></div>
-    </div>
-    <!-- preloader end -->
-    <!-- Page-Wrapper-Start -->
-    <div class="page-wrapper">
-        <div class="navbar-height" id="home-section"></div>   
-        <!-- Mainmenu-Area-Start -->
-        <div class="mainmenu-area">
-            <div class="container">
-                <div class="nav-row">
-                    <!-- Logo-Start -->
-                    <div class="nav-logo">
-                        <a href="index.html" class="logo light-logo"><img src="assets/images/theme-1/logo-light.svg"
-                                alt=""></a>
-                        <a href="index.html" class="logo dark-logo"><img src="assets/images/theme-1/logo-dark.svg"
-                                alt=""></a>
-                    </div>
-                    <!-- Logo-End -->
-                    <!-- Nav-Actions-Start -->
-                    <div class="nav-actions">
-                        <a href="javascript:void(0)" class="primary-button cirlce">
-                            <span class="part front"><span class="ls-love-fill"></span></span>
-                            <span class="part back"><span class="ls-love-fill"></span></span>
-                        </a>
-                        <a href="javascript:void(0)" class="primary-button cirlce">
-                            <span class="part front"><span class="ls-user"></span></span>
-                            <span class="part back"><span class="ls-user"></span></span>
-                        </a>
-                        <a href="javascript:void(0)" class="primary-button cirlce">
-                            <span class="part front"><span class="ls-shop"></span></span>
-                            <span class="part back"><span class="ls-shop"></span></span>
-                        </a>
-                        <a href="javascript:void(0)" class="primary-button cirlce toggle menu-toggle">
-                            <span class="part front"><span class="ls-bar"></span></span>
-                            <span class="part back"><span class="ls-close-line"></span></span>
-                        </a>
-                    </div>
-                    <!-- Nav-Actions-End -->
-                    <!-- Menu-Items-Start -->
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a class="active" href="#home-section">Home</a>
-                                <ul>
-                                    <li><a class="active" href="index.html">1. Backpack</a></li>
-                                    <li><a href="index-2.html">2. Virtual Reality</a></li>
-                                    <li><a href="index-3.html">3. HomePod</a></li>
-                                    <li><a href="index-4.html">4. Bicycle</a></li>
-                                    <li><a href="index-5.html">5. Security Camera</a></li>
-                                    <li><a href="index-6.html">6. Drone</a></li>
-                                    <li><a href="index-7.html">7. Electric Scooter</a></li>
-                                    <li><a href="index-8.html">8. Sunglas</a></li>
-                                    <li><a href="index-9.html">9. AirPod</a></li>
-                                    <li class="soon"><a href="index-10.html">10. Mobile</a></li>
-                                    <li class="soon"><a href="index-11.html">11. Headphone</a></li>
-                                    <li class="soon"><a href="index-12.html">12. Router</a></li>
-                                    <li class="soon"><a href="index-13.html">13. Skateboard</a></li>
-                                    <li class="soon"><a href="index-14.html">14. Watch</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#features-section">Features</a></li>
-                            <li><a href="#overview-section">Overview</a></li>
-                            <li><a href="#reviews-section">Pages</a>
-                                <ul>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="#product-section">Product</a>
-                                        <ul>
-                                            <li><a href="products.html">Product List</a></li>
-                                            <li><a href="product-details.html">Product Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Menu-Items-End -->
-                </div>
-            </div>
-        </div>
-        <!-- Mainmenu-Area-End -->
-        <!-- Header-Area-Start -->
-        <header class="header-area" >
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="header-element-1">
-                            <img src="assets/images/theme-1/header-ele-1.png" alt="">
-                        </div>
-                        <div class="header-content">
-                            <h5 class="top-title anim_bottom">More Than Just A Backpack</h5>
-                            <h1 class="main-title anim_bottom">Backpacks for All Preference</h1>
-                            <div class="desc anim_bottom">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form.</p>
-                            </div>
-                            <div class="swiper header-product-slider anim_bottom">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <figure class="product-item"
-                                            style="background-image: url('assets/images/theme-1/header-product-bg-1.png');">
-                                            <img src="assets/images/theme-1/header-product-1.png" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="product-item"
-                                            style="background-image: url('assets/images/theme-1/header-product-bg-2.png');">
-                                            <img src="assets/images/theme-1/header-product-2.png" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="product-item"
-                                            style="background-image: url('assets/images/theme-1/header-product-bg-3.png');">
-                                            <img src="assets/images/theme-1/header-product-3.png" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="product-item"
-                                            style="background-image: url('assets/images/theme-1/header-product-bg-1.png');">
-                                            <img src="assets/images/theme-1/header-product-1.png" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="product-item"
-                                            style="background-image: url('assets/images/theme-1/header-product-bg-2.png');">
-                                            <img src="assets/images/theme-1/header-product-2.png" alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center anim_bottom">
-                                <a href="javascript:void(0)" class="button-link">Check Now <span
-                                        class="ls-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="header-circle-text anim_right">
-                            <svg viewBox="0 0 100 100">
-                                <defs>
-                                    <path id="textCircle" d="
-                                      M 50, 50
-                                      m -37, 0
-                                      a 37,37 0 1,1 74,0
-                                      a 37,37 0 1,1 -74,0" />
-                                </defs>
-                                <text>
-                                    <textPath xlink:href="#textCircle">
-                                        100% Certified Fabric & Smart Zipper
-                                    </textPath>
-                                </text>
-                            </svg>
-                            <div class="middle-icon">
-                                <img src="assets/images/theme-1/icon-backpack.svg" alt="">
-                            </div>
-                        </div>
-                        <figure class="header-image anim_bottom">
-                            <img src="assets/images/theme-1/header-image.png" alt="Backpack">
-                        </figure>
-                        <div class="info-box anim_right">
-                            <div class="icon">
-                                <img src="assets/images/theme-1/header-icon-bag.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h6 class="title">Save Upto 20%</h6>
-                                <span class="desc">On Backpack</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header-Area-End -->
-        <!-- Feature-Area-Start -->
-        <section class="feature-area section-padding" id="features-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Awesome Features</h2>
-                            <div class="desc anim_bottom">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-                        <div class="feature-box-1 anim_bottom">
-                            <div class="icon"><span class="ls-wool"></span></div>
-                            <h3 class="title">Certified Fabric</h3>
-                            <div class="desc">
-                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 mb-4 mb-xl-0">
-                        <div class="feature-box-1 anim_bottom">
-                            <div class="icon"><span class="ls-zipper"></span></div>
-                            <h3 class="title">Smart Zippers</h3>
-                            <div class="desc">
-                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3 mb-4 mb-sm-0">
-                        <div class="feature-box-1 anim_bottom">
-                            <div class="icon"><span class="ls-drop"></span></div>
-                            <h3 class="title">Water Resistant</h3>
-                            <div class="desc">
-                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="feature-box-1 anim_bottom">
-                            <div class="icon"><span class="ls-locked"></span></div>
-                            <h3 class="title">Anti Theft Lock</h3>
-                            <div class="desc">
-                                <p>It is a longest estabalished fact that a reader will be a readable content</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Feature-Area-End -->
-        <!-- Counter-Area-Start -->
-        <section class="counter-area">
-            <div class="counter-text-overlay anim_left">Backpack</div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-start mb-lg-0">
-                            <h2 class="title mb-0 anim_left">Trusted By 4k+ Customers Worldwide Since 2018</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 g-md-4 g-xl-5 offset-lg-1">
-                        <div class="row">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="counter-box active anim_right">
-                                    <h3 class="number">4.9</h3>
-                                    <div class="rating-star">
-                                        <span class="star front"></span>
-                                        <span class="star back"></span>
-                                    </div>
-                                    <br>
-                                    <span class="title">2028 Total Ratings</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="counter-box anim_right">
-                                    <h3 class="number">2k+</h3>
-                                    <span class="title">Worldwide product <br> sale per year</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Counter-Area-End -->
-        <!-- Premium-Area-Start -->
-        <section class="premium-area section-padding" id="overview-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Backpack Premium Details</h2>
-                            <div class="desc anim_bottom">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center mb-n40">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="feature-box-2 align-right anim_right">
-                            <div class="icon">
-                                <span class="ls-backpack"></span>
-                            </div>
-                            <h3 class="title">Haul Handle</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box-2 align-right anim_right">
-                            <div class="icon">
-                                <span class="ls-needle"></span>
-                            </div>
-                            <h3 class="title">100% Polyester</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box-2 align-right anim_right">
-                            <div class="icon">
-                                <span class="ls-sapling"></span>
-                            </div>
-                            <h3 class="title">Spot Clean</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <figure class="premium-backpack anim_top">
-                            <img src="assets/images/theme-1/premium-backpack.png" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="feature-box-2 anim_left">
-                            <div class="icon">
-                                <span class="ls-plate"></span>
-                            </div>
-                            <h3 class="title">Colour Shown</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box-2 anim_left">
-                            <div class="icon">
-                                <span class="ls-jaket"></span>
-                            </div>
-                            <h3 class="title">Internal Padded Sleeve</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box-2 anim_left">
-                            <div class="icon">
-                                <span class="ls-pocket"></span>
-                            </div>
-                            <h3 class="title">Side Pocket</h3>
-                            <div class="desc">
-                                <p>It is a longes established fact that will be readable content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Premium-Area-End -->
-        <!-- Video-Area-Start -->
-        <div class="video-area">
-            <div class="container">
-                <div class="video-play-box anim_bottom">
-                    <a href="https://www.youtube.com/watch?v=GQcm5ckZMUo" data-lity class="play-button"><span
-                            class="ls-play"></span></a>
-                    <div class="wave-effect">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Video-Area-End -->
-        <!-- Product-Detials-Start -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 anim_bottom mb-5 mb-md-0">
-                        <h4 class="mb-4">Backpack Specification</h4>
-                        <ul class="icon-list">
-                            <li>Light Madder Root/Black/Sail</li>
-                            <li>Fabric: 100% polyester</li>
-                            <li>Dimensions: 46cm H x 30cm W x 13cm D</li>
-                            <li>Style: BA6030-630</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 anim_bottom mb-5 mb-md-0">
-                        <h4 class="mb-4">What's New Here in Backpack?</h4>
-                        <ul class="icon-list">
-                            <li>Enim minim veniam nostrud exercitation</li>
-                            <li>Praesent vitae dui vitae massa</li>
-                            <li>Nulla consectetur dui a maximus finibus</li>
-                            <li>Vivamus sed turpis non tortor</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 anim_bottom">
-                        <h4 class="mb-4">Get 30% Off Your First Order & Free Shipping</h4>
-                        <div class="desc">
-                            <p>Ut enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        </div>
-                        <a href="javascript:void(0)" class="primary-button mt-4">
-                            <span class="part front">Buy Now <span class="ls-angle-right icon"></span></span>
-                            <span class="part back">Buy Now <span class="ls-angle-right icon"></span></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Product-Detials-End -->
-        <!-- Call-Top-Actions-Start -->
-        <section class="actions-area section-padding">
-            <div class="container">
-                <div class="row actions-one align-items-center">
-                    <div class="col-md-6 mb-5 mb-md-0">
-                        <div class="section-title text-start mb-0">
-                            <h2 class="title anim_bottom">Water Resistant Coating Helps keep Gear Dry</h2>
-                            <div class="desc anim_bottom">
-                                <p>An internal padded sleeve provides quick access to your laptop while front and side
-                                    accessories pockets help keep your lanyards, calculator and phone organised and easy
-                                    to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
-                                    your gear and go.</p>
-                            </div>
-                            <a href="javascript:void(0)" class="primary-button anim_bottom">
-                                <span class="part front">Learn More <span class="ls-angle-right icon"></span></span>
-                                <span class="part back">Learn More <span class="ls-angle-right icon"></span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 offset-md-1">
-                        <figure class="action-image anim_right">
-                            <img src="assets/images/theme-1/action-image-1.png" alt="">
-                            <div class="action-tip tip-1">
-                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
-                                <span class="label">Slip Pokects</span>
-                            </div>
-                            <div class="action-tip tip-2">
-                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
-                                <span class="label">Laptop Sleeves</span>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-                <div class="row actions-two align-items-center flex-row-reverse section-padding-top">
-                    <div class="col-md-6 offset-md-1 mb-5 mb-md-0">
-                        <div class="section-title text-start mb-0">
-                            <h2 class="title anim_bottom">A Large Zipped Offers Your Books and Laptop</h2>
-                            <div class="desc anim_bottom">
-                                <p>An internal padded sleeve provides quick access to your laptop while front and side
-                                    accessories pockets help keep your lanyards, calculator and phone organised and easy
-                                    to find. Padded shoulder straps and an easy-carry haul loop make it easy to grab
-                                    your gear and go.</p>
-                            </div>
-                            <a href="javascript:void(0)" class="primary-button anim_bottom">
-                                <span class="part front">Learn More <span class="ls-angle-right icon"></span></span>
-                                <span class="part back">Learn More <span class="ls-angle-right icon"></span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <figure class="action-image anim_left">
-                            <img src="assets/images/theme-1/action-image-2.png" alt="">
-                            <div class="action-tip tip-3">
-                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
-                                <span class="label">Strong Hook</span>
-                            </div>
-                            <div class="action-tip tip-4">
-                                <span class="icon"><img src="assets/images/theme-1/check.svg" alt="check"></span>
-                                <span class="label">Easy to Carry</span>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call-Top-Actions-End -->
-        <!-- Testimonial-Area-Start -->
-        <section class="testimonial-area section-padding" id="reviews-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section-title text-start pe-md-5">
-                            <h2 class="title anim_bottom">Customer Feedback</h2>
-                            <div class="desc anim_bottom">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page.</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-slider swiper anim_bottom">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="desc">
-                                            <span class="ls-quote-right"></span>
-                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over words, combined with a handful of
-                                                model sentence structures, to generate which looks reasonable.</p>
-                                            <span class="ls-quote-left"></span>
-                                        </div>
-                                        <h4 class="title">Helena Paitora</h4>
-                                        <div class="position">Digital Marketer</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="desc">
-                                            <span class="ls-quote-right"></span>
-                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over words, combined with a handful of
-                                                model sentence structures, to generate which looks reasonable.</p>
-                                            <span class="ls-quote-left"></span>
-                                        </div>
-                                        <h4 class="title">Helena Paitora</h4>
-                                        <div class="position">Digital Marketer</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="desc">
-                                            <span class="ls-quote-right"></span>
-                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over words, combined with a handful of
-                                                model sentence structures, to generate which looks reasonable.</p>
-                                            <span class="ls-quote-left"></span>
-                                        </div>
-                                        <h4 class="title">Helena Paitora</h4>
-                                        <div class="position">Digital Marketer</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="desc">
-                                            <span class="ls-quote-right"></span>
-                                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined
-                                                chunks as necessary, making this the first true generator on the
-                                                Internet. It uses a dictionary of over words, combined with a handful of
-                                                model sentence structures, to generate which looks reasonable.</p>
-                                            <span class="ls-quote-left"></span>
-                                        </div>
-                                        <h4 class="title">Helena Paitora</h4>
-                                        <div class="position">Digital Marketer</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="swiper-controls" id="testimonial-slider-control">
-                            <div class="navigation-control">
-                                <button type="button" class="control next"><span class="ls-angle-left"></span></button>
-                                <button type="button" class="control prev"><span class="ls-angle-right icon"></span></button>
-                            </div>
-                            <div class="pagination-control"></div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-5 offset-md-1 d-none d-lg-block">
-                        <figure class="testimonial-image anim_bottom">
-                            <img src="assets/images/theme-1/testimonial-image.png" alt="">
-                        </figure>
-                        <img src="assets/images/theme-1/testimonial-element-1.png"
-                            class="testimonial-element-1 anim_right" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonial-Area-End -->
-        <!-- Product-Area-Start -->
-        <section class="product-area section-padding" id="product-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Choose Similar Products</h2>
-                            <div class="desc anim_bottom">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="product-slider swiper anim_bottom">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="product-box">
-                                        <figure class="thumb">
-                                            <img src="assets/images/theme-1/product-1.png" alt="Nike Backpack">
-                                        </figure>
-                                        <div class="content">
-                                            <h3 class="title">Heritage Backpack</h3>
-                                            <div class="price-and-rating">
-                                                <span class="price">€27.99</span>
-                                                <div class="rating-star">
-                                                    <span class="star front"></span>
-                                                    <span class="star back"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover">
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-1.png" data-lity
-                                                class="action"><span class="ls-eye"></span></a>
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-cart"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-box">
-                                        <figure class="thumb">
-                                            <img src="assets/images/theme-1/product-2.png" alt="Nike Backpack">
-                                        </figure>
-                                        <div class="content">
-                                            <h3 class="title">Heritage Backpack</h3>
-                                            <div class="price-and-rating">
-                                                <span class="price">€27.99</span>
-                                                <div class="rating-star">
-                                                    <span class="star front"></span>
-                                                    <span class="star back"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover">
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-2.png" data-lity
-                                                class="action"><span class="ls-eye"></span></a>
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-cart"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-box">
-                                        <figure class="thumb">
-                                            <img src="assets/images/theme-1/product-3.png" alt="Nike Backpack">
-                                        </figure>
-                                        <div class="content">
-                                            <h3 class="title">Heritage Backpack</h3>
-                                            <div class="price-and-rating">
-                                                <span class="price">€27.99</span>
-                                                <div class="rating-star">
-                                                    <span class="star front"></span>
-                                                    <span class="star back"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover">
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-3.png" data-lity
-                                                class="action"><span class="ls-eye"></span></a>
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-cart"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-box">
-                                        <figure class="thumb">
-                                            <img src="assets/images/theme-1/product-4.png" alt="Nike Backpack">
-                                        </figure>
-                                        <div class="content">
-                                            <h3 class="title">Heritage Backpack</h3>
-                                            <div class="price-and-rating">
-                                                <span class="price">€27.99</span>
-                                                <div class="rating-star">
-                                                    <span class="star front"></span>
-                                                    <span class="star back"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover">
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-heart"></span></a>
-                                            <a href="assets/images/theme-1/product-3x-4.png" data-lity
-                                                class="action"><span class="ls-eye"></span></a>
-                                            <a href="javascript:void(0)" class="action"><span
-                                                    class="ls-cart"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-controls" id="product-slider-control">
-                            <!-- <div class="navigation-control">
-                                <button type="button" class="control next"><span class="ls-angle-left"></span></button>
-                                <button type="button" class="control prev"><span class="ls-angle-right icon"></span></button>
-                            </div> -->
-                            <div class="pagination-control"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Product-Area-End -->
-        <!-- FAQ-Area-Start -->
-        <section class="faq-area section-padding" id="faq-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                        <div class="section-title">
-                            <h2 class="title anim_bottom">Frequently Asked Questions</h2>
-                            <div class="desc anim_bottom">
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of a page.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-row-reverse">
-                    <div class="col-lg-7 col-xl-6 offset-xl-1">
-                        <div id="accordion1" class="accordion anim_bottom">
-                            <div class="item">
-                                <h4 class="title"><a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                        Is there anything else we should know about you? </a></h4>
-                                <div id="collapseOne" class="collapse show desc" data-bs-parent="#accordion1">
-                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
-                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
-                                        ipsam voluptatem quia voluptas.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo"> Is
-                                        there anything else we should know about you? </a></h4>
-                                <div id="collapseTwo" class="collapse desc" data-bs-parent="#accordion1">
-                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
-                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
-                                        ipsam voluptatem quia voluptas.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseThree">
-                                        Is there anything else we should know about you? </a></h4>
-                                <div id="collapseThree" class="collapse desc" data-bs-parent="#accordion1">
-                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
-                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
-                                        ipsam voluptatem quia voluptas.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <h4 class="title"><a class="collapsed" data-bs-toggle="collapse" href="#collapseFour">
-                                        Is there anything else we should know about you? </a></h4>
-                                <div id="collapseFour" class="collapse desc" data-bs-parent="#accordion1">
-                                    <p>Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
-                                        aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo Nemo enim
-                                        ipsam voluptatem quia voluptas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 g-md-4 g-xl-5 mt-5 mt-lg-0 text-center">
-                        <figure class="faq-image anim_left">
-                            <img src="assets/images/theme-1/faq-image.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FAQ-Area-End -->
-        <!-- Footer-Area-Start -->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row footer-top section-padding">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="footer-widget pe-lg-3 g-md-4 g-xl-5">
-                            <a href="index.html" class="footer-logo">
-                                <img src="assets/images/theme-1/logo-dark.svg" alt="Landshop">
-                            </a>
-                            <div class="desc">
-                                <p>Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepde
-                                    eveniet ut et voluptates.</p>
-                            </div>
-                            <ul class="social-menu">
-                                <li><a href="javascript:void(0)"><span class="ls-facebook"></span></a></li>
-                                <li><a href="javascript:void(0)"><span class="ls-twitter"></span></a></li>
-                                <li><a href="javascript:void(0)"><span class="ls-instagram"></span></a></li>
-                                <li><a href="javascript:void(0)"><span class="ls-linkedin"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 mb-5 mb-lg-0">
-                        <div class="footer-widget">
-                            <h4 class="widget-title">Product</h4>
-                            <ul class="block-list">
-                                <li><a href="javascript:void(0)">Features</a></li>
-                                <li><a href="javascript:void(0)">Pricing Plan</a></li>
-                                <li><a href="javascript:void(0)">Purchase Guide</a></li>
-                                <li><a href="javascript:void(0)">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 mb-5 mb-lg-0">
-                        <div class="footer-widget">
-                            <h4 class="widget-title">Support</h4>
-                            <ul class="block-list">
-                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                                <li><a href="javascript:void(0)">Help Center</a></li>
-                                <li><a href="javascript:void(0)">Terms & Condition</a></li>
-                                <li><a href="javascript:void(0)">FAQ Questions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer-widget">
-                            <h4 class="widget-title">Subscribe Newsletter</h4>
-                            <div class="desc">
-                                <p>At vero eos et accusamus etablish iustod odio an dignissimos ducimus qui blanditiis
-                                </p>
-                            </div>
-                            <form class="subscribe-form" id="subscribe-form">
-                                <div class="form-group">
-                                    <span class="ls-envelope"></span>
-                                    <input type="email" id="subs-control" name="EMAIL" class="input-control"
-                                        placeholder="Enter your mail address">
-                                    <button type="submit"><span class="ls-paper-plane"></span></button>
-                                </div>
-                                <label></label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-bottom">
-                    <div class="copyrights">
-                        <p>&copy;2023 All rights reserved. Powered by ThemeCTG</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer-Area-End -->
-    </div>
-    <!-- Page-Wrapper-End -->
+<body data-spy="scroll" data-target=".landshop-navigation" data-offset="125">
 
-    <!-- Scripts-JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery-migrate.min.js"></script>
-    <script src="assets/js/boostrap-bundle-min.js"></script>
-    <script src="assets/js/swiper-bundle-min.js"></script>
-    <script src="assets/js/jquery-mailchimp.min.js"></script>
-    <script src="assets/js/lity.min.js"></script>
-    <script src="assets/js/scrollreveal.js"></script>
-    <script src="assets/js/jquery.lazy.min.js"></script>
-    <script src="assets/js/script-1.js"></script>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="Landshop Template"> <img src="assets/images/logo.svg"
+              alt="Landshop Template" /> </a>
+          <span class="text-2 ml-2">v1.0</span>
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li><a target="_blank" href="https://themeforest.net/user/themectg/portfolio?ref=themectg">Other Template</a></li>
+              <li><a target="_blank"
+                  href="https://themeforest.net/user/themectg/#contact?ref=themectg">Support</a></li>
+            </ul>
+          </div>
+          <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="https://twitter.com/Ashekur57196161"
+                target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/ashekur.rahman.hridoy"
+                target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="https://dribbble.com/ashekurrahman1"
+                target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="landshop-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_installation">Installation</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">HTML Structure</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_css">CSS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">Customization</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">Logo Settings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_layout">Layout</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_header">Header</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_content">Content</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_typography">Typography</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_code">Code</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_table">Table</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Accordion</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_tabs">Tabs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_contact_form">Contact Form</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_subscribe_form">Subscribe Form</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_templates">More Templates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+              <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="landshop-content">
+        <div class="container">
+
+          <!-- Getting Started
+		============================ -->
+          <section id="idocs_start">
+            <h1>Documentation</h1>
+            <h2>Landshop - Product Landing Website Template</h2>
+            <p class="lead">Thank you so much for purchasing our item from themeforest.</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Version:</strong> 1.0</li>
+                  <li><strong>Author:</strong> <a href="http://www.themectg.net" target="_blank">ThemeCTG</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong class="font-weight-700">Created:</strong> 28 February, 2023</li>
+                  <li><strong>Update:</strong> 28 February, 2023</li>
+                </ul>
+              </div>
+            </div>
+            <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please
+              feel free to email via <a target="_blank"
+                href="https://themeforest.net/user/themectg/#contact?ref=themectg">Item Support Page</a>.</p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Installation
+		============================ -->
+          <section id="idocs_installation">
+            <h2>Installation</h2>
+            <p class="lead">Follow the steps below to setup your site template:</p>
+            <ol>
+              <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template
+                files. You will need to upload these files to your hosting web server using FTP or localhost in order to
+                use it on your website.</li>
+              <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
+                <ul>
+                  <li><code>HTML/assets</code> - Contains all of the assets referenced
+                    <ul>
+                      <li><code>HTML/assets/css</code> - Stylesheet files</li>
+                      <li><code>HTML/assets/fonts</code> - All fonts and icons files.</li>
+                      <li><code>HTML/assets/images</code> - Images files</li>
+                      <li><code>HTML/assets/js</code> - Javacript files</li>
+                    </ul>
+                  </li>
+                  <li><code>HTML/style.css</code> - This Stylesheet to write your own code.
+                  <li><code>HTML/index.html</code> - Backpack Landing Page
+                  <li><code>HTML/index-2.html</code> - VR Landing Page
+                  <li><code>HTML/index-3.html</code> - Speakers Landing Page
+                  <li><code>HTML/index-4.html</code> - Cycle Landing Page
+                  <li><code>HTML/index-5.html</code> - Webcam Landing Page
+                  <li><code>HTML/index-6.html</code> - Drone Landing Page
+                  <li><code>HTML/index-7.html</code> - Skateboard Landing Page
+                  <li><code>HTML/index-8.html</code> - Sunglass Landing Page
+                  <li><code>HTML/index-9.html</code> - Airpods Landing Page
+                  <li><code>HTML/404.html</code> - 404 error page
+                  <li><code>HTML/about.html</code> - About Page
+                  <li><code>HTML/blog.html</code> - Blog List Page
+                  <li><code>HTML/blog-details.html</code> - Blog Details page
+                  <li><code>HTML/contact.html</code> - Dynamic Contact Page
+                  <li><code>HTML/faq.html</code> - Frequently Asked Questions Page
+                  <li><code>HTML/products.html</code> - Product List Page
+                  <li><code>HTML/product-details.html</code> - Product Details Page
+                  <li><code>HTML/process.php</code> - This is for Contact form
+                </ul>
+              </li>
+              <li>You should upload all or specific HTML files as per your need.</li>
+              <li>You are good to go for adding your content now!</li>
+            </ol>
+          </section>
+
+          <hr class="divider">
+
+          <!-- HTML Structure
+		============================ -->
+          <section id="idocs_html_structure">
+            <h2>HTML Structure</h2>
+            <p>Landshop follows a simple and easy to customize coding structure. Here is the sample for your
+              reference:<br>
+              The template is based on <a class="ml-1" target="_blank" href="https://getbootstrap.com/"><i
+                  class="fas fa-external-link-alt"></i> Bootstrap Framework</a></p>
+            <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+
+&lt;!-- Your Title, Description, Stylesheets
+============================================= --&gt;
+
+&lt;/head&gt;
+
+&lt;body data-bs-spy="scroll" data-bs-target=".mainmenu-area .menu-items" data-bs-offset="50" class="transparent-dark"&gt;
+&lt;!-- preloader  --&gt;
+&lt;div class="preloader"&gt;
+    &lt;div class="load"&gt;&lt;/div&gt;
+    &lt;div class="count"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- preloader end --&gt;
+&lt;!-- Page-Wrapper-Start --&gt;
+&lt;div class="page-wrapper"&gt;
+    &lt;div class="navbar-height" id="home-section"&gt;&lt;/div&gt;   
+
+    &lt;!-- Mainmenu-Area-Start --&gt;
+    &lt;div class="mainmenu-area"&gt;&lt;/div&gt;
+    &lt;!-- Mainmenu-Area-End --&gt;
+
+    &lt;!-- Header-Area-Start --&gt;
+    &lt;header class="header-area" &gt;&lt;/header&gt;
+    &lt;!-- Header-Area-End --&gt;
+
+    &lt;!-- Feature-Area-Start --&gt;
+    &lt;section class="feature-area section-padding" id="features-section"&gt;&lt;/section&gt;
+    &lt;!-- Feature-Area-End --&gt;
+
+    &lt;!-- Counter-Area-Start --&gt;
+    &lt;section class="counter-area"&gt;&lt;/section&gt;
+    &lt;!-- Counter-Area-End --&gt;
+
+    &lt;!-- Premium-Area-Start --&gt;
+    &lt;section class="premium-area section-padding" id="overview-section"&gt;&lt;/section&gt;
+    &lt;!-- Premium-Area-End --&gt;
+    
+    &lt;!-- Video-Area-Start --&gt;
+    &lt;div class="video-area"&gt;&lt;/div&gt;
+    &lt;!-- Video-Area-End --&gt;
+    
+    &lt;!-- Product-Detials-Start --&gt;
+    &lt;section class="section-padding"&gt;&lt;/section&gt;
+    &lt;!-- Product-Detials-End --&gt;
+
+    &lt;!-- Call-Top-Actions-Start --&gt;
+    &lt;section class="actions-area section-padding"&gt;&lt;/section&gt;
+    &lt;!-- Call-Top-Actions-End --&gt;
+
+    &lt;!-- Testimonial-Area-Start --&gt;
+    &lt;section class="testimonial-area section-padding" id="reviews-section"&gt;&lt;/section&gt;
+    &lt;!-- Testimonial-Area-End --&gt;
+
+    &lt;!-- Product-Area-Start --&gt;
+    &lt;section class="product-area section-padding" id="product-section"&gt;&lt;/section&gt;
+    &lt;!-- Product-Area-End --&gt;
+
+    &lt;!-- FAQ-Area-Start --&gt;
+    &lt;section class="faq-area section-padding" id="faq-section"&gt;&lt;/section&gt;
+    &lt;!-- FAQ-Area-End --&gt;
+
+    &lt;!-- Footer-Area-Start --&gt;
+    &lt;footer class="footer-area"&gt;&lt;/footer&gt;
+    &lt;!-- Footer-Area-End --&gt;
+
+&lt;/div&gt;
+&lt;!-- Page-Wrapper-End --&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p class="alert alert-info">If you need more information, please visit bootstrap site: <a target="_blank"
+                href="https://getbootstrap.com/docs/4.4/layout/grid/">https://getbootstrap.com</a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Sass
+		============================ -->
+          <section id="idocs_css">
+            <h2>CSS</h2>
+            <p>The Landshop template includes a number of CSS files in the <code>HTML/assets/css</code> directory that you can use to customize the CSS styles for your website. If you have experience working with CSS, you can modify these files directly and customize the styles to your liking.</p>
+            <p>We have provided two different homepage options, each with its own corresponding CSS file: <code>theme-1.css</code> for Homepage 1 and <code>theme-2.css</code> for Homepage 2. These files include styles specific to each homepage, such as layout, typography, and color schemes.</p>
+            <p>Additionally, we have included a responsive.css file that contains CSS styles for ensuring that the website is responsive and looks good on different devices and screen sizes. You can modify this file to adjust the styles and layout for different breakpoints.</p>
+            <p>For Homepage 1, we have also included a <code>responsive-1.css</code> file that contains specific CSS styles for ensuring that the homepage 1 is responsive and looks good on different devices and screen sizes.</p>
+            <p>In addition, we have also included a <code>style.css</code> file where you can add your own custom CSS styles. This file is where you can add your own styles to modify or extend the existing styles of the template.</p>
+            <p>To get started with CSS customization, open the relevant CSS file(s) in your preferred code editor and make your modifications. You can use any text editor or integrated development environment (IDE) that supports CSS, such as Visual Studio Code, Sublime Text, or Atom.</p>
+            <p>Once you have made your customizations, save the file(s) and refresh your website in the browser to see the changes. If you need more information on specific styles or elements, you can refer to the comments and documentation within the CSS files.</p>
+          </section>
+
+           <hr class="divider">
+
+          <!-- Customization
+		============================ -->
+          <section id="idocs_theme_customization">
+            <h2>Theme Customization</h2>
+            <p>We have include a Custom CSS File in the <code>css</code> Folder so that you can better handle your
+              Customizations for New Styles or
+              Overwriting Default Theme Styles. Simply add all your Custom CSS Codes in the <code>css/custom.css</code>
+              File and link it in the Document <code>&lt;head&gt;</code> after the <code>css/style.css</code>
+              Linking. Also make sure that this is the Last Linked CSS File in the Document <code>&lt;head&gt;</code> so
+              that your Custom CSS Styles are Overwritten properly.</p>
+            <pre><code class="html">&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Landshop - Product landing HTML5 Template&lt;/title&gt;
+
+  &lt;!-- Favicon-Links --&gt;
+  &lt;link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png"&gt;
+  &lt;link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png"&gt;
+  &lt;link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png"&gt;
+  &lt;link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png"&gt;
+  &lt;link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png"&gt;
+  &lt;link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png"&gt;
+  &lt;link rel="manifest" href="assets/images/favicon/manifest.json"&gt;
+  &lt;meta name="msapplication-TileColor" content="#ffffff"&gt;
+  &lt;meta name="msapplication-TileImage" content="/ms-icon-144x144.png"&gt;
+  &lt;meta name="theme-color" content="#ffffff"&gt;
+
+  &lt;!-- Stylesheets --&gt;
+  &lt;link rel="stylesheet" href="assets/css/swiper-bundle-min.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/bootstrap.min.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/normalize.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/lity.min.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/theme-icons.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/theme-font.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/theme-1.css"&gt;
+  &lt;link rel="stylesheet" href="assets/css/responsive.css"&gt;
+  &lt;link rel="stylesheet" href="./style.css"&gt;
+&lt;/head&gt;</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Logo Settings
+		============================ -->
+          <section id="idocs_logo_settings">
+            <h2>Logo Settings</h2>
+            <p>The Logo Container can be found in the Header Container - <code>&lt;header&gt;</code></p>
+            <pre><code class="html">&lt;!-- Logo-Start --&gt;
+&lt;div class="nav-logo"&gt;
+    &lt;a href="index.html" class="logo light-logo"&gt;&lt;img src="assets/images/theme-1/logo-light.svg" alt=""&gt;&lt;/a&gt;
+    &lt;a href="index.html" class="logo dark-logo"&gt;&lt;img src="assets/images/theme-1/logo-dark.svg" alt=""&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- Logo-End --&gt;</code></pre>
+          </section>
+
+
+          <hr class="divider">
+
+          <!-- Layout
+		============================ -->
+          <section id="idocs_layout">
+            <h2>Layout</h2>
+            <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
+          </section>
+
+
+          <!-- Header
+		============================ -->
+          <section id="idocs_header">
+            <h2>Header</h2>
+            <p>Here have an example for the page header.</p>
+            
+            <p><a class="popup-img" href="assets/images/site=header.png"><img class="img-fluid border"
+                  src="assets/images/site=header.png" alt=""></a></p>
+
+            <pre><code class="html">&lt;!-- Site-Header-Start --&gt;
+&lt;header class="site-header" style="background-image: url('./assets/images/inner-pages/element-1.jpg');"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row justify-content-center"&gt;
+            &lt;div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 text-center"&gt;
+                &lt;h2 class="page-title"&gt;Our Story&lt;/h2&gt;
+                &lt;div class="desc"&gt;
+                    &lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blan ditisede voluptatum.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;!-- Site-Header-End --&gt;</code></pre>
+
+          </section>
+
+          <hr class="divider">
+
+          
+          <!-- Navbar
+		============================ -->
+    <section id="idocs_navbar">
+      <h2>Navbar</h2>
+      <p>The list of various header types & its descriptions are provided below for your reference:</p>
+
+      <h4>Transparent Dark</h4>
+      <p>Navbar with transparent background & Dark text. <span class="text-info">See below image and code for more
+          information.</span></p>
+      <p><a class="popup-img" href="assets/images/header-light.jpg"><img class="img-fluid border"
+            src="assets/images/header-light.jpg" alt=""></a></p>
+      <pre><code class="html">&lt;body data-bs-spy="scroll" data-bs-target=".mainmenu-area .menu-items" data-bs-offset="50" class="transparent-dark"&gt;</code></pre>
+
+      <h4>Transparent Light</h4>
+      <p>Navbar with transparent background & light text. <span class="text-info">See below image and code for more
+          information.</span></p>
+      <p><a class="popup-img" href="assets/images/header-dark.jpg"><img class="img-fluid border"
+            src="assets/images/header-dark.jpg" alt=""></a></p>
+      <pre><code class="html">&lt;body data-bs-spy="scroll" data-bs-target=".mainmenu-area .menu-items" data-bs-offset="50" class="transparent-light"&gt;</code></pre>
+    </section>
+
+    <hr class="divider">
+
+          <!-- Sidebar
+		============================ -->
+    <section id="idocs_sidebar">
+      <h2>Sidebar</h2>
+      <p>Here has an example for the sidebar.</p>
+
+      <h4>Right Sidebar</h4>
+      <p><a class="popup-img" href="assets/images/right-sidebar.png"><img class="img-fluid border"
+            src="assets/images/right-sidebar.png" alt=""></a></p>
+      <pre><code class="html">&lt;section class="section-padding"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row g-4"&gt;
+            &lt;div class="col-lg-8"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-4"&gt;
+                &lt;!--Sidebar-Area-Start--&gt;
+                &lt;aside class="sidebar-main"&gt; 
+                &lt;/aside&gt;
+                &lt;!--Sidebar-Area-End--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+
+<h4>Left Sidebar</h4>
+<p><a class="popup-img" href="assets/images/left-sidebar.png"><img class="img-fluid border"
+      src="assets/images/left-sidebar.png" alt=""></a></p>
+<pre><code class="html">&lt;section class="section-padding"&gt;
+&lt;div class="container"&gt;
+  &lt;div class="row g-4 flex-row-reverse"&gt;
+      &lt;div class="col-lg-8"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-lg-4"&gt;
+          &lt;!--Sidebar-Area-Start--&gt;
+          &lt;aside class="sidebar-main"&gt; 
+          &lt;/aside&gt;
+          &lt;!--Sidebar-Area-End--&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+    </section>
+
+    <hr class="divider">
+
+
+    
+          <!-- Footer
+		============================ -->
+    <section id="idocs_footer">
+      <h2>Footer</h2>
+      <p>Footer with white background Color & Dark text. See below code for more information.</p>
+      <p><a class="popup-img" href="assets/images/footer-component-4.jpg"><img class="img-fluid border"
+            src="assets/images/footer-component-4.jpg" alt=""></a></p>
+      <pre><code class="html">&lt;!-- Footer-Area-Start --&gt;
+&lt;footer class="footer-area"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row footer-top section-padding"&gt;
+            &lt;div class="col-lg-4 mb-5 mb-lg-0"&gt;
+                &lt;div class="footer-widget pe-lg-3 g-md-4 g-xl-5"&gt;
+                    &lt;a href="index.html" class="footer-logo"&gt;
+                        &lt;img src="assets/images/theme-1/logo-dark.svg" alt="Landshop"&gt;
+                    &lt;/a&gt;
+                    &lt;div class="desc"&gt;
+                        &lt;p&gt;Temporibus autem quibusdam aut officiis debitis aut rerum necessitatibus saepde
+                            eveniet ut et voluptates.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;ul class="social-menu"&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-facebook"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-twitter"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-instagram"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-linkedin"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-sm-6 mb-5 mb-lg-0"&gt;
+                &lt;div class="footer-widget"&gt;
+                    &lt;h4 class="widget-title"&gt;Product&lt;/h4&gt;
+                    &lt;ul class="block-list"&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Features&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Pricing Plan&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Purchase Guide&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-sm-6 mb-5 mb-lg-0"&gt;
+                &lt;div class="footer-widget"&gt;
+                    &lt;h4 class="widget-title"&gt;Support&lt;/h4&gt;
+                    &lt;ul class="block-list"&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Help Center&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Terms &amp; Condition&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="javascript:void(0)"&gt;FAQ Questions&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-4"&gt;
+                &lt;div class="footer-widget"&gt;
+                    &lt;h4 class="widget-title"&gt;Subscribe Newsletter&lt;/h4&gt;
+                    &lt;div class="desc"&gt;
+                        &lt;p&gt;At vero eos et accusamus etablish iustod odio an dignissimos ducimus qui blanditiis
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;form class="subscribe-form" id="subscribe-form"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;span class="ls-envelope"&gt;&lt;/span&gt;
+                            &lt;input type="email" id="subs-control" name="EMAIL" class="input-control"
+                                placeholder="Enter your mail address"&gt;
+                            &lt;button type="submit"&gt;&lt;span class="ls-paper-plane"&gt;&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;label&gt;&lt;/label&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row footer-bottom"&gt;
+            &lt;div class="copyrights"&gt;
+                &lt;p&gt;&amp;copy;2023 All rights reserved. Powered by ThemeCTG&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- Footer-Area-End --&gt;</code></pre>
+    </section>
+
+    <hr class="divider">
+          
+          <!-- Content
+		============================ -->
+          <section id="idocs_content">
+            <h2>Content</h2>
+            <p class="lead mb-5">Documentation and examples for displaying typography, code, table, image and video and
+              more..</p>
+          </section>
+
+          <!-- Typography
+		============================ -->
+          <section id="idocs_typography">
+            <h2>Typography</h2>
+            <p class="text-4">Documentation and examples for typography, headings, body text, lists, and more.</p>
+            <h3>Headings</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Heading</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+                  <td>
+                    <h1>h1. Heading</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+                  <td>
+                    <h2>h2. Heading</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+                  <td>
+                    <h3>h3. Heading</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+                  <td>
+                    <h4>h4. Heading</h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+                  <td>
+                    <h5>h5. Heading</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+                  <td>
+                    <h6>h6. Heading</h6>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="mt-5">Lead</h3>
+            <p>Make a paragraph stand out by adding <code>.lead</code></p>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur
+              cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+            <pre><code class="html">&lt;p class=&quot;lead&quot;&gt;
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+&lt;/p&gt;</code></pre>
+
+            <h3 class="mt-5">Inline Text elements</h3>
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            <p><u>This line of text will render as underlined</u></p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+
+            <pre><code class="html">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Code
+		============================ -->
+          <section id="idocs_code">
+            <h2>Code</h2>
+            <p class="text-4">Documentation and examples for displaying inline and multiline blocks of code</p>
+
+            <h3 class="mt-5">Inline code</h3>
+            <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>. <span class="text-info">Be sure to escape
+                HTML angle brackets</span>.</p>
+
+            <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+            <pre><code class="html">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.</code></pre>
+
+
+            <h3 class="mt-5">Code blocks</h3>
+            <p>Use <code>&lt;pre&gt;</code>s for multiple lines of code. <span class="text-info">Once again, be sure to
+                escape any angle brackets in the code for proper rendering</span>. You may optionally add the
+              <code>.pre-scrollable</code> class, which will set a max-height of 340px and provide a y-axis scrollbar.
+            </p>
+            <p><strong>For example:</strong></p>
+            <pre><code class="html">&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+            <p><strong>Have to use something like:</strong></p>
+            <pre><code class="html">&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And another line of sample text here...&amp;lt;/p&amp;gt;
+&lt;/pre&gt;&lt;/code&gt;
+</code></pre>
+
+            <h3 class="mt-5">Syntax highlighter</h3>
+            <p>We use <strong><a target="_blank" href="https://highlightjs.org/">Highlight Js</a></strong> for syntax
+              highlight code snippet.</p>
+            <p>You can refer more information here: <a class="btn btn-primary" target="_blank"
+                href="https://highlightjs.org/usage/"><i class="fas fa-external-link-alt mr-1"></i> How to use
+                highlight.js</a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Table
+		============================ -->
+          <section id="idocs_table">
+            <h2>Table</h2>
+            <p class="text-4">Documentation and examples for opt-in styling of tables.</p>
+            <p>Landshop is based on Bootstrap 4, so you can easily use Bootstrap's table classes to style your table. <a
+                class="ml-1" target="_blank" href="https://getbootstrap.com/docs/4.4/content/tables/"><i
+                  class="fas fa-external-link-alt"></i> Bootstrap Documentation</a></p>
+
+            <h3 class="mt-5">Bordered</h3>
+            <pre><code class="html">&lt;table class=&quot;table table-bordered&quot;&gt;
+   .......
+&lt;/table&gt;</code></pre>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="mt-5">Striped</h3>
+            <pre><code class="html">&lt;table class=&quot;table table-bordered table-striped&quot;&gt;
+   .......
+&lt;/table&gt;</code></pre>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><span class="badge badge-danger text-uppercase mr-2">Note</span>You can refer more information in
+              Bootstrap Documentation here: <a class="btn btn-primary" target="_blank"
+                href="https://getbootstrap.com/docs/4.4/content/tables/"><i class="fas fa-external-link-alt mr-1"></i>
+                Bootstrap Documentation</a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Icons
+		============================ -->
+          <section id="idocs_icons">
+            <h2>Icons</h2>
+            <p><strong>Custom font</strong> icon sets are used in Landshop.</p>
+
+            <pre><code class="html">&lt;i class=&quot;ls-wool&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;ls-zipper&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;ls-envelope&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;ls-paper-plane&quot;&gt;&lt;/i&gt;
+</code></pre>            
+      <p><a class="popup-img" href="assets/images/icon-list-class.png"><img class="img-fluid border"
+        src="assets/images/icon-list-class.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Image
+		============================ -->
+          <section id="idocs_image">
+            <h2>Image</h2>
+            <p class="text-4">Documentation and examples for opting images into responsive behavior and add lightweight
+              styles to them—all via classes.</p>
+
+            <h3 class="mt-5">Responsive Images</h3>
+            <p>Images in Bootstrap are made responsive with <code>.img-fluid.</code> <code>max-width: 100%;</code> and
+              <code>height: auto;</code> are applied to the image so that it scales with the parent element.</p>
+            <p><img src="assets/images/screenshot.jpg" class="img-fluid" alt="Responsive image"></p>
+            <pre><code class="html">&lt;img src=&quot;assets/images/screenshot.jpg&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive image&quot;&gt;</code></pre>
+
+            <h3 class="mt-5">Image lightbox</h3>
+            <p>Show image popup when click on image:</p>
+            <p><a class="popup-img" href="assets/images/screenshot.jpg"><img src="assets/images/screenshot-thumb.jpg"
+                  class="img-fluid img-thumbnail" alt="image"></a></p>
+            <pre><code class="html">&lt;a class=&quot;popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;
+  &lt;img src=&quot;assets/images/screenshot-thumb.jpg&quot; class=&quot;img-fluid img-thumbnail&quot; alt=&quot;image&quot;&gt;
+&lt;/a&gt;</code></pre>
+
+            <h3 class="mt-5">Image Lightbox with Link</h3>
+            <p>Show image popup when click on link: <a class="popup-img" href="assets/images/screenshot.jpg">Click Here
+                for Popup Image</a></p>
+            <pre><code class="html">&lt;a class=&quot;popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;Click Here for Popup Image&lt;/a&gt;</code></pre>
+
+            <h3 class="mt-5">Image lightbox with Button</h3>
+            <p>Show image popup when click on button: <a class="btn btn-primary popup-img"
+                href="assets/images/screenshot.jpg">Click Here for Popup Image</a></p>
+            <pre><code class="html">&lt;a class=&quot;btn btn-primary popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;Click Here for Popup Image&lt;/a&gt;</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Video
+		============================ -->
+          <section id="idocs_video">
+            <h2>Video</h2>
+            <p class="text-4">Create responsive video embeds based on the width of the parent by creating an intrinsic
+              ratio that scales on any device.</p>
+
+            <h3 class="mt-5">Embedded Video</h3>
+            <p>Wrap any embed like an <code>&lt;iframe&gt;</code> in a parent element with
+              <code>.embed-responsive</code> and an aspect ratio. The <code>.embed-responsive-item</code> isn’t strictly
+              required, but we encourage it.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7e90gBu4pas"
+                allowfullscreen></iframe>
+            </div>
+            <pre><code class="html">&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/7e90gBu4pas&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+            <p><span class="badge badge-danger text-uppercase mr-2">Note</span>Please go to official bootstrap
+              documentation for a full information of embed video: <a class="btn btn-primary" target="_blank"
+                href="https://getbootstrap.com/docs/4.4/utilities/embed/"><i class="fas fa-external-link-alt mr-1"></i>
+                Bootstrap Documentation</a></p>
+
+            <h3 class="mt-5">Popup with Video</h3>
+            <p>Show <strong>Youtube</strong> and <strong>Vimeo</strong> video popup when click on link:</p>
+            <p><a class="popup-youtube" href="http://www.youtube.com/watch?v=7e90gBu4pas">Open Popup YouTube Video </a>
+            </p>
+            <pre><code class="html">&lt;a data-lity href=&quot;http://www.youtube.com/watch?v=7e90gBu4pas&quot;&gt;Open Popup YouTube Video &lt;/a&gt;</code></pre>
+
+            <p><a class="popup-vimeo" href="https://vimeo.com/45830194">Open Popup Vimeo video</a></p>
+            <pre><code class="html">&lt;a data-lity href=&quot;https://vimeo.com/45830194&quot;&gt;Open Popup Vimeo video&lt;/a&gt;</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Components
+		============================ -->
+          <section id="idocs_components">
+            <h2>Components</h2>
+            <p class="mb-5">Setting up components is very easy. Here is the Some of shortcodes describe. also,
+              <strong>Landshop</strong> is based on Bootstrap 4, so you can easily use Bootstrap's components: <a
+                class="ml-1" target="_blank" href="https://getbootstrap.com/docs/4.4/components/"><i
+                  class="fas fa-external-link-alt"></i> Bootstrap Documentation</a></p>
+          </section>
+
+          <!-- Accordion
+		  ============================ -->
+          <section id="idocs_accordion">
+            <h2>Accordion</h2>
+            <p>You can extend the default collapse behavior to create an accordion. To properly achieve the accordion
+              style, be sure to use <code>.accordion</code> as a wrapper.</p>
+            <p>See below image and code for more information.</p>
+            <p><a class="popup-img" href="assets/images/accordion.png"><img class="img-fluid border"
+                  src="assets/images/accordion.png" alt=""></a></p>
+            <pre><code class="html">&lt;!-- Accordion-Start --&gt;
+&lt;div id="accordion1" class="accordion"&gt;
+    &lt;div class="item"&gt;
+        &lt;h4 class="title"&gt;&lt;a data-bs-toggle="collapse" href="#collapseOne"
+                aria-expanded="true"&gt; Is there anything else we should know about you?
+            &lt;/a&gt;&lt;/h4&gt;
+        &lt;div id="collapseOne" class="collapse show desc" data-bs-parent="#accordion1"&gt;
+            &lt;p&gt;Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo
+                Nemo enim
+                ipsam voluptatem quia voluptas.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item"&gt;
+        &lt;h4 class="title"&gt;&lt;a class="collapsed" data-bs-toggle="collapse"
+                href="#collapseTwo"&gt; Is there anything else we should know about you?
+            &lt;/a&gt;&lt;/h4&gt;
+        &lt;div id="collapseTwo" class="collapse desc" data-bs-parent="#accordion1"&gt;
+            &lt;p&gt;Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo
+                Nemo enim
+                ipsam voluptatem quia voluptas.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item"&gt;
+        &lt;h4 class="title"&gt;&lt;a class="collapsed" data-bs-toggle="collapse"
+                href="#collapseThree"&gt; Is there anything else we should know about you?
+            &lt;/a&gt;&lt;/h4&gt;
+        &lt;div id="collapseThree" class="collapse desc" data-bs-parent="#accordion1"&gt;
+            &lt;p&gt;Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo
+                Nemo enim
+                ipsam voluptatem quia voluptas.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item"&gt;
+        &lt;h4 class="title"&gt;&lt;a class="collapsed" data-bs-toggle="collapse"
+                href="#collapseFour"&gt; Is there anything else we should know about you?
+            &lt;/a&gt;&lt;/h4&gt;
+        &lt;div id="collapseFour" class="collapse desc" data-bs-parent="#accordion1"&gt;
+            &lt;p&gt;Dicta sunt explicabo Nemo enimrds ipsam voluptatem quia voluptas sit
+                aspernaturaut odit aut fugit, sed quiaue consequuntur. Dicta explicabo
+                Nemo enim
+                ipsam voluptatem quia voluptas.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Accordion-End --&gt;
+</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Tabs
+		  ============================ -->
+          <section id="idocs_tabs">
+            <h2>Tabs</h2>
+            <p class="text-4">Default <a
+                href="https://getbootstrap.com/docs/4.4/components/navs/#javascript-behavior">Bootstrap Nav</a>
+              component combined with Landshop for unique tabs.</p>
+            <p>See below image and code for more information.</p>
+            <p><a class="popup-img" href="assets/images/tabs.jpg"><img class="img-fluid border"
+                  src="assets/images/tabs.jpg" alt=""></a></p>
+
+            <pre><code class="html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#contact&quot; role=&quot;tab&quot; aria-controls=&quot;contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content my-3&quot; id=&quot;myTabContent&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot;&gt;This is Tab Content Home&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;This is Tab Content Profile&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;This is Tab Content Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Options:</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Type Class</th>
+                    <th>Features</th>
+                    <th>Code Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>Basic Navs</code></td>
+                    <td>Basic Navs Style for the Tabs</td>
+                    <td>
+                      <pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  .......
+&lt;/ul&gt;</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.nav-separator</code></td>
+                    <td>Basic Navs Style with Separator for the Tabs</td>
+                    <td>
+                      <pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  .......
+&lt;/ul&gt;</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.nav-tabs</code></td>
+                    <td>Tabs Navs Style for the Tabs. For example - above Preview Example.</td>
+                    <td>
+                      <pre class="mb-0"><code>&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  .......
+&lt;/ul&gt;</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.nav-pills</code></td>
+                    <td>Pills Navs Style for the Tabs</td>
+                    <td>
+                      <pre class="mb-0"><code>&lt;ul class=&quot;nav nav-pills&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  .......
+&lt;/ul&gt;</code></pre>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Social Icon
+		  ============================ -->
+          <section id="idocs_social_icon">
+            <h3>Social Icon</h3>
+            <p>Social links with different styles. See below code for more information.</p>
+            <pre><code class="html">&lt;ul class="social-menu"&gt;
+    &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-facebook"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-twitter"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-instagram"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;span class="ls-linkedin"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Helper Classes
+		  ============================ -->
+          <section id="idocs_helper_classes">
+            <h3>Helper Classes</h3>
+            <p>We have created some really useful helper classes for you. Here are a few of them. also, You can refer
+              other default bootstrap helper classes here: <a class="ml-1" target="_blank"
+                href="https://getbootstrap.com/docs/4.4/utilities/"><i class="fas fa-external-link-alt"></i> Bootstrap
+                Documentation</a> </p>
+
+            <h5>Text Size:</h5>
+            <ul>
+              <li><code>.text-0</code> - Changes the Font size to 11px.</li>
+              <li><code>.text-1</code> - Changes the Font size to 12px.</li>
+              <li><code>.text-2</code> - Changes the Font size to 14px.</li>
+              <li><code>.text-3</code> - Changes the Font size to 16px.</li>
+              <li><code>.text-4</code> - Changes the Font size to 18px.</li>
+              <li><code>.text-5</code> - Changes the Font size to 21px.</li>
+              <li><code>.text-6</code> - Changes the Font size to 24px.</li>
+              <li><code>.text-7</code> - Changes the Font size to 28px.</li>
+              <li><code>.text-8</code> - Changes the Font size to 32px.</li>
+              <li><code>.text-9</code> - Changes the Font size to 36px.</li>
+              <li><code>.text-10</code> - Changes the Font size to 40px.</li>
+              <li><code>.text-11</code> - Changes the Font size to 44px.</li>
+              <li><code>.text-12</code> - Changes the Font size to 48px.</li>
+              <li><code>.text-13</code> - Changes the Font size to 52px.</li>
+              <li><code>.text-14</code> - Changes the Font size to 56px.</li>
+              <li><code>.text-15</code> - Changes the Font size to 60px.</li>
+              <li><code>.text-16</code> - Changes the Font size to 64px.</li>
+              <li><code>.text-17</code> - Changes the Font size to 72px.</li>
+              <li><code>.text-18</code> - Changes the Font size to 80px.</li>
+              <li><code>.text-19</code> - Changes the Font size to 84px.</li>
+              <li><code>.text-20</code> - Changes the Font size to 92px.</li>
+            </ul>
+            <h5>Font Weight:</h5>
+            <ul>
+              <li><code>.font-weight-100</code> - For font weight of 100.</li>
+              <li><code>.font-weight-200</code> - For font weight of 200.</li>
+              <li><code>.font-weight-300</code> - For font weight of 300.</li>
+              <li><code>.font-weight-400</code> - For font weight of 400.</li>
+              <li><code>.font-weight-500</code> - For font weight of 500.</li>
+              <li><code>.font-weight-600</code> - For font weight of 600.</li>
+              <li><code>.font-weight-700</code> - For font weight of 700.</li>
+              <li><code>.font-weight-800</code> - For font weight of 800.</li>
+              <li><code>.font-weight-900</code> - For font weight of 900.</li>
+            </ul>
+            <h5>Background Color:</h5>
+            <ul>
+              <li><code>.bg-transparent</code> - For background color of transparent</li>
+              <li><code>.bg-light</code> - For background color of light gray</li>
+              <li><code>.bg-light-1</code> - For background color of more light gray</li>
+              <li><code>.bg-light-2</code> - For background color of more light gray</li>
+              <li><code>.bg-light-3</code> - For background color of more light gray</li>
+              <li><code>.bg-light-4</code> - For background color of more light gray</li>
+              <li><code>.bg-dark</code> - For background color of dark</li>
+              <li><code>.bg-dark-1</code> - For background color of dark gray</li>
+              <li><code>.bg-dark-2</code> - For background color of more dark gray</li>
+              <li><code>.bg-dark-3</code> - For background color of more dark gray</li>
+              <li><code>.bg-dark-4</code> - For background color of more dark gray</li>
+            </ul>
+            <h5>Box Shadow</h5>
+            <ul>
+              <li><code>.shadow-none</code> - For No shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow-sm</code> - For Small shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow</code> - For Regular shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow-md</code> - For medium light shadows to elements with box-shadow utilities.</li>
+              <li><code>.shadow-lg</code> - For Larger shadows to elements with box-shadow utilities.</li>
+            </ul>
+            <h5>Opacity</h5>
+            <ul>
+              <li><code>.opacity-1</code> - For 10% opacity.</li>
+              <li><code>.opacity-2</code> - For 20% opacity.</li>
+              <li><code>.opacity-3</code> - For 30% opacity.</li>
+              <li><code>.opacity-4</code> - For 40% opacity.</li>
+              <li><code>.opacity-5</code> - For 50% opacity.</li>
+              <li><code>.opacity-6</code> - For 60% opacity.</li>
+              <li><code>.opacity-7</code> - For 70% opacity.</li>
+              <li><code>.opacity-8</code> - For 80% opacity.</li>
+              <li><code>.opacity-9</code> - For 90% opacity.</li>
+            </ul>
+            <h5>Border Radius</h5>
+            <ul>
+              <li><code>.rounded-top-0</code> - No Border Radius for top.</li>
+              <li><code>.rounded-bottom-0</code> - No Border Radius for bottom.</li>
+              <li><code>.rounded-left-0</code> - No Border Radius for left.</li>
+              <li><code>.rounded-right-0</code> - No Border Radius for right.</li>
+            </ul>
+            <h5>Borders, Sizing, Spacing (margin & padding) and also much more....</h5>
+            <div class="alert alert-info">You can refer for use other default bootstrap helper classes here - <a
+                href="https://getbootstrap.com/docs/4.4/utilities/">https://getbootstrap.com/docs/4.4/utilities/</a>
+            </div>
+          </section>
+
+          
+          <hr class="divider">
+
+          <!-- Contact Form
+		  ============================ -->
+          <section id="idocs_contact_form">
+            <h3>Contact Form</h3>
+            <p>To set up the contact form, you need to make sure that the email address in the <code>"process.php"</code> file matches the email address where you want to receive the contact form submissions. You can open the <code>"process.php"</code> file in any text editor and look for the line of code that specifies the email address. Simply replace the email address in that line with the email address where you want to receive the submissions. After making the changes, make sure to save the file.</p>
+            <p><a class="popup-img" href="assets/images/contact-form.png"><img class="img-fluid border" src="assets/images/contact-form.png" alt=""></a></p>
+            
+            <h3>HTML Codes</h3>
+            <pre><code class="html">&lt;form class="contact-form" id="contact-form"&gt;
+&lt;div class="row g-4"&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;label class="field-group icon-group"&gt;
+            &lt;span class="icon"&gt;&lt;span class="ls-user-2"&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;input type="text" class="input-field" name="form-name" id="form-name" placeholder="Enter your name"&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;label class="field-group icon-group"&gt;
+            &lt;span class="icon"&gt;&lt;span class="ls-envelope"&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;input type="email" class="input-field" name="form-email" id="form-email" placeholder="Enter your mail"&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;div class="field-group"&gt;
+            &lt;select name="form-subject" id="form-subject" class="input-field" &gt;
+                &lt;option value="web-design"&gt;Web Design&lt;/option&gt;
+                &lt;option value="web-development"&gt;Web Development&lt;/option&gt;
+                &lt;option value="graphic-design"&gt;Graphic Design&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;div class="field-group"&gt;
+            &lt;input type="date" name="form-date" id="form-date" class="input-field"&gt;                                    
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;div class="field-group"&gt;
+            &lt;textarea name="form-message" id="form-message" class="input-field" placeholder="Enter your message..."&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;button class="primary-button" type="submit"&gt;
+            &lt;span class="part front"&gt;Send Message&lt;/span&gt;
+            &lt;span class="part back"&gt;Send Message&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+
+<h3>PHP Codes</h3>
+<pre>
+  <code>&lt;?php
+    // Configure your Subject Prefix and Recipient here
+    $subjectPrefix = 'Landshop';
+    $emailTo       = 'yourmail@example.com';
+    $errors = array(); // array to hold validation errors
+    $data   = array(); // array to pass back data
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $name    = stripslashes(trim($_POST['name']));
+        $email   = stripslashes(trim($_POST['email']));
+        $subject = stripslashes(trim($_POST['subject']));
+        $date = stripslashes(trim($_POST['date']));
+        $message = stripslashes(trim($_POST['message']));
+        if (empty($name)) {
+            $errors['name'] = 'Name is required.';
+        }
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors['email'] = 'Email is invalid.';
+        }
+        if (empty($subject)) {
+            $errors['subject'] = 'Subject is required.';
+        }
+        if (empty($date)) {
+            $date = date("Y/m/d");
+        }
+        if (empty($message)) {
+            $errors['message'] = 'Message is required.';
+        }
+        // if there are any errors in our errors array, return a success boolean or false
+        if (!empty($errors)) {
+            $data['success'] = false;
+            $data['errors']  = $errors;
+        } else {
+            $subject = "$subjectPrefix $subject";
+            $body    = '
+                &lt;strong&gt;Name: &lt;/strong&gt;'.$name.'&lt;br /&gt;
+                &lt;strong&gt;Email: &lt;/strong&gt;'.$email.'&lt;br /&gt;
+                &lt;strong&gt;Date: &lt;/strong&gt;'.$date.'&lt;br /&gt;
+                &lt;strong&gt;Message: &lt;/strong&gt;'.nl2br($message).'&lt;br /&gt;
+            ';
+            $headers  = "MIME-Version: 1.1" . PHP_EOL;
+            $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
+            $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
+            $headers .= "Date: " . date('r', $_SERVER['REQUEST_TIME']) . PHP_EOL;
+            $headers .= "Message-ID: &lt;" . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '&gt;' . PHP_EOL;
+            $headers .= "From: " . "=?UTF-8?B?".base64_encode($name)."?=" . "&lt;$email&gt;" . PHP_EOL;
+            $headers .= "Return-Path: $emailTo" . PHP_EOL;
+            $headers .= "Reply-To: $email" . PHP_EOL;
+            $headers .= "X-Mailer: PHP/". phpversion() . PHP_EOL;
+            $headers .= "X-Originating-IP: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
+            mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
+            $data['success'] = true;
+            $data['message'] = 'Congratulations. Your message has been sent successfully';
+        }
+        // return all our data to an AJAX call
+        echo json_encode($data);
+    }
+    </code>
+</pre>
+
+
+          </section>
+
+
+          <hr class="divider">
+
+          <!-- Subscribe Form
+		============================ -->
+    <section id="idocs_subscribe_form">
+      <h2>Subscribe Form</h2>
+      <p>To set up a Mailchimp subscribe form on your HTML template, you can follow these steps:</p>
+      <ol>
+        <li>Create a Mailchimp account and log in.</li>
+        <li>In the Mailchimp dashboard, navigate to the <code>"Audience"</code> tab and select <code>"Audience dashboard"</code>.</li>
+        <li>Click on <code>"Signup forms"</code> and then <code>"Embedded forms"</code>.</li>
+        <li>Customize your form settings and fields as per your requirements.</li>
+        <li>Click on the "Copy" button to copy the HTML code for your form.</li>
+        <li>Open the HTML file where you want to add the subscribe form in any text editor.</li>
+        <li>Paste the HTML code where you want the form to appear on the page.</li>
+        <li>Make sure to save the HTML file and upload it to your server.</li>
+      </ol>
+      <p>Once you have added the Mailchimp subscribe form to your HTML template, your website visitors can use the form to subscribe to your mailing list. The email addresses collected through the form will be added to your Mailchimp audience automatically.</p>
+      <p>For more information on how to set up a Mailchimp subscribe form on your HTML template, you can follow this video tutorial. </p>
+      <iframe class="embed-responsive" height="600" src="https://www.youtube.com/embed/jvOoRB02mtg" title="Mailchimp Iframe URL Collect" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <hr class="divider">
+          <!-- FAQ
+		============================ -->
+          <section id="idocs_faq">
+            <h2>FAQ</h2>
+            <p class="text-4">A FAQ is a list of frequently asked questions (FAQs) and answers on a particular topic.
+            </p>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
+                          aria-expanded="false" aria-controls="collapse1">What is an HTML template?</a> </h5>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                      <div class="card-body">An HTML template is a pre-designed and pre-coded website or web application that can be customized and used as the basis for your own project. HTML templates can save time and effort in the development process and provide a professional and polished look to your website or web application.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Do I need to know how to code to use an HTML template?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body">Basic knowledge of HTML, CSS, and JavaScript is required to customize an HTML template. However, many templates come with detailed documentation and support to help users customize and implement the template.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading3">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
+                          aria-expanded="false" aria-controls="collapse3">What do I get when I purchase an HTML template?</a> </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
+                      <div class="card-body">When you purchase an HTML template, you typically receive the HTML, CSS, and JavaScript files that make up the template. You may also receive additional assets like images, fonts, and icons that are used in the template.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading4">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4"
+                          aria-expanded="false" aria-controls="collapse4">Can I use an HTML template for commercial projects?</a> </h5>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
+                      <div class="card-body">Yes, most HTML templates can be used for commercial projects, but it is important to check the license agreement before using the template to ensure that you are following the terms and conditions.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading5">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5"
+                          aria-expanded="false" aria-controls="collapse5">How do I customize an HTML template?</a> </h5>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
+                      <div class="card-body">You can customize an HTML template by editing the HTML, CSS, and JavaScript files. Most templates come with documentation that explains how to make changes and customize the template to fit your needs.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading6">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6"
+                          aria-expanded="false" aria-controls="collapse6">What if I have problems customizing the template?</a> </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                      <div class="card-body">Most HTML template providers offer customer support and documentation to help users customize and implement the template. If you have any problems, you can reach out to the provider for help.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading6">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6"
+                          aria-expanded="false" aria-controls="collapse6">Are HTML templates mobile-friendly?</a> </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                      <div class="card-body">Most modern HTML templates are designed to be mobile-friendly and responsive, meaning that they will look and function well on a variety of devices, including desktops, laptops, tablets, and smartphones.</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading6">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6"
+                          aria-expanded="false" aria-controls="collapse6">Can I use a HTML template with a content management system (CMS)?</a> </h5>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                      <div class="card-body">Yes, you can usually use HTML templates with CMS platforms like WordPress, Drupal, and Joomla. However, it is important to check compatibility and ensure that the template is designed to work with your chosen CMS.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <hr class="divider">
+
+          <!-- Source & Credits
+		============================ -->
+          <section id="idocs_source_credits">
+            <h2>Source & Credits</h2>
+            <h4>Images:</h4>
+            <ul>
+              <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a></li>
+            </ul>
+            <h4>Fonts:</h4>
+            <ul>
+              <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+            </ul>
+            <h4>Scripts:</h4>
+            <ul>
+              <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+              <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+              <li>Highlight Js - <a target="_blank" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+              <li>jQuery easing - <a target="_blank"
+                  href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+              <li>Magnific Popup - <a target="_blank"
+                  href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+              </li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Support
+		============================ -->
+          <section id="idocs_support">
+            <h2>Support</h2>
+            <p>If this documentation doesn't answer your questions, So, Please send us Email via <a
+                class="btn btn-primary" target="_blank" href="https://themeforest.net/user/themectg#contact">Item
+                Support Page</a></p>
+            <p> We are located in GMT +5:30 time zone and we answer all questions within 12-24 hours in weekdays. In
+              some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
+            <div class="alert alert-warning mb-4"><span class="badge badge-danger text-uppercase">Note:</span> While we
+              aim to provide the best support possible, please keep in mind that it only extends to verified buyers and
+              only to issues related to our template like bugs and errors. Custom modifications or third party module
+              implementations are not included.</div>
+            <h4>Don’t forget to Rate this template
+              <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
+                class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
+                class="fas fa-star text-warning"></i>
+            </h4>
+            <div class="alert alert-success">
+              Please Add your Review (Opinion) for Our template. It would be a great support for us.<br>
+              Go to your <strong>Themeforest Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate &
+              Review for our template.<br>
+              Thank You.
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <!-- More Templates
+		============================ -->
+          <section id="idocs_templates">
+            <h2>More Templates</h2>
+            <p class="lead">Checkout Our Below Premium Templates</p>
+
+            <div class="row">
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/28476751?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/simone.jpg" alt="">
+                  <h6 class="pt-2">Simone - Personal Portfolio Template</h6>
+                </a>
+              </div>
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/26454458?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/kenil.jpg" alt="">
+                  <h6 class="pt-2">Kenil - Responsive Bootstrap 4 One Page Portfolio Template</h6>
+                </a>
+              </div>
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/26313677?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/doon.jpg" alt="">
+                  <h6 class="pt-2">Doon - One Page Parallax HTML Template</h6>
+                </a>
+              </div>
+
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/27172933?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/domainx.jpg" alt="">
+                  <h6 class="pt-2">DomainX- Domain for Sale HTML Template</h6>
+                </a>
+              </div>
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/28848609?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/oxyy.jpg" alt="">
+                  <h6 class="pt-2">Oxyy - Login and Register Form HTML Templates</h6>
+                </a>
+              </div>
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/27034971?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/koice.jpg" alt="">
+                  <h6 class="pt-2">Koice - Invoice HTML Template</h6>
+                </a>
+              </div>
+
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/24017808?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/payyed.jpg" alt="">
+                  <h6 class="pt-2">Payyed - Money Transfer and Online Payments HTML Template</h6>
+                </a>
+              </div>
+              <div class="col-4 my-3 text-center">
+                <a target="_blank" href="https://themeforest.net/item/x/22375065?ref=themectg"><img
+                    class="img-fluid border" src="assets/images/templates/quickai.jpg" alt="">
+                  <h6 class="pt-2">Quickai - Recharge & Bill Payment, Booking HTML5 Template</h6>
+                </a>
+              </div>
+            </div>
+
+            <p class="text-center"><a class="btn btn-lg btn-primary my-4" target="_blank"
+                href="https://themeforest.net/user/themectg/portfolio?ref=themectg">Our Portfolio</a></p>
+
+          </section>
+
+          <hr class="divider">
+
+          <!-- Changelog
+		============================ -->
+
+          <section id="idocs_changelog">
+            <h2>Changelog</h2>
+            <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+            <p class="alert alert-info mb-5"> For Future Updates Follow Us <a target="_blank"
+                href="http://themeforest.net/user/themectg?ref=themectg">@themeforest</a> / <a target="_blank"
+                href="http://facebook.com/themectg">@facebook</a> / <a target="_blank"
+                href="http://twitter.com/themectg">@twitter</a> / <a target="_blank"
+                href="https://dribbble.com/themectg">@Dribbble</a></p>
+
+            <h3 id="v1-1">Version 1.1 <small class="text-muted">(12 Oct, 2020)</small></h3>
+            <ul class="changelog">
+              <li><span class="badge badge-success">Added</span> Your information here for added new feature</li>
+              <li><span class="badge badge-danger">Fixed</span> Some minor bugs for browser compatibility</li>
+              <li><span class="badge badge-danger">Fixed</span> Some minor bugs for responsive</li>
+              <li><span class="badge badge-info">Updated</span> FontAwesome to Latest Version</li>
+              <li><span class="badge badge-info">Updated</span> Bootstrap to Latest Version</li>
+              <li><span class="badge badge-info">Updated</span> Improvements in CSS and JS</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h3 id="v1-0">Version 1.0 <small class="text-muted">(8 April, 2020)</small></h3>
+            <p>Initial Release</p>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+        <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+          <li><a data-toggle="tooltip" href="https://twitter.com/themectg/" target="_blank" title=""
+              data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.facebook.com/themectg/" target="_blank" title=""
+              data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.dribbble.com/themectg/" target="_blank" title=""
+              data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+          <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title=""
+              data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <p class="text-center">Copyright &copy; 2020 <a
+            href="http://www.themectg.net/landshop-one-page-documentation-html-template/">Landshop</a>. All Rights
+          Reserved.</p>
+        <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank"
+            href="http://www.themectg.net/">themectg</a>.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
