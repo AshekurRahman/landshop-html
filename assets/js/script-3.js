@@ -53,7 +53,7 @@
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             distance: '60px',
-            duration: 2800,
+            duration: 2000,
             // reset: true,
         });
         sr.reveal(`.anim_top`, {
