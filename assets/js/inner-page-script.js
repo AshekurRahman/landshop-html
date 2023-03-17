@@ -43,28 +43,6 @@
         $('.product-quantity .sub').click(function () {
             $(this).next().val(+$(this).next().val() - 1);
         });
-             
-        /*===== SCROLL REVEAL ANIMATION =====*/
-        const sr = ScrollReveal({
-            distance: '60px',
-            duration: 2800,
-            // reset: true,
-        });
-        sr.reveal(`.anim_top`, {
-            origin: 'top',
-            interval: 100,
-        });
-        sr.reveal(`.anim_bottom`, {
-            origin: 'bottom',
-            interval: 100,
-        });
-        sr.reveal(`.anim_left`, {
-            origin: 'left',
-        });
-        sr.reveal(`.anim_right`, {
-            origin: 'right',
-            interval: 100,
-        });
         
         /*====== Product-Slider ======*/
         var client_slider = new Swiper("#client-logo-slider", {

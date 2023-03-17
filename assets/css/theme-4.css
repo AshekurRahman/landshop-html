@@ -29,8 +29,8 @@ CSS Indexing
 
 /*=== 1. Reset-CSS ===*/
 body {
-    font-family: 'Gilroy';
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: var(--body-color);
     position: relative;
@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--heading-color);
     margin-bottom: 16px;
 }
@@ -84,7 +84,6 @@ img {
     color: var(--heading-color);
     display: inline-block;
     border-radius: 6px;
-    font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
@@ -183,7 +182,8 @@ img {
 }
 
 .section-title .title {
-    font-size: 48px;
+    font-size: 42px;
+    font-weight: 700;
     margin-bottom: 24px;
 }
 
@@ -229,7 +229,7 @@ img {
     transform: translate(-50%, -50%);
     font-size: 18vw;
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     display: inline-block;
 }
@@ -630,7 +630,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 .header-area .header-text .main-title {
     font-size: 104px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 10px;
     margin-bottom: 40px;
 }
@@ -656,7 +656,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .header-slider-pagination .swiper-slide .number {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--heading-color);
     cursor: pointer;
     display: block;
@@ -1147,7 +1147,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     border-radius: 4px;
     display: inline-block;
     padding: 15px 24px;
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
     line-height: 1.445em;
     -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);

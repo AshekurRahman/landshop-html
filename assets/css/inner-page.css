@@ -29,8 +29,8 @@ CSS Indexing
 
 /*=== 1. Reset-CSS ===*/
 body {
-    font-family: 'Gilroy';
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: var(--body-color);
 }
@@ -82,7 +82,6 @@ img {
     color: #ffffff;
     display: inline-block;
     border-radius: 5px;
-    font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
@@ -234,7 +233,7 @@ img {
     transform: translate(-50%, -50%);
     font-size: 18vw;
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     display: inline-block;
 }
@@ -550,7 +549,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     bottom: 0;
     font-size: 120px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color);
     opacity: 0.1;
     -webkit-transform: translateY(45%);
@@ -923,7 +922,6 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     padding: 0 24px;
     background-color: #F7F7F7;
     color: var(--heading-color);
-    font-weight: 700;
     margin: 12px;
     border-radius: 5px;
 }
@@ -1414,7 +1412,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .widget .widget-title {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 24px;
 }
 
@@ -1722,7 +1720,6 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     padding: 14px 0;
     color: var(--heading-color);
     font-size: 24px;
-    font-weight: 700;
     margin-right: 32px;
 }
 
@@ -1816,7 +1813,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     border-radius: 4px;
     display: inline-block;
     padding: 15px 24px;
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
     line-height: 1.445em;
     -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);

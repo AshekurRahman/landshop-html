@@ -18,6 +18,18 @@
     }
 }
 
+
+@media screen and (min-width: 768px) {        
+    .mainmenu-area .nav-row .menu-items li:hover > ul {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .mainmenu-area .nav-row .menu-items ul li:hover > .plus:before {
+        transform: rotate(0deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .section-padding {
         padding: 80px 0;

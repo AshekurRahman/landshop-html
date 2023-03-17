@@ -48,31 +48,6 @@
             }
         });  
         
-        
-        
-        /*===== SCROLL REVEAL ANIMATION =====*/
-        const sr = ScrollReveal({
-            distance: '60px',
-            duration: 2800,
-            // reset: true,
-        });
-        sr.reveal(`.anim_top`, {
-            origin: 'top',
-            interval: 100,
-        });
-        sr.reveal(`.anim_bottom`, {
-            origin: 'bottom',
-            interval: 100,
-        });
-        sr.reveal(`.anim_left`, {
-            origin: 'left',
-        });
-        sr.reveal(`.anim_right`, {
-            origin: 'right',
-            interval: 100,
-        });
-        
-        
         /*====== Testimonial-Slider ======*/
         var Testimonial_Slider = new Swiper(".testimonial-slider", {
             loop: true,

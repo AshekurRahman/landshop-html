@@ -34,30 +34,6 @@
             $(this).parent().toggleClass('menu-open');
         });
         
-
-        
-        /*===== SCROLL REVEAL ANIMATION =====*/
-        const sr = ScrollReveal({
-            distance: '60px',
-            duration: 2800,
-            // reset: true,
-        });
-        sr.reveal(`.anim_top`, {
-            origin: 'top',
-            interval: 100,
-        });
-        sr.reveal(`.anim_bottom`, {
-            origin: 'bottom',
-            interval: 100,
-        });
-        sr.reveal(`.anim_left`, {
-            origin: 'left',
-        });
-        sr.reveal(`.anim_right`, {
-            origin: 'right',
-            interval: 100,
-        });
-
         /*====== Header_Slider_Pagination ======*/
         var Header_Slider_Pagination = new Swiper("#header-slider-pagination", {
             loop: true,

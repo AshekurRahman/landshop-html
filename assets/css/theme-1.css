@@ -29,8 +29,8 @@ CSS Indexing
 
 /*=== 1. Reset-CSS ===*/
 body {
-    font-family: 'Gilroy';
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: var(--body-color);
 }
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--heading-color);
     margin-bottom: 16px;
 }
@@ -82,7 +82,6 @@ img {
     color: #ffffff;
     display: inline-block;
     border-radius: 5px;
-    font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
@@ -168,6 +167,7 @@ img {
 .section-title .title {
     font-size: 48px;
     margin-bottom: 24px;
+    font-weight: 700;
 }
 
 .section-title .primary-button {
@@ -226,7 +226,7 @@ img {
     transform: translate(-50%, -50%);
     font-size: 18vw;
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     display: inline-block;
 }
@@ -483,16 +483,16 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .header-area .top-title {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
     text-transform: uppercase;
     color: var(--primary-color);
     margin-bottom: 16px;
 }
 
 .header-area .main-title {
-    font-size: 88px;
-    font-weight: 800;
+    font-size: 82px;
+    font-weight: 700;
     margin-bottom: 16px;
 }
 
@@ -612,7 +612,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     margin-bottom: 0px;
     margin-top: 5px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 10px;
 }
 
@@ -1101,7 +1101,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 }
 
 .product-box .title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 12px;
 }
 
@@ -1329,7 +1329,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     border-radius: 4px;
     display: inline-block;
     padding: 15px 24px;
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
     line-height: 1.445em;
     -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);

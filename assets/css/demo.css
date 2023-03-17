@@ -29,8 +29,8 @@ CSS Indexing
 
 /*=== 1. Reset-CSS ===*/
 body {
-    font-family: 'Gilroy';
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: var(--body-color);
 }
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--heading-color);
     margin-bottom: 16px;
 }
@@ -81,7 +81,6 @@ img {
     background: none;
     display: inline-block;
     border-radius: 100px;
-    font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
@@ -163,7 +162,6 @@ img {
     background: none;
     display: inline-block;
     border-radius: 100px;
-    font-weight: 700;
     -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
     position: relative;
@@ -310,7 +308,7 @@ img {
     transform: translate(-50%, -50%);
     font-size: 18vw;
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     display: inline-block;
 }
@@ -569,8 +567,8 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .header-text .title {
     font-size: 72px;
-    font-weight: 800;
     margin-bottom: 22px;
+    font-weight: 700;
 }
 
 .header-text .desc {
@@ -690,19 +688,26 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 
 .demo-box .title {
     margin: 0;
+    font-weight: 600;
 }
 
 .demo-box .thumb .soon-banner {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 50%;
+    top: 50%;
     text-align: center;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 14px;
-    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    white-space: nowrap;
     font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.1);
 }
 
 
@@ -758,7 +763,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
-    padding: 40px;
+    padding: 40px 30px;
     text-align: center;
     transition: 0.5s;
 
@@ -782,7 +787,7 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
     border-radius: 100px;
     color: var(--primary-color);
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     transition: 0.5s;
 }
 
@@ -790,9 +795,10 @@ body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
 .feature-box:hover .icon {background-color: #ffffff;}
 
 .feature-box .title {
+    font-size: 24px;
+    font-weight: 300;
     transition: 0.5s;
     margin: 0;
-    font-size: 20px;
 }
 
 .feature-box:hover .title {

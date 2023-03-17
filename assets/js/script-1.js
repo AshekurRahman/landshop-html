@@ -36,28 +36,7 @@
         $('.mainmenu-area .nav-row .menu-items ul li .plus').on('click', function(){
             $(this).parent().toggleClass('menu-open');
         });
-             
-        /*===== SCROLL REVEAL ANIMATION =====*/
-        const sr = ScrollReveal({
-            distance: '60px',
-            duration: 2800,
-            // reset: true,
-        });
-        sr.reveal(`.anim_top`, {
-            origin: 'top',
-            interval: 100,
-        });
-        sr.reveal(`.anim_bottom`, {
-            origin: 'bottom',
-            interval: 100,
-        });
-        sr.reveal(`.anim_left`, {
-            origin: 'left',
-        });
-        sr.reveal(`.anim_right`, {
-            origin: 'right',
-            interval: 100,
-        });
+        
         /*====== Header-Product-Slider ======*/
         var Product_Slider = new Swiper(".header-product-slider", {
             loop: true,
